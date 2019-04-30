@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-permalink: /home/
+permalink: 
 ---
 
  <link rel="shortcut icon" href="/img/logo.png" type="image/png">
