@@ -2,7 +2,7 @@
 layout: page
 title: Séance 2
 parent: Course
-permalink: /course/séance_2
+permalink: /course/seance_2
 nav_order: 2
 ---
 
