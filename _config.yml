@@ -43,11 +43,11 @@ plugins:
 #   - vendor/ruby/
 
 #My settings
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 
 aux_links:
   "New Leaves on GitHub":
     - https://github.com/3outeille/new-leaves.github.io
-    
+
 timezone: TIMEZONE
