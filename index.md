@@ -6,6 +6,7 @@ title: Home
  <link rel="shortcut icon" href="/img/logo.png" type="image/png">
  
 Here are 65 examples of long sentences ranging from the relatively brief 96 words to one of the longest sentences at 2,156 words.
+ezaaezezae
 
 Almost all of the really long sentences are under 1,000 words. The six longest sentences (1,000+ words) are mostly a curiosity, just to see what is possible.
 
