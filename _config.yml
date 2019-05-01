@@ -29,6 +29,23 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+#My settings
+
+#-----------
+
+#For Github pages.
+#remote_theme: pmarsceill/just-the-docs
+
+#-----------
+
+#For local
+theme: just-the-docs
+search_enabled: true
+
+aux_links:
+  "New Leaves on GitHub":
+    - https://github.com/new-leaves
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -40,11 +57,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-#My settings
-remote_theme: pmarsceill/just-the-docs
-search_enabled: true
-
-aux_links:
-  "New Leaves on GitHub":
-    - https://github.com/new-leaves
