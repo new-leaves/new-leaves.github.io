@@ -28,18 +28,19 @@ github_username:  jekyll
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-jupyter-notebook
 
 #My settings
 
 #-----------
 
 #For Github pages.
-remote_theme: pmarsceill/just-the-docs
+#remote_theme: pmarsceill/just-the-docs
 
 #-----------
 
 #For local
-#theme: just-the-docs
+theme: just-the-docs
 search_enabled: true
 
 aux_links:
