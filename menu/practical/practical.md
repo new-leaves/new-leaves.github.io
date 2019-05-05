@@ -5,3 +5,5 @@ has_children: true
 permalink: /practical/
 nav_order: 3
 ---
+
+eazaze
