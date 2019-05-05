@@ -1,3 +1,10 @@
+---
+layout: page
+title: Les listes
+parent: Séance 2
+permalink: /course/seance_2/listes
+nav_order: 2
+---
 
 # Liste
 

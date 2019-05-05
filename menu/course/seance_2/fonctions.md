@@ -1,3 +1,10 @@
+---
+layout: page
+title: Les fonctions
+parent: Séance 2
+permalink: /course/seance_2/fonctions
+nav_order: 1
+---
 
 # Les fonctions
 

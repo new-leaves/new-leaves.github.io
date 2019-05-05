@@ -1,0 +1,143 @@
+---
+layout: page
+title: Les conditions
+parent: Séance 1
+permalink: /course/seance_1/conditions
+nav_order: 2
+---
+
+# Les conditions
+
+## a) Le concept
+
+Comme le nom le suggère, les conditions sont là pour imposer des __conditions__.
+
+## b) La manipulation
+
+Par exemple, supposons que vous êtes le videur d'une boîte de nuit. Votre patron vous dit: <font color='brown'> "Il y'a trop de mec à l'intérieur, accepte que des filles okay ?"</font>
+
+Ainsi, à chaque fois qu'une personne se présente à vous, votre cerveau va faire la chose suivante:
+if personne is FILLE: 
+    print("Tu peux entrer Madzelle")
+else:
+    print("Allez Oust !")
+Une autre version aurait pu être:
+if personne is GARCON: 
+    print("Allez Oust)
+else:
+    print("Tu peux entrer Madzelle"")
+Ce que vous venez de voir est une conditon __if__/__else__. 
+
+Cela peut se traduire de la manière suivante:
+
+---
+
+Est ce que __personne__ est une __FILLE__ ?
+
+Si <font color = 'green'> TRUE </font> alors:
+- Tu peux entrer Madzelle  
+
+Sinon:
+
+- Allez Oust!
+
+---
+
+Pour que cela puisse marcher en Python, il faudrait que __FILLE__ soit un __booléen__.
+
+Ainsi:
+
+
+```python
+personne = True
+FILLE = True
+
+if personne is FILLE: #Est ce que True est True ? -> Oui !
+    print("Tu peux entrer Madzelle")
+else:
+    print("Allez Oust !")
+```
+
+    Tu peux entrer Madzelle
+
+
+
+```python
+personne = True
+FILLE = False
+
+if personne is FILLE: #Est ce que True est False? -> Non!
+    print("Tu peux entrer Madzelle")
+else:
+    print("Allez Oust !")
+```
+
+    Allez Oust !
+
+
+Désormais, votre patron vous dit: <font color = 'brown'> "Hey bro, il commence à y avoir trop de garçons à l'intérieur. Laisse les entrer mais que les plus beaux !"</font>.
+
+Ainsi, à chaque fois qu'une personne se présente à vous, votre cerveau va faire la chose suivante:
+if personne is FILLE:
+    print("Tu peux entrer Madzelle")
+else:
+    if personne is BEAU:
+        print("Allez garçon, fait moi honneur! 8D")
+    else:
+        print("www.pole-emploi.com")
+Cela peut se traduire de la manière suivante:
+
+---
+
+Est ce que __personne__ est une __FILLE__ ?
+
+Si <font color = 'green'> TRUE </font> alors:
+
+&emsp;&emsp;&emsp; -Tu peux entrer Madzelle  
+
+Sinon:
+
+&emsp;&emsp;&emsp; Est ce que __personne__ est __BEAU__ ?
+
+&emsp;&emsp;&emsp; Si <font color = 'green'> TRUE </font> alors:
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Allez garçon, fait moi honneur! 8D
+
+&emsp;&emsp;&emsp; Sinon:
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - www.pole-emploi.com
+
+---
+
+Voici une version plus jolie:
+if personne is FILLE:
+    print("Tu peux entrer Madzelle")
+elif personne is BEAU:
+    print("Allez garçon, fait moi honneur! 8D")
+else:
+    print("www.pole-emploi.com")
+---
+<font color = 'red'> Remarque: </font>
+
+On peut utiliser autant de "__elif__" qu'on le souhaite (__if / elif / ... / elif / else__).
+
+---
+
+Nous pouvons même faire autrement avec les opérateurs logiques:
+if personne is GARCON and BEAU:
+    print("Allez garçon, fait moi honneur! 8D")
+elif personne is FILLE:
+    print("Tu peux entrer Madzelle")
+else:
+    print("www.pole-emploi.com")
+"__and__" est un opérateur logique. Il en existe d'autres comme "__or__" et "__not__". 
+
+Voici le tableau de vérité:
+
+![Tableau de vérité](img/course2_1.png)
+
+__Pour résumer:__
+
+- __if / elif / else__ sont appelés __conditions__. 
+- On peut utiliser autant de "__elif__" qu'on le souhaite.
+- On peut combiner les __opérateurs logiques__ avec nos __conditions__.

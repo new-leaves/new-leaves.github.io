@@ -1,3 +1,10 @@
+---
+layout: page
+title: Les tuples
+parent: Séance 2
+permalink: /course/seance_2/tuples
+nav_order: 3
+---
 
 # Tuple
 
