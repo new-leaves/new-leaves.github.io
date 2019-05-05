@@ -11,14 +11,13 @@ nav_order: 1
 
 # **Notion de variable**
 
-## a) Le concept
+## <u> 1) Le concept </u>
 
 Les **variables** sont utilisées pour **stocker** des **valeurs**. Voyez le comme une boîte où vous pouvez y posez un objet à l'intérieur. Cette boîte a également un **nom** pour pouvoir se distinguer des autres.
 
---- 
 
-<font color = 'green'> Exemples: </font>
-
+<font color = 'green'> <u> Exemples: </u> </font>
+<br>
 
 ```python
 a = 5
@@ -28,11 +27,12 @@ a
 
 
 
-    5
+    >>> 5
 
 
 
 
+---
 ```python
 coucou = 5.6
 coucou
@@ -41,11 +41,11 @@ coucou
 
 
 
-    5.6
+    >>> 5.6
 
 
 
-
+---
 ```python
 ferdi = True
 ferdi
@@ -54,31 +54,25 @@ ferdi
 
 
 
-    True
+    >>> True
 
 
 
 
+---
 ```python
 coucou = "Hello World!"
 coucou
 ```
+    >>> 'Hello World!'
 
-
-
-
-    'Hello World!'
-
-
-
----
-<font color='red'>Remarque:</font> 
-
+<br>
+<font color='red'><u>Remarque: </u></font> 
+<br>
 La valeur précédente de "__coucou__"  a été remplacé par la récente !
 
----
 
-## b) La convention
+## <u> 2) La convention </u>
 
 - Les noms de __variables__ doivent être écrit en __miniscule__.
 
@@ -88,7 +82,7 @@ La valeur précédente de "__coucou__"  a été remplacé par la récente !
     - nomDeVariable
     - checkHorizontal
 
-## c) Les différents types
+## <u> 3) Les différents types </u>
 
 Les __variables__ peuvent être de __différents types__. Voici les principaux types: 
 
@@ -106,11 +100,11 @@ type(a)
 
 
 
-    int
+    >>> int
 
 
 
-
+---
 ```python
 coucou = 5.6
 type(coucou)
@@ -119,11 +113,11 @@ type(coucou)
 
 
 
-    float
+    >>> float
 
 
 
-
+---
 ```python
 ferdi = True
 type(ferdi)
@@ -132,11 +126,11 @@ type(ferdi)
 
 
 
-    bool
+    >>> bool
 
 
 
-
+---
 ```python
 coucou = "Hello World!"
 type(coucou)
@@ -145,14 +139,14 @@ type(coucou)
 
 
 
-    str
+    >>> str
 
 
 
----
-<font color='red'>Remarque:</font> 
-
-Pour les strings, vous pouvez soit écrire avec __" "__ ou bien __' '__. Tout est une question de style ! 
+<br>
+<font color='red'> <u> Remarque: </u> </font> 
+<br>
+Pour les strings, vous pouvez soit écrire avec " " ou bien ' '. Tout est une question de style ! 
 
 Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre __" "__ et __' '__.
 
@@ -160,7 +154,7 @@ Cependant, dans d'autres langage tel que le C, il existe bien une distinction en
 
 Une __string__ correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le __code ASCII__.
 
-## d) Manipulation
+##  <u> 4) Manipulation </u>
 
 Si la __variable__ est un __nombre__ (__int__ ou __float__), vous pouvez faire les opérations suivantes:
 
@@ -171,8 +165,8 @@ Si la __variable__ est un __nombre__ (__int__ ou __float__), vous pouvez faire l
 - // (division entière)
 - % (modulo -> reste d'une division entière)
 
-<font color = 'green'>Exemple: </font>
-
+<font color = 'green'> <u> Exemple: </u> </font>
+<br>
 
 ```python
 var = 5
@@ -183,7 +177,7 @@ var
 
 
 
-    6
+    >>> 6
 
 
 
@@ -194,7 +188,7 @@ Si la __variable__ est une __string__, vous pouvez faire les opérations suivant
 3. Accéder à un caractère précis.
 
 
-#### 1) Concaténation
+### <u> a) Concaténation <u>
 
 La __concaténation__ permet de __combiner 2 strings__ pour en __former__ une __nouvelle__.
 
@@ -208,11 +202,11 @@ a + b
 
 
 
-    'salut'
+    >>> 'salut'
 
 
 
-####  2) Multiplier avec un entier
+### <u> b) Multiplier avec un entier </u>
 
 
 ```python
@@ -220,10 +214,10 @@ s = "Hello"
 print(s * 2)
 ```
 
-    HelloHello
+    >>> HelloHello
 
 
-#### 3) Accéder un caractère précis 
+### <u> c) Accéder un caractère précis </u>
 
 
 ```python
@@ -235,7 +229,7 @@ print(a[3]) #u
 print(a[4]) #t
 print(a[5]) # IndexError! Cela signifie qu'on est en dehors de la string.
 ```
-
+    >>>
     s
     a
     l
@@ -256,12 +250,8 @@ print(a[5]) # IndexError! Cela signifie qu'on est en dehors de la string.
 
     IndexError: string index out of range
 
-
----
-<font color ='red'> Remarque 1: </font>
-
-
-
+<font color ='red'> <u> Remarque 1: </u> </font>
+<br>
 ```python
 a = "" #string vide
 type(a)
@@ -270,12 +260,12 @@ type(a)
 
 
 
-    str
+    >>> str
 
 
 
-<font color ='red'> Remarque 2: </font>
-
+<font color ='red'> <u> Remarque 2: </u> </font>
+<br>
 __print()__ est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
 
 ---
@@ -290,18 +280,19 @@ b = 42
 print(a,b)
 ```
 
-    Hello World! 42
+    >>> Hello World! 42
 
 
-
+---
 ```python
 a, b = "Hello World", 42
 
 print(a,b)
 ```
 
-    Hello World 42
+    >>> Hello World 42
 
+<br>
 
 __Pour résumer:__
 

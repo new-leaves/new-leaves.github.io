@@ -6,71 +6,81 @@ permalink: /course/seance_1/boucles
 nav_order: 3
 ---
 
-# Les Boucles 
+# **Les Boucles**
 
-## a) Le concept
+## <u> 1) Le concept </u>
 
 Les __boucles__ sont un moyen de __répéter des instructions__.
 
 Il existe 2 types de boucles:
 
-1- __while__
+1- __While__
 
-2- __for__
+2- __For__
 
-## b) Manipulation
+## <u> 2) Manipulation </u>
 
-### 1) Boucle While
+### <u> a) Boucle While </u>
 
 Reprenons l'exemple du videur. A chaque que vous voyez une __personne__, vous allez répéter les instructions jusqu'à ce qu'il n'y ait plus personne n'est ce pas?
 
 Ainsi, au lieu d'écrire plusieurs fois:
+
+```python
 #1ère personne
--------------
 
 if personne is GARCON and BEAU:
-    print("Allez garçon, fait moi honneur! 8D")
+    print("Allez garçon, fais-moi honneur! 8D")
 elif personne is GIRL:
     print("Tu peux entrer Madzelle")
 else:
     print("www.pole-emploi.com")
+```
 
+```python
 #2ème personne
---------------
+
 if personne is GARCON and BEAU:
-    print("Allez garçon, fait moi honneur! 8D")
+    print("Allez garçon, fais-moi honneur! 8D")
 elif personne is GIRL:
     print("Tu peux entrer Madzelle")
 else:
     print("www.pole-emploi.com")    
+```
 .
+<br>
 .
+<br>
 .
+<br>
 .
 
+```python
 #n-ième personne 
-----------------
 
 if personne is GARCON and BEAU:
-    print("Allez garçon, fait moi honneur! 8D")
+    print("Allez garçon, fais-moi honneur! 8D")
 elif personne is FILLE:
     print("Tu peux entrer Madzelle")
 else:
     print("www.pole-emploi.com")
+```    
+
 Pourquoi ne pas utiliser une boucle ?
 
 
 ```python
+
 personne = True
 GARCON = True
 BEAU = True
 nbPeople = 20 #Supposons qu'il y ait 20 personnes.
     
-    #Tant qu'il y a des personnes, on répète les instructions.
+#Tant qu'il y a des personnes, on répète les instructions.
 while nbPeople > 0:
 
     if personne is GARCON and BEAU:
-        print("Allez garçon, fait moi honneur! 8D")
+        print("Allez garçon, fais-moi honneur! 8D")
     elif personne is FILLE:
         print("Tu peux entrer Madzelle")
     else:
@@ -79,35 +89,37 @@ while nbPeople > 0:
     #On réduit le nombre de personnes (décrémentation).
     nbPeople -= 1 #-> Loop breaker.
 ```
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
 
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
+Vous venez de voir une boucle __while__.
+<br> 
+Cette dernière va continuer de répéter les instructions à l'intérieure d'elle __tant que "nbPeople > 0" est__ <font color = 'green'>True</font>.
 
 
-Vous venez de voir une boucle __while__. Cette dernière va continuer de répéter les instructions à l'intérieure d'elle __tant que "nbPeople > 0" est__ <font color = 'green'>True</font>.
-
----
-<font color = 'red'>Remarque:</font>
-
+<font color = 'red'> <u> Remarque: </u> </font>
+<br>
 Si vous oubliez de __décrémenter__ (d'ajouter un __loop breaker__), vous allez entrer dans une __boucle infinie__ ! 
+
 
 En effet, __nbPeople__ ne sera __jamais égal à 0__ et donc __"nbPeople > 0" SERA TOUJOURS__ <font color = 'green'>True</font>.
 
@@ -120,11 +132,11 @@ GARCON = True
 BEAU = True
 nbPeople = 20 #Supposons qu'il y ait 20 personnes.
     
-    #Tant qu'il y a des personnes, on répète les instructions.
+#Tant qu'il y a des personnes, on répète les instructions.
 while nbPeople > 0:
 
     if personne is GARCON and BEAU:
-        print("Allez garçon, fait moi honneur! 8D")
+        print("Allez garçon, fais-moi honneur! 8D")
     elif personne is FILLE:
         print("Tu peux entrer Madzelle")
     else:
@@ -133,35 +145,37 @@ while nbPeople > 0:
     #On enlève le loop breaker.
     #nbPeople -= 1
 ```
-
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
     .
     .
-    .
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-
-
+    . 
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
 
     ---------------------------------------------------------------------------
 
@@ -191,22 +205,8 @@ while nbPeople > 0:
         205             f()
 
 
-    zmq/backend/cython/socket.pyx in zmq.backend.cython.socket.Socket.send (zmq/backend/cython/socket.c:7314)()
 
-
-    zmq/backend/cython/socket.pyx in zmq.backend.cython.socket.Socket.send (zmq/backend/cython/socket.c:7057)()
-
-
-    zmq/backend/cython/socket.pyx in zmq.backend.cython.socket._send_copy (zmq/backend/cython/socket.c:2929)()
-
-
-    /usr/lib/python3/dist-packages/zmq/backend/cython/checkrc.pxd in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:8007)()
-
-
-    KeyboardInterrupt: 
-
-
-### 2) Boucle For
+### <u> b) Boucle For </u>
 
 Pour le même exemple, nous pouvons utiliser la boucle __for__.
 
@@ -219,43 +219,45 @@ nbPeople = 20 #Supposons qu'il y ait 20 personnes.
     
 for i in range(0, nbPeople):
     if personne is GARCON and BEAU:
-        print("Allez garçon, fait moi honneur! 8D")
+        print("Allez garçon, fais-moi honneur! 8D")
     elif personne is FILLE:
         print("Tu peux entrer Madzelle")
     else:
         print("www.pole-emploi.com")
 ```
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
+    Allez garçon, fais-moi honneur! 8D
 
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-    Allez garçon, fait moi honneur! 8D
-
+---
 
 Pour une boucle __for__:
 
-- Il n'y a pas besoin d'avoir de **loop breaker**.
+1. Il n'y a pas besoin d'avoir de **loop breaker**.
 
-- "__i__" change automatiquement de valeurs.
+2. "__i__" change automatiquement de valeurs.
 
-- "__i in range(0, n)__" <=> **i** prend les valeurs de <font color = 'red'> 0 </font> __INCLUS__ à <font color = 'red'> n </font>  __EXCLU__.
+3. "__i in range(0, n)__" <=> **i** prend les valeurs de <font color = 'red'> 0 </font> __INCLUS__ à <font color = 'red'> n </font>  __EXCLU__.
 
+---
 
 ```python
 for i in range(0, 5):
@@ -270,30 +272,30 @@ for i in range(0, 5):
 
 
 ---
-<font color = 'red'> Remarque: </font>
-
+<font color = 'red'> <u> Remarque: </u> </font>
+<br>
 Par convention, on commence à **0**. Si on veut que notre instruction se répète __20 fois__, soit :
 
-- range(0, 20) (de 0 à 19 -> 20 chiffres)
-- range(1, 21) (de 1 à 20 -> 20 chiffres)
+- range(0, 20) (de 0 à 19 -> il y a 20 chiffres)
+- range(1, 21) (de 1 à 20 -> il y a 20 chiffres)
 
 ---
-
+<br>
 __Pour résumer:__
 
-Les __boucles__ sont un moyen de __répéter des instructions__.
+- Les __boucles__ sont un moyen de __répéter des instructions__.
+ 
+- Il existe 2 types de boucles:
 
-Il existe 2 types de boucles:
+    1- __while__
+        
+        - Tant que la condition est vérifiée, on continue.
+        - Nécessite un loop breaker.
+        
+    2- __for__
+        
+        - i change automatiquement de valeurs.
 
-1- __while__
-    
-   - Tant que la condition est vérifiée, on continue.
-   - Nécessite un __loop breaker__.
-    
-2- __for__
-       
-   - "__i__"  change automatiquement de valeurs.
-
-   - "__i in range(0, n)__" <=> **i** prend les valeurs de <font color = 'red'> 0 </font> __INCLUS__ à <font color = 'red'> n </font>  __EXCLU__.
-   
-   - Ne nécessite pas de **loop breaker**.
+        - "i in range(0, n)" <=> i prend les valeurs de 0 (INCLUS) à n (EXCLU).
+        
+        - Ne nécessite pas de loop breaker.

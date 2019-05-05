@@ -11,5 +11,6 @@ nav_order: 2
 
 # **FIX ME**
 
-1. Dire qu'ils peuvent run jupyter notebook pour suivre intéractivement le cours.
+1. Faire un zip avec les cours en .ipyjnb.
+2. Dire qu'ils peuvent run jupyter notebook pour suivre intéractivement le cours.
  

@@ -6,42 +6,50 @@ permalink: /course/seance_1/conditions
 nav_order: 2
 ---
 
-# Les conditions
+<link rel="icon" href="/img/logo.png">
 
-## a) Le concept
+# **Les conditions**
+
+## <u> 1) Le concept </u>
 
 Comme le nom le suggère, les conditions sont là pour imposer des __conditions__.
 
-## b) La manipulation
+## <u> 2) La manipulation </u>
 
-Par exemple, supposons que vous êtes le videur d'une boîte de nuit. Votre patron vous dit: <font color='brown'> "Il y'a trop de mec à l'intérieur, accepte que des filles okay ?"</font>
+Par exemple, supposons que vous êtes le videur d'une boîte de nuit. 
+
+Votre patron vous dit: <font color='brown'> "Il y'a trop de mecs à l'intérieur, accepte que des filles okay ?"</font>
 
 Ainsi, à chaque fois qu'une personne se présente à vous, votre cerveau va faire la chose suivante:
-if personne is FILLE: 
-    print("Tu peux entrer Madzelle")
-else:
+
+```python
+if personne is FILLE:  #Si personne est une FILLE
+    print("Tu peux entrer Madzelle") 
+else: #Sinon
     print("Allez Oust !")
+```
+
 Une autre version aurait pu être:
+
+```python
 if personne is GARCON: 
-    print("Allez Oust)
+    print("Allez Oust")
 else:
     print("Tu peux entrer Madzelle"")
+```
+
 Ce que vous venez de voir est une conditon __if__/__else__. 
 
 Cela peut se traduire de la manière suivante:
 
----
-
+```python
 Est ce que __personne__ est une __FILLE__ ?
 
-Si <font color = 'green'> TRUE </font> alors:
-- Tu peux entrer Madzelle  
-
-Sinon:
-
-- Allez Oust!
-
----
+if True alors:
+    Tu peux entrer Madzelle  
+else:
+    Allez Oust!
+```
 
 Pour que cela puisse marcher en Python, il faudrait que __FILLE__ soit un __booléen__.
 
@@ -58,10 +66,10 @@ else:
     print("Allez Oust !")
 ```
 
-    Tu peux entrer Madzelle
+    >>> Tu peux entrer Madzelle
 
 
-
+---
 ```python
 personne = True
 FILLE = False
@@ -72,12 +80,14 @@ else:
     print("Allez Oust !")
 ```
 
-    Allez Oust !
+    >>> Allez Oust !
 
-
+<br>
 Désormais, votre patron vous dit: <font color = 'brown'> "Hey bro, il commence à y avoir trop de garçons à l'intérieur. Laisse les entrer mais que les plus beaux !"</font>.
 
 Ainsi, à chaque fois qu'une personne se présente à vous, votre cerveau va faire la chose suivante:
+
+```python
 if personne is FILLE:
     print("Tu peux entrer Madzelle")
 else:
@@ -85,57 +95,61 @@ else:
         print("Allez garçon, fait moi honneur! 8D")
     else:
         print("www.pole-emploi.com")
+```
+<br>
 Cela peut se traduire de la manière suivante:
 
----
+```python
+Est ce que personne est une FILLE ?
 
-Est ce que __personne__ est une __FILLE__ ?
+if True alors:
+    Tu peux entrer Madzelle  
+else:
+    Est ce que personne est BEAU ?
 
-Si <font color = 'green'> TRUE </font> alors:
+    if True alors:
+        Allez garçon, fait moi honneur! 8D
+    else:
+        www.pole-emploi.com
+```
+<br>
+Voici une plus jolie version:
 
-&emsp;&emsp;&emsp; -Tu peux entrer Madzelle  
-
-Sinon:
-
-&emsp;&emsp;&emsp; Est ce que __personne__ est __BEAU__ ?
-
-&emsp;&emsp;&emsp; Si <font color = 'green'> TRUE </font> alors:
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Allez garçon, fait moi honneur! 8D
-
-&emsp;&emsp;&emsp; Sinon:
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - www.pole-emploi.com
-
----
-
-Voici une version plus jolie:
+```python
 if personne is FILLE:
     print("Tu peux entrer Madzelle")
 elif personne is BEAU:
     print("Allez garçon, fait moi honneur! 8D")
 else:
     print("www.pole-emploi.com")
----
-<font color = 'red'> Remarque: </font>
+```
 
+<br>
+<font color = 'red'> <u> Remarque: </u> </font>
+<br>
 On peut utiliser autant de "__elif__" qu'on le souhaite (__if / elif / ... / elif / else__).
 
 ---
 
 Nous pouvons même faire autrement avec les opérateurs logiques:
+
+```python
 if personne is GARCON and BEAU:
     print("Allez garçon, fait moi honneur! 8D")
 elif personne is FILLE:
     print("Tu peux entrer Madzelle")
 else:
     print("www.pole-emploi.com")
+```
+
+
 "__and__" est un opérateur logique. Il en existe d'autres comme "__or__" et "__not__". 
 
-Voici le tableau de vérité:
+<u> Voici le tableau de vérité: </u>
 
-![Tableau de vérité](img/course2_1.png)
+![Tableau de vérité](/img/course_image/nb_2/course2_1.png)
 
+<br>
 __Pour résumer:__
 
 - __if / elif / else__ sont appelés __conditions__. 
