@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-nav_order: 3
+nav_order: 4
 ---
 
  <link rel="shortcut icon" href="/img/logo.png" type="image/png">
