@@ -4,6 +4,8 @@ title: Home
 nav_order: 1
 ---
 
+<link rel="icon" href="/img/logo.png">
+
 Here are 65 examples of long sentences ranging from the relatively brief 96 words to one of the longest sentences at 2,156 words.
 ezaaezezae
 

@@ -6,6 +6,7 @@ permalink: /practical/td/td_0
 nav_order: 1
 ---
 
+<link rel="icon" href="/img/logo.png">
 
 Avant de commencer, voici les consignes à respecter:
 
