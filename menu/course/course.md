@@ -8,5 +8,8 @@ nav_order: 2
 
 <link rel="icon" href="/img/logo.png">
  
- OOF
- OOF
+
+# **FIX ME**
+
+1. Dire qu'ils peuvent run jupyter notebook pour suivre intéractivement le cours.
+ 
