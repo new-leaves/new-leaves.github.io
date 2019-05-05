@@ -8,6 +8,5 @@ nav_order: 2
 
 <link rel="icon" href="/img/logo.png">
  
-{::nomarkdown}
-{% jupyter_notebook "/menu/course/test.ipynb" %}
-{:/nomarkdown}
+ OOF
+ OOF
