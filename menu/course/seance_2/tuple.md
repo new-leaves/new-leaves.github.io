@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Les tuples
+grand_parent: Course
 parent: Séance 2
 permalink: /course/seance_2/tuples
 nav_order: 3

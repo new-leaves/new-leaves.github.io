@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Les listes
+grand_parent: Course
 parent: Séance 2
 permalink: /course/seance_2/listes
 nav_order: 2
