@@ -124,10 +124,9 @@ else:
     print("www.pole-emploi.com")
 ```
 
-<br>
+---
 <font color = 'red'> <u> Remarque: </u> </font>
-<br>
-On peut utiliser autant de "__elif__" qu'on le souhaite (__if / elif / ... / elif / else__).
+- On peut utiliser autant de "__elif__" qu'on le souhaite (__if / elif / ... / elif / else__).
 
 ---
 
@@ -149,7 +148,8 @@ else:
 
 ![Tableau de vérité](/img/course_image/nb_2/course2_1.png)
 
-<br>
+---
+
 __Pour résumer:__
 
 - __if / elif / else__ sont appelés __conditions__. 

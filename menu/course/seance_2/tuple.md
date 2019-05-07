@@ -6,13 +6,15 @@ permalink: /course/seance_2/tuples
 nav_order: 3
 ---
 
-# Tuple
+<link rel="icon" href="/img/logo.png">
 
-## a) Le concept
+# **Tuple**
+
+## <u> 1) Le concept </u>
 
 Un __tuple__ ressemble grossièrement aux listes mais ces derniers __ne peuvent être modifiés__. 
 
-## b) La manipulation
+## <u> 2) La manipulation </u>
 
 Nous allons voir comment:
     
@@ -20,7 +22,7 @@ Nous allons voir comment:
 2. Accéder à un tuple.
 3. Compter le nombre d'éléments d'un tuple.
 
-### 1) Créer un tuple
+### <u> a) Créer un tuple </u>
 
 
 ```python
@@ -28,74 +30,57 @@ my_tuple = ()
 print(my_tuple)
 ```
 
-    ()
+    >>> ()
 
-
+---
 
 ```python
 my_tuple = (2, 5)
 print(my_tuple)
 ```
 
-    (2, 5)
+    >>> (2, 5)
 
-
+---
 
 ```python
 my_tuple = "Hello World!", 42
 print(my_tuple)
 ```
 
-    ('Hello World!', 42)
+    >>> ('Hello World!', 42)
 
-
+---
 
 ```python
 type(my_tuple)
 ```
 
-
-
-
-    tuple
-
-
+    >>> tuple
 
 ---
 
-<font color = 'red'> Remarque: </font>
-
-Si le __tuple__ ne contient qu'__un seul élement__, alors il ne sera pas de type __tuple__.
+<font color = 'red'> <u> Remarque: </u> </font>
+- Si le __tuple__ ne contient qu'__un seul élement__, alors il ne sera pas de type __tuple__.
 
 
 ```python
 my_tuple = 3
 type(my_tuple)
 ```
+    >>> int
 
-
-
-
-    int
-
-
-
+---
 
 ```python
 my_tuple = ("Hello World!")
 type(my_tuple)
 ```
 
-
-
-
-    str
-
-
-
+    >>> str
 ---
 
-### 2) Accéder à un tuple
+### <u> b) Accéder à un tuple </u>
 
 Vous pouvez accéder aux tuples comme les listes. Cependant, on ne peut pas changer la valeur d'un élément d'un tuple.
 
@@ -107,13 +92,10 @@ print(my_tuple[1])
 print(my_tuple[2])
 print(my_tuple[3]) #IndexError
 ```
-
+    >>>
     1
     Hello World !
     5.0
-
-
-
     ---------------------------------------------------------------------------
 
     IndexError                                Traceback (most recent call last)
@@ -126,19 +108,19 @@ print(my_tuple[3]) #IndexError
 
     IndexError: tuple index out of range
 
+---
 
-### 3) Compter le nombre d'éléments d'un tuple 
+### <u> c) Compter le nombre d'éléments d'un tuple </u>
 
 
 ```python
 my_tuple = [1, "Hello World !", 5.0]
 print(len(my_tuple))
 ```
+    >>> 3
 
-    3
 
-
-## c) Utilité
+## <u> 3) Utilité</u>
 
 Les __tuples__ sont généralement utilisés pour:
     
@@ -151,7 +133,7 @@ a,b = 1,2
 print(a)
 print(b)
 ```
-
+    >>>
     1
     2
 
@@ -164,10 +146,11 @@ def give_me_your_names():
 print(give_me_your_names())
 print(type(give_me_your_names()))
 ```
-
+    >>>
     ('Ferdinand', 'Ferdinette')
     <class 'tuple'>
-
+    
+---
 
 __Pour résumer:__
 

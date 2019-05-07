@@ -66,11 +66,11 @@ coucou
 ```
     >>> 'Hello World!'
 
-<br>
+---
 <font color='red'><u>Remarque: </u></font> 
-<br>
-La valeur précédente de "__coucou__"  a été remplacé par la récente !
+- La valeur précédente de "__coucou__"  a été remplacé par la récente !
 
+---
 
 ## <u> 2) La convention </u>
 
@@ -142,13 +142,10 @@ type(coucou)
     >>> str
 
 
-
-<br>
+---
 <font color='red'> <u> Remarque: </u> </font> 
-<br>
-Pour les strings, vous pouvez soit écrire avec " " ou bien ' '. Tout est une question de style ! 
-
-Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre __" "__ et __' '__.
+- Pour les strings, vous pouvez soit écrire avec " " ou bien ' '. Tout est une question de style ! 
+- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre __" "__ et __' '__.
 
 ---
 
@@ -250,23 +247,18 @@ print(a[5]) # IndexError! Cela signifie qu'on est en dehors de la string.
 
     IndexError: string index out of range
 
+---
 <font color ='red'> <u> Remarque 1: </u> </font>
 <br>
+
 ```python
 a = "" #string vide
 type(a)
 ```
-
-
-
-
     >>> str
 
-
-
 <font color ='red'> <u> Remarque 2: </u> </font>
-<br>
-__print()__ est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
+- __print()__ est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
 
 ---
 
@@ -292,7 +284,7 @@ print(a,b)
 
     >>> Hello World 42
 
-<br>
+---
 
 __Pour résumer:__
 

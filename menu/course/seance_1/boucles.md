@@ -6,6 +6,8 @@ permalink: /course/seance_1/boucles
 nav_order: 3
 ---
 
+<link rel="icon" href="/img/logo.png">
+
 # **Les Boucles**
 
 ## <u> 1) Le concept </u>
@@ -115,13 +117,10 @@ Vous venez de voir une boucle __while__.
 <br> 
 Cette dernière va continuer de répéter les instructions à l'intérieure d'elle __tant que "nbPeople > 0" est__ <font color = 'green'>True</font>.
 
-
+---
 <font color = 'red'> <u> Remarque: </u> </font>
-<br>
-Si vous oubliez de __décrémenter__ (d'ajouter un __loop breaker__), vous allez entrer dans une __boucle infinie__ ! 
-
-
-En effet, __nbPeople__ ne sera __jamais égal à 0__ et donc __"nbPeople > 0" SERA TOUJOURS__ <font color = 'green'>True</font>.
+- Si vous oubliez de __décrémenter__ (d'ajouter un __loop breaker__), vous allez entrer dans une __boucle infinie__ ! 
+- En effet, __nbPeople__ ne sera __jamais égal à 0__ et donc __"nbPeople > 0" SERA TOUJOURS__ <font color = 'green'>True</font>.
 
 ---
 
@@ -273,14 +272,12 @@ for i in range(0, 5):
 
 ---
 <font color = 'red'> <u> Remarque: </u> </font>
-<br>
-Par convention, on commence à **0**. Si on veut que notre instruction se répète __20 fois__, soit :
-
-- range(0, 20) (de 0 à 19 -> il y a 20 chiffres)
-- range(1, 21) (de 1 à 20 -> il y a 20 chiffres)
+- Par convention, on commence à **0**. Si on veut que notre instruction se répète __20 fois__, soit :
+    - range(0, 20) (de 0 à 19 -> il y a 20 chiffres)
+    - range(1, 21) (de 1 à 20 -> il y a 20 chiffres)
 
 ---
-<br>
+
 __Pour résumer:__
 
 - Les __boucles__ sont un moyen de __répéter des instructions__.

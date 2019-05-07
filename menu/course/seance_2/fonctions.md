@@ -6,17 +6,19 @@ permalink: /course/seance_2/fonctions
 nav_order: 1
 ---
 
-# Les fonctions
+<link rel="icon" href="/img/logo.png">
 
-## a) Le concept
+# **Les fonctions**
+
+## <u> 1) Le concept </u>
 
 Les __fonctions__ sont là pour __organiser notre code__ de manière à ce que dernier soit __plus facile à lire__.
 
-##  b) La convention
+##  <u> 2) La convention </u>
 
 Même convention que les noms de variables.
 
-## c) La manipulation
+## <u> 3) La manipulation </u>
 
 Supposons que vous êtes un magicien. Par conséquent, vous avez des sorts:
 
@@ -41,7 +43,7 @@ else:
     
 print("Energie restante: {}".format(energy))
 ```
-
+    >>>
     Le sort va être prêt dans 5 sec
     Le sort va être prêt dans 4 sec
     Le sort va être prêt dans 3 sec
@@ -51,7 +53,7 @@ print("Energie restante: {}".format(energy))
     BOULE DE FEU!
     Energie restante: 40
 
-
+---
 
 ```python
 #SORT 2 : Attend 6 secondes avant d'utiliser le 'Sexy jutsu'.
@@ -71,7 +73,7 @@ else:
 
 print("Energie restante: {}".format(energy))
 ```
-
+    >>>
     ECHEC CRITIQUE
     Energie restante: 40
 
@@ -127,10 +129,9 @@ def sexyJutsu(energy, isMale):
 ```python
 energy = 100 
 isMale = False
-
 bouleDeFeu(energy)
 ```
-
+    >>>
     Le sort va être prêt dans 5 sec
     Le sort va être prêt dans 4 sec
     Le sort va être prêt dans 3 sec
@@ -140,6 +141,7 @@ bouleDeFeu(energy)
     BOULE DE FEU!
     Energie restante: 40
 
+---
 
 Plusieurs points à mentioner:
 
@@ -147,13 +149,12 @@ Plusieurs points à mentioner:
 
 - Ce qu'il y a entre parenthèse après le nom de la fonction s'appelle __argument__.
 
-- Le texte entouré de __"""  """__ est appelé une __docstring__ (documentation string). Elle permet d'avoir des __informations__ sur l'__utilité de la fonction et des ses paramètres__. 
+- Le texte entouré de __"""  """__ (triple guillemets) est appelé une __docstring__ (documentation string). Elle permet d'avoir des __informations__ sur l'__utilité de la fonction et des ses paramètres__. 
+
 
 ---
-<font color = 'red'> Remarque: </font>
-
-Une fonction n'est pas obligée d'avoir des arguments!
-
+<font color = 'red'> <u> Remarque: </u> </font>
+- Une fonction n'est pas obligée d'avoir des arguments!
 
 ```python
 def f():
@@ -163,10 +164,8 @@ def f():
 
 ```python
 f()
+>>> Hello World!
 ```
-
-    Hello World!
-
 
 ---
 
@@ -176,12 +175,11 @@ Testons l'exemple suivant:
 ```python
 energy = 100 
 isMale = False
-
 bouleDeFeu(energy)
 print()
 sexyJutsu(energy, isMale)
 ```
-
+    >>>
     Le sort va être prêt dans 5 sec
     Le sort va être prêt dans 4 sec
     Le sort va être prêt dans 3 sec
@@ -203,19 +201,18 @@ sexyJutsu(energy, isMale)
 
 Pouvez-vous voir le problème?
 
-On avait __100__ d'énergie, après l'appel de __bouleDeFeu()__ il nous reste que __40__ d'énergie. 
+On avait __100__ d'énergie. Après l'appel de __bouleDeFeu()__, il nous reste plus que __40__ d'énergie. 
 
 Ainsi, lancer le sort  __sexyJutsu()__ ne devrait pas être possible ! Alors pourquoi cela marche ?
-
-Cela est du au fait que les fonctions ont leurs propres __environnements__.
+Cela est dut au fait que les fonctions ont leurs propres __environnements__.
 
 Voici un schéma résumant la situation:
 
-![Fonctions scope](img/course4_1.png)
+![Fonctions scope](/img/course_image/nb_4/course4_1.png)
 
 Nous, nous voulons la situation suivante:
 
-![Fonction environnement](img/course4_2.png)
+![Fonction environnement](/img/course_image/nb_4/course4_2.png)
 
 Ainsi, pour que cela marche comme on le souhaite, nous devons faire en sorte que la variable __"energy" sorte de son environnement__.
 
@@ -251,7 +248,7 @@ energy = bouleDeFeu(energy)
 print()
 sexyJutsu(energy, isMale)
 ```
-
+    >>>
     Le sort va être prêt dans 5 sec
     Le sort va être prêt dans 4 sec
     Le sort va être prêt dans 3 sec
@@ -268,11 +265,10 @@ sexyJutsu(energy, isMale)
 Ce que vous venez de voir est la notion de __scope__.
 
 ---
-<font color = 'red'> Remarque: </font>
+<font color = 'red'> <u> Remarque: </u> </font>
 
-Comme dit auparavant, __print()__ ne retourne pas de valeurs mais __affiche__ dans la console. 
-
-Par conséquent, si on ne fait que __return__, le résultat __ne s'affichera pas dans la console__.
+- Comme dit auparavant, __print()__ ne retourne pas de valeurs mais __affiche__ dans la console. 
+- Par conséquent, si on ne fait que __return__, le résultat __ne s'affichera pas dans la console__.
 
 ---
 
@@ -286,7 +282,7 @@ __Pour résumer__:
 
 - Ce qu'il y a entre parenthèse après le nom de la fonction s'appelle __argument__.
 
-- Le texte entouré de __"""  """__ est appelé une __docstring__ (documentation string). Elle permet d'avoir des __informations__ sur l'__utilité de la fonction et des ses paramètres__. 
+- Le texte entouré de __"""  """__ (trple guillemets) est appelé une __docstring__ (documentation string). Elle permet d'avoir des __informations__ sur l'__utilité de la fonction et des ses paramètres__. 
 
 - Chaque fonction a son propre __scope__ (environnement).
 
