@@ -1,6 +1,7 @@
 ---
 layout: page
 title: TD 0
+grand_parent: Practical
 parent: TD
 permalink: /practical/td/td_0
 nav_order: 1
