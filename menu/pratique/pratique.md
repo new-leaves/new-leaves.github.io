@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Practical
+title: Pratique
 has_children: true
-permalink: /practical/
+permalink: /pratique/
 nav_order: 3
 ---
 

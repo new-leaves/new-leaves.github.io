@@ -1,9 +1,9 @@
 ---
 layout: page
 title: TD 0
-grand_parent: Practical
+grand_parent: Pratique
 parent: TD
-permalink: /practical/td/td_0
+permalink: /pratique/td/td_0
 nav_order: 1
 ---
 

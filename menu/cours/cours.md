@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Course
+title: Cours
 has_children: true
-permalink: /course/
+permalink: /cours/
 nav_order: 2
 ---
 

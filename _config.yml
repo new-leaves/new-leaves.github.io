@@ -42,7 +42,7 @@ remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 
 aux_links:
-  "New Leaves on GitHub":
+  "New Leaves sur GitHub":
     - https://github.com/new-leaves
 
 # Exclude from processing.

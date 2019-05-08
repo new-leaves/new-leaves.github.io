@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Accueil
 nav_order: 1
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Les listes
-grand_parent: Course
+grand_parent: Cours
 parent: Séance 2
-permalink: /course/seance_2/listes
+permalink: /cours/seance_2/listes
 nav_order: 2
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Les tuples
-grand_parent: Course
+grand_parent: Cours
 parent: Séance 2
-permalink: /course/seance_2/tuples
+permalink: /cours/seance_2/tuples
 nav_order: 3
 ---
 

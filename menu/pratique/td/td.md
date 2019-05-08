@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TD
-parent: Practical
+parent: Pratique
 has_children: true
 permalink: /td/
 nav_order: 1

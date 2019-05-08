@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Les fonctions
-grand_parent: Course
+grand_parent: Cours
 parent: Séance 2
-permalink: /course/seance_2/fonctions
+permalink: /cours/seance_2/fonctions
 nav_order: 1
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: TP
-parent: Practical
+parent: Pratique
 has_children: true
-permalink: /tp/
+permalink: pratique/tp/
 nav_order: 2
 ---
 

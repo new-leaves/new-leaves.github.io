@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Séance 2
-parent: Course
+parent: Cours
 has_children: true
-permalink: /course/seance_2
+permalink: /cours/seance_2
 nav_order: 2
 ---
 
