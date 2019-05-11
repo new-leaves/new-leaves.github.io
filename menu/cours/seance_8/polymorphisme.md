@@ -159,7 +159,7 @@ Ajouter de <font color = "green"> nouvelles fonctionnalités  aux opérateurs </
 
 Par exemple, l'opérateur *+* permet de faire une addition. Mais si on utilise l'__overload__, il peut être utilisé pour concatener des strings.
 
-__Voir exemple 4 dans le cours n° 6__.
+__Voir exemple 4 dans le cours__<a href="/cours/seance_4/methode_classe_statique"> Méthodes spéciales - Magic/Dunder méthodes</a>.
 
 ## <u> 2) Overriding </u>
 
