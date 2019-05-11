@@ -8,6 +8,8 @@ nav_order: 2
 
 <link rel="icon" href="/img/logo.png">
  
+Merci à <a href="https://www.youtube.com/user/schafer5">Corey Schafer</a> pour son travail de qualité, sans quoi je n'aurai pu
+écrire le cours sur la <b> Programmation Orientée Objet</b> (POO) de manière rigoureuse et structuré !
 
 # **FIX ME**
 

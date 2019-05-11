@@ -2,9 +2,9 @@
 layout: page
 title: Décorateurs - Getters / Setters / Deleters
 grand_parent: Cours
-parent: Séance 3
-permalink: /cours/seance_3/decorateurs_getter_setters_deleters
-nav_order: 5
+parent: Séance 6
+permalink: /cours/seance_6/decorateurs_getter_setters_deleters
+nav_order: 6
 ---
 <link rel="icon" href="/img/logo.png">
 

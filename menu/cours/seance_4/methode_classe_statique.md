@@ -2,9 +2,9 @@
 layout: page
 title: Méthodes de classe et méthodes statiques
 grand_parent: Cours
-parent: Séance 3
-permalink: /cours/seance_3/methode_classe_statique
-nav_order: 3
+parent: Séance 4
+permalink: /cours/seance_4/methode_classe_statique
+nav_order: 4
 ---
 
 <link rel="icon" href="/img/logo.png">

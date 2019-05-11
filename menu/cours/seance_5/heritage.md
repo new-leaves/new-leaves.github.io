@@ -2,9 +2,9 @@
 layout: page
 title: Héritage - Création de sous-classe
 grand_parent: Cours
-parent: Séance 3
-permalink: /cours/seance_3/heritage_creation_sous-classe
-nav_order: 4
+parent: Séance 5
+permalink: /cours/seance_5/heritage_creation_sous-classe
+nav_order: 5
 ---
 <link rel="icon" href="/img/logo.png">
 

@@ -2,9 +2,9 @@
 layout: page
 title: Méthodes spéciales - Magic/Dunder méthodes
 grand_parent: Cours
-parent: Séance 3
-permalink: /cours/seance_3/methodes_speciales
-nav_order: 6
+parent: Séance 7
+permalink: /cours/seance_7/methodes_speciales
+nav_order: 7
 ---
 <link rel="icon" href="/img/logo.png">
 

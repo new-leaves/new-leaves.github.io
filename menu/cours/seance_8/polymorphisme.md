@@ -2,9 +2,9 @@
 layout: page
 title: Polymorphisme
 grand_parent: Cours
-parent: Séance 3
-permalink: /cours/seance_3/polymorphisme
-nav_order: 7
+parent: Séance 8
+permalink: /cours/seance_8/polymorphisme
+nav_order: 8
 ---
 
 <link rel="icon" href="/img/logo.png">
