@@ -9,7 +9,7 @@ nav_order: 3
 
 <link rel="icon" href="/img/logo.png">
 
-# **Tuple**
+# **Tuples**
 
 ## <u> 1) Le concept </u>
 
@@ -18,10 +18,12 @@ Un __tuple__ ressemble grossièrement aux listes mais ces derniers __ne peuvent 
 ## <u> 2) La manipulation </u>
 
 Nous allons voir comment:
-    
-1. Créer un tuple.
-2. Accéder à un tuple.
-3. Compter le nombre d'éléments d'un tuple.
+
+<table><tr><td>
+<b>a</b>. Créer un tuple.<br>
+<b>b</b>. Accéder à un tuple.<br>
+<b>c</b>. Compter le nombre d'éléments d'un tuple.
+</td></tr></table>
 
 ### <u> a) Créer un tuple </u>
 
@@ -30,8 +32,9 @@ Nous allons voir comment:
 my_tuple = ()
 print(my_tuple)
 ```
-
-    >>> ()
+```python
+>>> ()
+```
 
 ---
 
@@ -39,8 +42,9 @@ print(my_tuple)
 my_tuple = (2, 5)
 print(my_tuple)
 ```
-
-    >>> (2, 5)
+```python
+>>> (2, 5)
+```
 
 ---
 
@@ -48,28 +52,34 @@ print(my_tuple)
 my_tuple = "Hello World!", 42
 print(my_tuple)
 ```
-
-    >>> ('Hello World!', 42)
+```python
+>>> ('Hello World!', 42)
+```
 
 ---
 
 ```python
 type(my_tuple)
 ```
+```python
+>>> tuple
+```
 
-    >>> tuple
-
----
-
-<font color = 'red'> <u> Remarque: </u> </font>
-- Si le __tuple__ ne contient qu'__un seul élement__, alors il ne sera pas de type __tuple__.
+<br>
+<table><tr><td>
+<font color = "red"> <u> Remarque: </u> </font>
+<br>
+&nbsp;&nbsp;&nbsp;- Si le <b>tuple</b> ne contient qu'<b>un seul élement</b>, alors il ne sera pas de type <b>tuple</b>.
+</td></tr></table>
 
 
 ```python
 my_tuple = 3
 type(my_tuple)
 ```
-    >>> int
+```python
+>>> int
+```
 
 ---
 
@@ -77,9 +87,9 @@ type(my_tuple)
 my_tuple = ("Hello World!")
 type(my_tuple)
 ```
-
-    >>> str
----
+```python
+>>> str
+```
 
 ### <u> b) Accéder à un tuple </u>
 
@@ -93,23 +103,24 @@ print(my_tuple[1])
 print(my_tuple[2])
 print(my_tuple[3]) #IndexError
 ```
-    >>>
-    1
-    Hello World !
-    5.0
-    ---------------------------------------------------------------------------
+```python
+>>>
+1
+Hello World !
+5.0
+---------------------------------------------------------------------------
 
-    IndexError                                Traceback (most recent call last)
+IndexError                                Traceback (most recent call last)
 
-    <ipython-input-12-922fcd9833af> in <module>()
-          3 print(my_tuple[1])
-          4 print(my_tuple[2])
-    ----> 5 print(my_tuple[3])
-    
+<ipython-input-12-922fcd9833af> in <module>()
+        3 print(my_tuple[1])
+        4 print(my_tuple[2])
+----> 5 print(my_tuple[3])
 
-    IndexError: tuple index out of range
 
----
+IndexError: tuple index out of range
+```
+
 
 ### <u> c) Compter le nombre d'éléments d'un tuple </u>
 
@@ -118,8 +129,9 @@ print(my_tuple[3]) #IndexError
 my_tuple = [1, "Hello World !", 5.0]
 print(len(my_tuple))
 ```
-    >>> 3
-
+```python
+>>> 3   
+```
 
 ## <u> 3) Utilité</u>
 
@@ -134,11 +146,12 @@ a,b = 1,2
 print(a)
 print(b)
 ```
-    >>>
-    1
-    2
-
-
+```python
+>>> 
+1
+2
+```
+---
 
 ```python
 def give_me_your_names():
@@ -147,20 +160,23 @@ def give_me_your_names():
 print(give_me_your_names())
 print(type(give_me_your_names()))
 ```
-    >>>
-    ('Ferdinand', 'Ferdinette')
-    <class 'tuple'>
-    
+```python
+>>>
+('Ferdinand', 'Ferdinette')
+<class 'tuple'>
+```
+
 ---
 
-__Pour résumer:__
-
-- Un __tuple__ ressemble grossièrement aux listes mais ces derniers __ne peuvent être modifiés__. 
-- Nous avons vu comment:
-    - Créer un tuple.
-    - Accéder à un tuple.
-    - Compter le nombre d'éléments d'un tuple.
-
-- Les __tuples__ sont généralement utilisés pour:
-    - Faire des déclarations multiples de variables.
-    - Retourner plusieurs valeurs à la fin d'une fonction.
+**<u> Pour résumer: </u>**
+<table><tr><td>
+- Un <b>tuple</b> ressemble grossièrement aux listes mais ces derniers <b>ne peuvent être modifiés</b>. <br>
+- Nous avons vu comment:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Créer un tuple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Accéder à un tuple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Compter le nombre d'éléments d'un tuple.
+<br>
+- Les <b>tuples</b> sont généralement utilisés pour:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Faire des déclarations multiples de variables.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Retourner plusieurs valeurs à la fin d'une fonction.
+</td></tr></table>

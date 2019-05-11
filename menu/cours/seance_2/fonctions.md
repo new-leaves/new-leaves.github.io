@@ -44,15 +44,18 @@ else:
     
 print("Energie restante: {}".format(energy))
 ```
-    >>>
-    Le sort va être prêt dans 5 sec
-    Le sort va être prêt dans 4 sec
-    Le sort va être prêt dans 3 sec
-    Le sort va être prêt dans 2 sec
-    Le sort va être prêt dans 1 sec
-    Le sort va être prêt dans 0 sec
-    BOULE DE FEU!
-    Energie restante: 40
+
+```python
+>>>
+Le sort va être prêt dans 5 sec
+Le sort va être prêt dans 4 sec
+Le sort va être prêt dans 3 sec
+Le sort va être prêt dans 2 sec
+Le sort va être prêt dans 1 sec
+Le sort va être prêt dans 0 sec
+BOULE DE FEU!
+Energie restante: 40
+```
 
 ---
 
@@ -74,10 +77,12 @@ else:
 
 print("Energie restante: {}".format(energy))
 ```
-    >>>
-    ECHEC CRITIQUE
-    Energie restante: 40
 
+```python
+>>>
+ECHEC CRITIQUE
+Energie restante: 40
+```
 
 Puisque vous êtes un magicien, vous ne voulez pas écrire vos sorts à chaque combat n'est-ce-pas? Vous voulez faire comme les autres magiciens et pouvoir crier le nom du sort directement!
 
@@ -132,19 +137,21 @@ energy = 100
 isMale = False
 bouleDeFeu(energy)
 ```
-    >>>
-    Le sort va être prêt dans 5 sec
-    Le sort va être prêt dans 4 sec
-    Le sort va être prêt dans 3 sec
-    Le sort va être prêt dans 2 sec
-    Le sort va être prêt dans 1 sec
-    Le sort va être prêt dans 0 sec
-    BOULE DE FEU!
-    Energie restante: 40
+```python
+>>>
+Le sort va être prêt dans 5 sec
+Le sort va être prêt dans 4 sec
+Le sort va être prêt dans 3 sec
+Le sort va être prêt dans 2 sec
+Le sort va être prêt dans 1 sec
+Le sort va être prêt dans 0 sec
+BOULE DE FEU!
+Energie restante: 40
+```
 
 ---
 
-Plusieurs points à mentioner:
+<u>Plusieurs points à mentioner:</u>
 
 - Une fonction en Python commence par le mot-clef __def__
 
@@ -152,10 +159,12 @@ Plusieurs points à mentioner:
 
 - Le texte entouré de __"""  """__ (triple guillemets) est appelé une __docstring__ (documentation string). Elle permet d'avoir des __informations__ sur l'__utilité de la fonction et des ses paramètres__. 
 
-
----
-<font color = 'red'> <u> Remarque: </u> </font>
-- Une fonction n'est pas obligée d'avoir des arguments!
+<br>
+<table><tr><td>
+<font color = "red"> <u> Remarque: </u> </font>
+<br>
+&nbsp;&nbsp;&nbsp;- Une fonction n'est pas obligée d'avoir des arguments !
+</td></tr></table>
 
 ```python
 def f():
@@ -180,25 +189,26 @@ bouleDeFeu(energy)
 print()
 sexyJutsu(energy, isMale)
 ```
-    >>>
-    Le sort va être prêt dans 5 sec
-    Le sort va être prêt dans 4 sec
-    Le sort va être prêt dans 3 sec
-    Le sort va être prêt dans 2 sec
-    Le sort va être prêt dans 1 sec
-    Le sort va être prêt dans 0 sec
-    BOULE DE FEU!
-    Energie restante: 40
-    
-    Le sort va être prêt dans 5 sec
-    Le sort va être prêt dans 4 sec
-    Le sort va être prêt dans 3 sec
-    Le sort va être prêt dans 2 sec
-    Le sort va être prêt dans 1 sec
-    Le sort va être prêt dans 0 sec
-    SEXY JUTSU ! (Très efficace !)
-    Energie restante: 50
+```python
+>>>
+Le sort va être prêt dans 5 sec
+Le sort va être prêt dans 4 sec
+Le sort va être prêt dans 3 sec
+Le sort va être prêt dans 2 sec
+Le sort va être prêt dans 1 sec
+Le sort va être prêt dans 0 sec
+BOULE DE FEU!
+Energie restante: 40
 
+Le sort va être prêt dans 5 sec
+Le sort va être prêt dans 4 sec
+Le sort va être prêt dans 3 sec
+Le sort va être prêt dans 2 sec
+Le sort va être prêt dans 1 sec
+Le sort va être prêt dans 0 sec
+SEXY JUTSU ! (Très efficace !)
+Energie restante: 50
+```
 
 Pouvez-vous voir le problème?
 
@@ -249,42 +259,46 @@ energy = bouleDeFeu(energy)
 print()
 sexyJutsu(energy, isMale)
 ```
-    >>>
-    Le sort va être prêt dans 5 sec
-    Le sort va être prêt dans 4 sec
-    Le sort va être prêt dans 3 sec
-    Le sort va être prêt dans 2 sec
-    Le sort va être prêt dans 1 sec
-    Le sort va être prêt dans 0 sec
-    BOULE DE FEU!
-    Energie restante: 40
-    
-    ECHEC CRITIQUE
-    Energie restante: 40
+```python
+>>>
+Le sort va être prêt dans 5 sec
+Le sort va être prêt dans 4 sec
+Le sort va être prêt dans 3 sec
+Le sort va être prêt dans 2 sec
+Le sort va être prêt dans 1 sec
+Le sort va être prêt dans 0 sec
+BOULE DE FEU!
+Energie restante: 40
 
+ECHEC CRITIQUE
+Energie restante: 40
+```
 
 Ce que vous venez de voir est la notion de __scope__.
 
+<table><tr><td>
+<font color = "red"> <u> Remarque: </u> </font>
+<br>
+&nbsp;&nbsp;&nbsp;- Comme dit auparavant, <b>print()</b> ne retourne pas de valeurs mais <b>affiche</b> dans la console. 
+<br>
+&nbsp;&nbsp;&nbsp;- Par conséquent, si on ne fait que <b>return</b>, le résultat <b>ne s'affichera pas dans la console</b>.
+</td></tr></table>
+
 ---
-<font color = 'red'> <u> Remarque: </u> </font>
 
-- Comme dit auparavant, __print()__ ne retourne pas de valeurs mais __affiche__ dans la console. 
-- Par conséquent, si on ne fait que __return__, le résultat __ne s'affichera pas dans la console__.
-
----
-
-__Pour résumer__:
-
-- Les __fonctions__ sont là pour __organiser notre code__ de manière à ce que dernier soit __plus facile à lire__.
-
+**<u> Pour résumer: </u>**
+<table><tr><td>
+- Les <b>fonctions</b> sont là pour <b>organiser notre code</b> de manière à ce que dernier soit <b>plus facile à lire</b>.
+<br>
 - En ce qui concerne les noms de fonctions, même convention que les variables.
-
-- Une fonction en Python commence par le mot-clef __def__.
-
-- Ce qu'il y a entre parenthèse après le nom de la fonction s'appelle __argument__.
-
-- Le texte entouré de __"""  """__ (trple guillemets) est appelé une __docstring__ (documentation string). Elle permet d'avoir des __informations__ sur l'__utilité de la fonction et des ses paramètres__. 
-
-- Chaque fonction a son propre __scope__ (environnement).
-
-- Pour pouvoir intéragir avec l'envrionnement globale, cette dernière doit __return__ sa valeur.
+<br>
+- Une fonction en Python commence par le mot-clef <b>def</b>.
+<br>
+- Ce qu'il y a entre parenthèse après le nom de la fonction s'appelle <b>argument</b>.
+<br>
+- Le texte entouré de <b>"""  """</b> (trple guillemets) est appelé une <b>docstring</b> (documentation string). Elle permet d'avoir des <b>informations</b> sur l'<b>utilité de la fonction et des ses paramètres</b>. 
+<br>
+- Chaque fonction a son propre <b>scope</b> (environnement).
+<br>
+- Pour pouvoir intéragir avec l'envrionnement globale, cette dernière doit <b>return</b> sa valeur.
+</td></tr></table>

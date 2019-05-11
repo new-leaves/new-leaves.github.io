@@ -25,72 +25,65 @@ a = 5
 a
 ```
 
-
-
-
-    >>> 5
-
-
-
-
+```python
+>>> 5
+```
 ---
+
 ```python
 coucou = 5.6
 coucou
 ```
 
-
-
-
-    >>> 5.6
-
-
-
+```python
+>>> 5.6
+```
 ---
+
 ```python
 ferdi = True
 ferdi
 ```
 
-
-
-
-    >>> True
-
-
-
-
+```python
+>>> True
+```
 ---
+
 ```python
 coucou = "Hello World!"
 coucou
 ```
-    >>> 'Hello World!'
 
----
-<font color='red'><u>Remarque: </u></font> 
-- La valeur précédente de "__coucou__"  a été remplacé par la récente !
+```python
+>>> 'Hello World!'
+```
 
----
+<table><tr><td>
+<font color = "red"> <u> Remarque: </u> </font>
+<br>
+&nbsp;&nbsp;&nbsp;La valeur précédente de "<b>coucou</b>"  a été remplacé par la récente !
+</td></tr></table>
+
 
 ## <u> 2) La convention </u>
 
-- Les noms de __variables__ doivent être écrit en __miniscule__.
+- Les noms de <b>variables</b> doivent être écrit en <b>miniscule</b>.
 
-- Seul les __constantes__ (variables qui ne changent pas de valeurs durant tout le programme) sont écrits en __majuscule__.
+- Seul les <b>constantes</b> (variables qui ne changent pas de valeurs durant tout le programme) sont écrits en <b>majuscule</b>.
 
-- Si la __variable__ est composée de __différents mots__, mettre une __majuscule__ à la __1er lettre__ de __chaque nouveau mot__:
+- Si la <b>variable</b> est composée de <b>différents mots</b>, mettre une <b>majuscule</b> à la <b>1er lettre</b> de <b>chaque nouveau mot</b>:
     - nomDeVariable
     - checkHorizontal
 
 ## <u> 3) Les différents types </u>
 
-Les __variables__ peuvent être de __différents types__. Voici les principaux types: 
+Les <b>variables</b> peuvent être de <b>différents types</b>. Voici les principaux types: 
 
-- '__int__' (entier) -> les entiers naturels.
-- '__float__' -> les nombres décimaux.
-- '__bool__' (booléen) -> <font color='green'> True</font> ou <font color='red'>False</font>.
-- '__str__' (string) ->  un mot (caractère) ou une phrase.
+- '<b>int</b>' (entier) -> les entiers naturels.
+- '<b>float</b>' -> les nombres décimaux.
+- '<b>bool</b>' (booléen) -> <font color='green'> True</font> ou <font color='red'>False</font>.
+- '<b>str</b>' (string) ->  un mot (caractère) ou une phrase.
 
 
 ```python
@@ -98,63 +91,55 @@ a = 5
 type(a)
 ```
 
-
-
-
-    >>> int
-
-
-
+```python
+>>> int
+```
 ---
+
 ```python
 coucou = 5.6
 type(coucou)
 ```
 
-
-
-
-    >>> float
-
-
+```python
+>>> float
+```
 
 ---
+
 ```python
 ferdi = True
 type(ferdi)
 ```
 
-
-
-
-    >>> bool
-
-
+```python
+>>> bool
+```
 
 ---
+
 ```python
 coucou = "Hello World!"
 type(coucou)
 ```
 
+```python
+>>> str
+```
 
-
-
-    >>> str
-
-
----
+<table><tr><td>
 <font color='red'> <u> Remarque: </u> </font> 
-- Pour les strings, vous pouvez soit écrire avec " " ou bien ' '. Tout est une question de style ! 
-- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre __" "__ et __' '__.
+<br>
+&nbsp;&nbsp;&nbsp;- Pour les strings, vous pouvez soit écrire avec <b>" "</b> ou bien <b>' '</b>. Tout est une question de style ! 
+<br>
+&nbsp;&nbsp;&nbsp;- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre <b>" "</b> et <b>' '</b>.
+</td></tr></table>
 
----
-
-Une __string__ correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le __code ASCII__.
+Une <b>string</b> correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le <b>code ASCII</b>.
 
 ##  <u> 4) Manipulation </u>
 
-Si la __variable__ est un __nombre__ (__int__ ou __float__), vous pouvez faire les opérations suivantes:
+Si la <b>variable</b> est un <b>nombre</b> (<b>int</b> ou <b>float</b>), vous pouvez faire les opérations suivantes:
 
 - +
 - -
@@ -172,14 +157,12 @@ var += 1 #Equivalent à var = var + 1
 var
 ```
 
+```python
+>>> 6
+```
 
 
-
-    >>> 6
-
-
-
-Si la __variable__ est une __string__, vous pouvez faire les opérations suivantes:
+Si la <b>variable</b> est une <b>string</b>, vous pouvez faire les opérations suivantes:
 
 1. Concaténation.
 2. Multiplier avec un entier.
@@ -188,7 +171,7 @@ Si la __variable__ est une __string__, vous pouvez faire les opérations suivant
 
 ### <u> a) Concaténation <u>
 
-La __concaténation__ permet de __combiner 2 strings__ pour en __former__ une __nouvelle__.
+La <b>concaténation</b> permet de <b>combiner 2 strings</b> pour en <b>former</b> une <b>nouvelle</b>.
 
 
 ```python
@@ -197,11 +180,9 @@ b = "lut"
 a + b
 ```
 
-
-
-
-    >>> 'salut'
-
+```python
+>>> 'salut'
+```
 
 
 ### <u> b) Multiplier avec un entier </u>
@@ -212,8 +193,9 @@ s = "Hello"
 print(s * 2)
 ```
 
-    >>> HelloHello
-
+```python
+>>> HelloHello
+```
 
 ### <u> c) Accéder un caractère précis </u>
 
@@ -227,43 +209,46 @@ print(a[3]) #u
 print(a[4]) #t
 print(a[5]) # IndexError! Cela signifie qu'on est en dehors de la string.
 ```
-    >>>
-    s
-    a
-    l
-    u
-    t
+
+```python
+>>>
+s
+a
+l
+u
+t
+---------------------------------------------------------------------------
+
+IndexError                                Traceback (most recent call last)
+
+<ipython-input-33-cfa449c6c73e> in <module>()
+        5 print(a[3]) #u
+        6 print(a[4]) #t
+----> 7 print(a[5]) # IndexError! Cela signifie qu'on est en dehors de la string.
 
 
-
-    ---------------------------------------------------------------------------
-
-    IndexError                                Traceback (most recent call last)
-
-    <ipython-input-33-cfa449c6c73e> in <module>()
-          5 print(a[3]) #u
-          6 print(a[4]) #t
-    ----> 7 print(a[5]) # IndexError! Cela signifie qu'on est en dehors de la string.
-    
-
-    IndexError: string index out of range
+IndexError: string index out of range
+```
 
 ---
-<font color ='red'> <u> Remarque 1: </u> </font>
+&nbsp;<font color ='red'> <u> Remarque 1: </u> </font>
 <br>
 
 ```python
 a = "" #string vide
 type(a)
 ```
-    >>> str
 
+```python
+>>> str
+```
+<table><tr><td>
 <font color ='red'> <u> Remarque 2: </u> </font>
-- __print()__ est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
+<br>
+&nbsp;&nbsp;&nbsp;- <b> print() </b> est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
+</td></tr></table>
 
----
-
-Nous pouvons également faire ce qu'on appelle des __déclarations mulitples de variables__.
+Nous pouvons également faire ce qu'on appelle des <b>déclarations mulitples de variables</b>.
 
 
 ```python
@@ -273,36 +258,50 @@ b = 42
 print(a,b)
 ```
 
-    >>> Hello World! 42
-
+```python
+>>> Hello World! 42
+```
 
 ---
+
 ```python
 a, b = "Hello World", 42
 
 print(a,b)
 ```
-
-    >>> Hello World 42
+```python
+>>> Hello World 42
+```
 
 ---
 
-__Pour résumer:__
 
-- Les **variables** sont utilisées pour **stocker** des **valeurs**. Elles portent des __noms__.
-- Les noms de __variables__ doivent être écrit en __miniscule__.
-- Seul les __constantes__ sont en __majuscule__.
-- Si la __variable__ est composée de __différents mots__, mettre une __majuscule__ à la __1ère lettre__ de __chaque nouveau mot__:
-    - nomDeVariable
-    - checkHorizontal
+<b><u> Pour résumer: </u></b>
 
-- Les __variables__ peuvent être de __différents types__. Voici les principaux types: 
-    - '__int__' 
-    - '__float__' 
-    - '__bool__' 
-    - '__str__'
-
-- Si la variable est un __nombre__, nous pouvons: +, -, *, /, //, %.
-- Si la variable est une __string__, nous pouvons: __concaténater__, __multiplier avec un entier__ et __accéder à un caractère précis__.
-- Une __string__ correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le __code ASCII__.
-- Nous pouvons __déclarer des variables sur une même ligne__.
+<table><tr><td>
+- Les <b>variables</b> sont utilisées pour <b>stocker</b> des <b>valeurs</b>. Elles portent des <b>noms</b>.
+<br>
+- Les noms de <b>variables</b> doivent être écrit en <b>miniscule</b>.
+<br>
+- Seul les <b>constantes</b> sont en <b>majuscule</b>.
+<br>
+- Si la <b>variable</b> est composée de <b>différents mots</b>, mettre une <b>majuscule</b> à la <b>1ère lettre</b> de <b>chaque nouveau mot</b>:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- nomDeVariable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- checkHorizontal
+<br>
+- Les <b>variables</b> peuvent être de <b>différents types</b>. Voici les principaux types:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '<b>int</b>' <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '<b>float</b>' <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '<b>bool</b>' <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '<b>str</b>'
+<br>
+- Si la variable est un <b>nombre</b>, nous pouvons: +, -, *, /, //, %.
+<br>
+- Si la variable est une <b>string</b>, nous pouvons: <b>concaténater</b>, <b>multiplier avec un entier</b> et <b>accéder à un caractère précis</b>.
+<br>
+- Une <b>string</b> correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le <b>code ASCII</b>.
+<br>
+- Nous pouvons <b>déclarer des variables sur une même ligne</b>.
+</td></tr></table>

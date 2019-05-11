@@ -1,0 +1,201 @@
+---
+layout: page
+title: Classes et Instances
+grand_parent: Cours
+parent: Séance 3
+permalink: /cours/seance_3/classes_et_instances
+nav_order: 1
+---
+
+<link rel="icon" href="/img/logo.png">
+
+# **Classes & Instances**
+
+Les __*classes*__ nous permettent d'__organiser nos fonctions/données__ de manière à pouvoir les __réutiliser__ plus __facilement__ dans le futur.
+
+<u> A savoir: </u>
+<table><tr><td>
+- Fonctions qui appartienent à une classe => <b> méthodes </b>.
+<br>
+- Variables qui appartienent à une classe => <b> attributs </b>.
+</td></tr></table>
+
+Imaginons que vous souhaitez constituer un profil pour chacun de vos employés (prénom, nom, mail ...).
+Cela revient donc à créer un espèce de moule où seul le prénom, nom, mail changeront pour chaque employé.
+
+Les __*classes*__ seront donc votre meilleur ami ! 
+
+Créons la class __Employee__:
+
+
+```python
+class Employee:
+```
+    >>>
+    File "<ipython-input-1-80b16634c775>", line 1
+        class Employee:                   ^
+    SyntaxError: unexpected EOF while parsing
+
+---
+
+Si nous exécutons la ligne d'au-dessus, nous obtiendrons une erreur. Pour cela nous devons ajouter le mot-clef "pass"
+
+
+```python
+class Employee:
+    pass
+```
+
+---
+
+Désormais, nous avons une classe vide. Elle ne contient ni attributs, ni méthodes.
+
+Créons 2 employés. On dit qu'on __*instancie*__ 2 employés.
+
+
+```python
+emp_1 = Employee() 
+emp_2 = Employee()
+```
+---
+
+emp_1 et emp_2 sont des __*instances*__ de notre classe __Employee__. 
+
+Ils sont considés comme des __*objets*__.
+
+
+```python
+print(emp_1)
+print(emp_2)
+```
+```python
+>>>
+<__main__.Employee object at 0x7f67a4321dd8>
+<__main__.Employee object at 0x7f67a4321da0>
+```
+
+---
+
+Comme vous pouvez le voir, ce sont bien des __objets__ et ils sont __uniques__.
+
+Puisque qu'un employé possède forcément un prénom, nom et un mail,
+allons les leur créer !
+
+
+```python
+emp_1.firstname = 'Ferdinand'
+emp_1.lastname = 'Mom'
+emp_1.email = 'ferdinand.mom@company.com'
+
+emp_2.firstname = 'Kevin'
+emp_2.lastname = 'Kakao'
+emp_2.email = 'kevin.kakao@company.com'
+```
+
+Affichons leur mail !
+
+
+```python
+print(emp_1.email)
+print(emp_2.email)
+```
+```python
+>>> 
+ferdinand.mom@company.com
+kevin.kakao@company.com
+```
+---
+
+
+Imaginons que nous avons des centaines d'employés ! Nous n'allons tout de même pas définir à la main leur prénom, nom et mail ?
+
+Nous devons trouver un moyen de tout créer en une seule fois.
+
+
+```python
+class Employee:
+    #Constructor
+    def __init__(self, firstname, lastname):        
+        #Attributs
+        self.firstname = firstname
+        self.lastname = lastname
+        self.email  = firstname + '.' + lastname + '@company.com'
+
+#Instanciation
+emp_1 = Employee('ferdinand', 'mom')
+emp_2 = Employee('kevin', 'kakao')
+
+print(emp_1.email)
+print(emp_2.email)
+```
+```python
+>>>
+ferdinand.mom@company.com
+kevin.kakao@company.com
+```
+---
+
+<u> Il y a beaucoup à dire ici: </u>
+
+<table><tr><td>
+- <b> _init__()</b> est appelé le <b> "constructeur" </b>. C'est une méthode qui va nous permettre de créer les objets (le moule).
+<br>
+<br>
+- Voir <b>self</b> comme un moyen de récupérer le nom de l'objet concerné. Par exemple, si nous créons un objet appelé <b>"emp_1"</b>, <b>self</b> sera en réalité <b>"emp_1"</b>.
+<br>
+<br>
+- Lorsqu'on crée un objet, le constructeur <b>__init__()</b> est automatiquement appelé.
+</td></tr></table>
+
+<table><tr><td>
+<font color = "red"> <u> Remarque: </u> </font>
+<br>
+&nbsp;&nbsp;&nbsp;Lors de <b> l'instanciation </b>, il ne faut pas ajouter <b> self </b> en tant qu'argument.
+</td></tr></table>
+
+Supposons désormais que nous voulons afficher le prénom et le nom de chaque employé. 
+
+Pour cela, nous allons créer une __*méthode*__.
+
+
+```python
+class Employee:
+    #Constructeur
+    def __init__(self, firstname, lastname):
+        #Attributs
+        self.firstname = firstname
+        self.lastname = lastname
+        self.email  = firstname + '.' + lastname + '@company.com'
+    
+    #Méthodes
+    def fullname(self):
+        return self.firstname  + ' ' + self.lastname
+
+emp_1 = Employee('ferdinand', 'mom')
+emp_2 = Employee('kevin', 'kakao')
+
+print(emp_1.fullname())
+print(emp_2.fullname())        
+```
+```python
+>>> 
+ferdinand mom
+kevin kakao
+```
+
+---
+
+**<u> Pour résumer: </u>**
+<table><tr><td>
+- <b> Employee </b> est une classe.
+<br>
+- Les fonctions qui appartienent à la classe => <b> méthodes</b>.
+<br>
+- Les variables qui appartienent à la classe => <b>attributs</b>.
+<br>
+- <b>__init__()</b> est appelé le <b>"constructeur"</b>. Il sert à créer des <b>instances  d'Employee </b>. 
+<br>
+- Le processus de création s'appele l'<b>instanciation</b>.
+</td></tr></table>
+
+

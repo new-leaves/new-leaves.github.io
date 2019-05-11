@@ -10,5 +10,4 @@ nav_order: 5
 
 # **FIX ME**
 
-1. Présentation de l'association
-2. Témoignage ?
+1. Présentation du fondateur

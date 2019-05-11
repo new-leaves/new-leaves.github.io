@@ -125,11 +125,12 @@ else:
     print("www.pole-emploi.com")
 ```
 
----
-<font color = 'red'> <u> Remarque: </u> </font>
-- On peut utiliser autant de "__elif__" qu'on le souhaite (__if / elif / ... / elif / else__).
 
----
+<table><tr><td>
+<font color = "red"> <u> Remarque: </u> </font>
+<br>
+&nbsp;&nbsp;&nbsp;On peut utiliser autant de "<b>elif</b>" qu'on le souhaite (<b>if / elif / ... / elif / else</b>).
+</td></tr></table>
 
 Nous pouvons même faire autrement avec les opérateurs logiques:
 
@@ -151,8 +152,13 @@ else:
 
 ---
 
-__Pour résumer:__
+**<u> Pour résumer: </u>**
 
-- __if / elif / else__ sont appelés __conditions__. 
-- On peut utiliser autant de "__elif__" qu'on le souhaite.
-- On peut combiner les __opérateurs logiques__ avec nos __conditions__.
+<table><tr><td>
+- <b>if / elif / else</b> sont appelés <b>conditions</b>. 
+<br>
+- On peut utiliser autant de "<b>elif</b>" qu'on le souhaite.
+<br>
+- On peut combiner les <b>opérateurs logiques</b> avec nos <b>conditions</b>.
+</td></tr></table>
+
