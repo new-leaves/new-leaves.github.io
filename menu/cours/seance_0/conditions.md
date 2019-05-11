@@ -2,8 +2,8 @@
 layout: page
 title: Les conditions
 grand_parent: Cours
-parent: Séance 1
-permalink: /cours/seance_1/conditions
+parent: Séance 0
+permalink: /cours/seance_0/conditions
 nav_order: 2
 ---
 

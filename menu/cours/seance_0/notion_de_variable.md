@@ -2,8 +2,8 @@
 layout: page
 title: Notion de variable
 grand_parent: Cours
-parent: Séance 1
-permalink: /cours/seance_1/notion_de_variable
+parent: Séance 0
+permalink: /cours/seance_0/notion_de_variable
 nav_order: 1
 ---
 

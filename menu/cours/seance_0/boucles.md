@@ -2,8 +2,8 @@
 layout: page
 title: Les boucles
 grand_parent: Cours
-parent: Séance 1
-permalink: /cours/seance_1/boucles
+parent: Séance 0
+permalink: /cours/seance_0/boucles
 nav_order: 3
 ---
 
