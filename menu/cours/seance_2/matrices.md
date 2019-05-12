@@ -4,12 +4,12 @@ title: Les Matrices
 grand_parent: Cours
 parent: Séance 2
 permalink: /cours/seance_2/matrices
-nav_order: 1
+nav_order: 2
 ---
 
 <link rel="icon" href="/img/logo.png">
 
-# __Matrice__
+# __Matrices__
 
 ## <u> 1) Le concept </u>
 
