@@ -257,12 +257,43 @@ Pour une boucle __for__:
 for i in range(0, 5):
     print(i)
 ```
+```python
+>>>
+0
+1
+2
+3
+4
+```
 
-    0
-    1
-    2
-    3
-    4
+---
+
+il faut savoir également que __range()__ possède un 3ème paramètre qui est le __pas__.
+
+```python
+for i in range(0, 5, 1): #Prend les valeurs de 0 à 4 avec un pas de 1
+    print(i)
+```
+```python
+>>>
+0
+1
+2
+3
+4
+```
+
+On n'est pas obligé de le préciser mais de base, le pas est égal à 1. On peut bien sûr le modifier.
+
+```python
+for i in range(0, 5, 2): #Prend les valeurs de 0 à 4 avec un pas de 2
+    print(i)
+```
+---
+```python
+for i in range(5, 0, -1): #Prend les valeurs de 0 à 4 avec un pas de 2
+    print(i)
+```
 
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
@@ -292,4 +323,6 @@ for i in range(0, 5):
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- "i in range(0, n)" <=> i prend les valeurs de 0 (<b>INCLUS</b>) à n (<b>EXCLU</b>).
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ne nécessite pas de loop breaker.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>range()</b> possède un 3ème paramètre qui est le <b>pas</b>.
 </td></tr></table>

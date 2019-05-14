@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Les Strings
+title: Les strings
 grand_parent: Cours
 parent: Séance 2
 permalink: /cours/seance_2/strings

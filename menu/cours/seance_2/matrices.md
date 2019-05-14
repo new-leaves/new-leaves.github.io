@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Les Matrices
+title: Les matrices
 grand_parent: Cours
 parent: Séance 2
 permalink: /cours/seance_2/matrices
-nav_order: 2
+nav_order: 3
 ---
 
 <link rel="icon" href="/img/logo.png">
@@ -13,7 +13,7 @@ nav_order: 2
 
 ## <u> 1) Le concept </u>
 
-Les __matrices__ sont des __listes de dimensions 2__, c'est-à-dire une liste dans une liste
+Les __matrices__ sont des __listes de dimensions 2__, c'est-à-dire une liste dans une liste.
 
 ## <u>2) Convention </u>
 
