@@ -4,7 +4,7 @@ title: Les listes
 grand_parent: Cours
 parent: Séance 1
 permalink: /cours/seance_1/listes
-nav_order: 1
+nav_order: 3
 ---
 
 <link rel="icon" href="/img/logo.png">
@@ -15,6 +15,7 @@ nav_order: 1
 ## <u> 1) Le concept </u>
 
 La __liste__ est une structure de donnée. Cette dernière permet de stocker plusieurs variables à la fois.
+
 
 ## <u> 2) La manipulation </u>
 
@@ -183,17 +184,32 @@ Hello World !
 ### <u> 6) Changer élement d'une liste </u>
 
 
-Contrairement aux __strings__, nous pouvons changer la valeur d'un élement d'une liste. 
-
+Contrairement aux strings, les __listes__ sont __mutables__, ce qui signfie qu'on __peut changer__ la __valeur__ d'un __élément d'une liste__.
 
 ```python
-L = [1, "Hello World !", 5.0]
-L[2] = "J'ai été changé"
+L = [1,2,3] #Liste
+s = "123" #String
+
+L[0] = 42
 print(L)
+s[0] = 42
+print(s)
 ```
 ```python
->>>
-[1, 'Hello World !', "J'ai été changé"]
+>>> [42, 2, 3]
+
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+<ipython-input-5-b74b4c956d05> in <module>()
+        4 L[0] = 42
+        5 print(L)
+----> 6 s[0] = 42
+        7 print(s)
+
+
+TypeError: 'str' object does not support item assignment
 ```
 
 ---
@@ -202,6 +218,7 @@ print(L)
 <table><tr><td>
 - La <b>liste</b> est une structure de donnée. Cette dernière permet de stocker plusieurs variables à la fois.
 <br>
+- les <b>listes</b> sont <b>mutables</b>, ce qui signfie qu'on <b>peut changer</b> la <b>valeur</b> d'un <b>élément d'une liste</b>.
 - Nous savons comment:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Initilialiser une liste.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ajouter une valeur dans une liste.<br>

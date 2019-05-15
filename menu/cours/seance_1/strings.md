@@ -2,9 +2,9 @@
 layout: page
 title: Les strings
 grand_parent: Cours
-parent: Séance 2
-permalink: /cours/seance_2/strings
-nav_order: 1
+parent: Séance 1
+permalink: /cours/seance_1/strings
+nav_order: 2
 ---
 
 <link rel="icon" href="/img/logo.png">
@@ -18,37 +18,6 @@ Une __string__ est une suite de caractères. Chaque caractère possède une vale
 
 ```python
 s = "salut" #Ceci est une string
-```
-
----
-
-Contrairement aux listes, les __strings__ sont __non mutables__, ce qui signfie qu'on __ne peut pas changer__ la __valeur__ d'un __caractère directement__.
-
-
-```python
-L = [1,2,3] #Liste
-s = "123" #String
-
-L[0] = 42
-print(L)
-s[0] = 42
-print(s)
-```
-```python
->>> [42, 2, 3]
-
----------------------------------------------------------------------------
-
-TypeError                                 Traceback (most recent call last)
-
-<ipython-input-5-b74b4c956d05> in <module>()
-        4 L[0] = 42
-        5 print(L)
-----> 6 s[0] = 42
-        7 print(s)
-
-
-TypeError: 'str' object does not support item assignment
 ```
 
 ## <u>2) Convention</u>

@@ -4,7 +4,7 @@ title: Les tuples
 grand_parent: Cours
 parent: Séance 1
 permalink: /cours/seance_1/tuples
-nav_order: 3
+nav_order: 4
 ---
 
 <link rel="icon" href="/img/logo.png">
@@ -126,7 +126,7 @@ IndexError: tuple index out of range
 
 
 ```python
-my_tuple = [1, "Hello World !", 5.0]
+my_tuple = (1, "Hello World !", 5.0)
 print(len(my_tuple))
 ```
 ```python
