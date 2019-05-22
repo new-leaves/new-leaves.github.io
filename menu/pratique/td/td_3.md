@@ -19,4 +19,4 @@ Avant de commencer, voici les consignes à respecter:
 
 <u>Voici le sujet: </u>
 
-<a href="/docs/td_3/TD-3-listes.pdf"> TD_3_Dictionnaires.pdf</a>
+<a href="/docs/td_3/TD-3-Dictionnaires.pdf"> TD_3_Dictionnaires.pdf</a>
