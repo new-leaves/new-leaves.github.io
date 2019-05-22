@@ -11,4 +11,4 @@ nav_order: 2
 
 # __Dictionnaires__
 
-<a href = "https://fr.wikibooks.org/wiki/Programmation_Python/Dictionnaires">RTFM :D</a>
+<a href = "https://www.programiz.com/python-programming/dictionary">RTFM :D</a>

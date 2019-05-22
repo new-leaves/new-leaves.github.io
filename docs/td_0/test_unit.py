@@ -1,19 +1,18 @@
 import os
 import subprocess
+import platform #To check the OS.
 
 if os.path.exists("info"):
    pass
 else:
     #Lors du premier run du fichier, ce dernier va demander prenom, nom de
-    #famille et l'identifiant.
+    #famille.
     prenom = str(input("Entrez votre prenom: "))
     nom = str(input("Entrez votre nom: "))
-    id_nb = str(input("Entrez votre identifiant: "))
 
     with open("info", "w") as f:
         f.write(prenom + '_')
-        f.write(nom + '_')
-        f.write(id_nb)
+        f.write(nom)
 
 #Lire le fichier pour pouvoir utiliser le import.
 filename = ""
@@ -33,9 +32,9 @@ def test_1():
         ans = "{}, vous aurez 100 ans dans {} ans".format(elt[0], 100 - elt[1]) 
         isTrue = (f.predict(elt[0], elt[1]) == ans)
         if isTrue:
-            print("predict({}, {}) -> True".format(elt[0], elt[1]))
+            print("predict({}, {}) -> correct".format(elt[0], elt[1]))
         else: 
-            print("predict({}, {}) -> FALSE".format(elt[0], elt[1]))
+            print("predict({}, {}) -> NOT CORRECT".format(elt[0], elt[1]))
 
 def test_2():
     example = [42, -1, -4321]
@@ -44,9 +43,9 @@ def test_2():
         tmp = f.valAbs(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("valAbs({}) = {} -> True".format(elt, tmp))
+            print("valAbs({}) = {} -> correct".format(elt, tmp))
         else: 
-            print("valAbs({}) = {} -> FALSE".format(elt, tmp))
+            print("valAbs({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 def test_3():
     example = [(1, 31), ("Salut", 42), (631, -2), (-1, 1)]
@@ -56,9 +55,9 @@ def test_3():
         tmp = f.swap(elt[0], elt[1]) 
         isTrue = (tmp == ans) 
         if isTrue:
-            print("swap({}, {}) = {} -> True".format(elt[0], elt[1], tmp))
+            print("swap({}, {}) = {} ->  correct".format(elt[0], elt[1], tmp))
         else:
-            print("swap({}, {}) = {} -> FALSE".format(elt[0], elt[1], tmp))
+            print("swap({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
 
 def test_4():
     #Question 1)
@@ -72,9 +71,9 @@ def test_4():
         tmp = f.myMax(elt[0], elt[1])
         isTrue = (tmp == ans)
         if isTrue:
-            print("myMax({}, {}) = {} -> True".format(elt[0], elt[1], tmp))
+            print("myMax({}, {}) = {} ->  correct".format(elt[0], elt[1], tmp))
         else:
-            print("myMax({}, {}) = {} -> FALSE".format(elt[0], elt[1], tmp))
+            print("myMax({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
     
     print()
     
@@ -89,10 +88,10 @@ def test_4():
         tmp = f.myMax3(elt[0], elt[1], elt[2])  
         isTrue = (tmp == ans)
         if isTrue:
-            print("myMax3({}, {}, {}) = {} -> True".format(elt[0], elt[1], 
+            print("myMax3({}, {}, {}) = {} ->  correct".format(elt[0], elt[1], 
             elt[2], tmp))
         else:
-            print("myMax3({}, {}, {}) = {} -> FALSE".format(elt[0], elt[1],
+            print("myMax3({}, {}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1],
             elt[2], tmp))
 
 def test_5():
@@ -107,9 +106,9 @@ def test_5():
         tmp = f.mySumFor(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("mySumFor({}) = {} -> True".format(elt, tmp))
+            print("mySumFor({}) = {} ->  correct".format(elt, tmp))
         else:
-            print("MySumFor({}) = {} -> FALSE".format(elt, tmp))
+            print("MySumFor({}) = {} -> NOT CORRECT".format(elt, tmp))
     
     #Question 2)
     example = [0, 12, 42, 1000]
@@ -122,9 +121,9 @@ def test_5():
         tmp = f.mySumWhile(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("mySumWhile({}) = {} -> True".format(elt, tmp))
+            print("mySumWhile({}) = {} ->  correct".format(elt, tmp))
         else:
-            print("MySumWhile({}) = {} -> FALSE".format(elt, tmp))
+            print("MySumWhile({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 def test_6():
     example = [12, 3, 1, 420, 9999]
@@ -134,9 +133,9 @@ def test_6():
         tmp = f.sumNbOdd(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("sumNbOdd({}) = {} -> True".format(elt, tmp))
+            print("sumNbOdd({}) = {} ->  correct".format(elt, tmp))
         else:
-            print("sumNbOdd({}) = {} -> FALSE".format(elt, tmp))
+            print("sumNbOdd({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 def test_7():
     example = [(1, 31), (42, 31), (-1, 31), (100, -29)]
@@ -146,12 +145,12 @@ def test_7():
         tmp = f.mult(elt[0], elt[1])
         isTrue = (tmp == ans)
         if isTrue:
-            print("mult({}, {}) = {} -> True".format(elt[0], elt[1], tmp))
+            print("mult({}, {}) = {} ->  correct".format(elt[0], elt[1], tmp))
         else:
-            print("mult({}, {}) = {} -> FALSE".format(elt[0], elt[1], tmp))
+            print("mult({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
 
 def test_8():
-    print("tableauMult(10) -> True")
+    print("tableauMult(10) -> correct")
 
 def test_9():
     pyramide_1 = "*"
@@ -164,9 +163,9 @@ def test_9():
         tmp = f.printPyramid(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("prettyPyramid({}) = {} -> True".format(elt, tmp))
+            print("prettyPyramid({}) = {} -> correct".format(elt, tmp))
         else:
-            print("prettyPyramid({}) = {} -> FALSE".format(elt, tmp))
+            print("prettyPyramid({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 def test_10(): 
     example = [("pierre", "pierre"), ("feuille", "ciseau"), ("ciseau", "pierre")
@@ -177,9 +176,9 @@ def test_10():
         tmp = f.PFC(elt[0], elt[1])
         isTrue = (tmp == ans)
         if isTrue:
-            print("PFC({}, {}) = {} -> True".format(elt[0], elt[1], tmp))
+            print("PFC({}, {}) = {} -> correct".format(elt[0], elt[1], tmp))
         else:
-            print("PFC({}, {}) = {} -> FALSE".format(elt[0], elt[1], tmp))
+            print("PFC({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
 
 def test_11():
     example = [2016, 2020, 2014, 2019]
@@ -189,9 +188,9 @@ def test_11():
         tmp = f.bissextile(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("bissextile({}) = {} -> True".format(elt, tmp))
+            print("bissextile({}) = {} -> correct".format(elt, tmp))
         else:
-            print("bissextile({}) = {} -> FALSE".format(elt, tmp))
+            print("bissextile({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 def test_12():
     example = ["Salut", "1234", "Ferdinand"]
@@ -201,9 +200,9 @@ def test_12():
         tmp = f.reverse(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("reverse({}) = {} -> True".format(elt, tmp))
+            print("reverse({}) = {} -> correct".format(elt, tmp))
         else:
-            print("reverse({}) = {} -> FALSE".format(elt, tmp))
+            print("reverse({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 def test_13():
     example = [1234, 4321, 1, 54321]
@@ -213,9 +212,9 @@ def test_13():
         tmp = f.miroir(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("miroir({}) = {} -> True".format(elt, tmp))
+            print("miroir({}) = {} -> correct".format(elt, tmp))
         else:
-            print("miroir({}) = {} -> FALSE".format(elt, tmp))
+            print("miroir({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 
 def test_14():
@@ -230,9 +229,9 @@ def test_14():
         tmp = f.myAtoi1(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("myAtoi1({}) = {} -> True".format(elt, tmp))
+            print("myAtoi1({}) = {} -> correct".format(elt, tmp))
         else:
-            print("myAtoi1({}) = {} -> FALSE".format(elt, tmp))
+            print("myAtoi1({}) = {} -> NOT CORRECT".format(elt, tmp))
     
     print()
     
@@ -248,9 +247,9 @@ def test_14():
         tmp = f.myAtoi2(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("myAtoi2({}) = {} -> True".format(elt, tmp))
+            print("myAtoi2({}) = {} -> correct".format(elt, tmp))
         else:
-            print("myAtoi2({}) = {} -> FALSE".format(elt, tmp))
+            print("myAtoi2({}) = {} -> NOT CORRECT".format(elt, tmp))
     
 def test_15():
     ans = ("1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14" + 
@@ -258,9 +257,9 @@ def test_15():
     tmp = f.fizzBuzz(20)
     isTrue = (tmp == ans)
     if isTrue:
-        print("fizzBuzz({}) = {} -> True".format(20, tmp))
+        print("fizzBuzz({}) = {} -> correct".format(20, tmp))
     else:
-        print("fizzBuzz({}) = {} -> FALSE".format(20, tmp))
+        print("fizzBuzz({}) = {} -> NOT CORRECT".format(20, tmp))
 
 def test_16():
     example = [(True, True), (True, False), (False, True), (False, False)]
@@ -271,9 +270,9 @@ def test_16():
         tmp = f.myAnd(elt[0], elt[1])
         isTrue = (tmp == ans)
         if isTrue:
-            print("myAnd({}, {}) = {} -> True".format(elt[0], elt[1], tmp))
+            print("myAnd({}, {}) = {} -> correct".format(elt[0], elt[1], tmp))
         else:
-            print("myAnd({}, {}) = {} -> FALSE".format(elt[0], elt[1], tmp))
+            print("myAnd({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
     
     print()
     
@@ -285,7 +284,7 @@ def test_16():
         if isTrue:
             print("myOr({}, {}) = {} -> True".format(elt[0], elt[1], tmp))
         else:
-            print("myOr({}, {}) = {} -> FALSE".format(elt[0], elt[1], tmp))
+            print("myOr({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
     
     print()
 
@@ -296,9 +295,9 @@ def test_16():
         tmp = f.myNot(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("nyNot({}) = {} -> True".format(elt, tmp))
+            print("nyNot({}) = {} -> correct".format(elt, tmp))
         else:
-            print("myNot({}) = {} -> FALSE".format(elt, tmp))
+            print("myNot({}) = {} -> NOT CORRECT".format(elt, tmp))
  
 def test_17():
     example = [0, 5, 7, 12]
@@ -308,9 +307,9 @@ def test_17():
         tmp = f.fact(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("fact({}) = {} -> True".format(elt, tmp))
+            print("fact({}) = {} -> correct".format(elt, tmp))
         else:
-            print("fact({}) = {} -> FALSE".format(elt, tmp))
+            print("fact({}) = {} -> NOT CORRECT".format(elt, tmp))
  
 def test_18():
     def __fibo(n):
@@ -338,9 +337,9 @@ def test_18():
     tmp = f.fibo()
     isTrue = (tmp == ans)
     if isTrue:
-        print("fibo() = {} -> True".format(tmp))
+        print("fibo() = {} -> correct".format(tmp))
     else:
-        print("fibo() = {} -> FALSE".format(tmp))
+        print("fibo() = {} -> NOT CORRECT".format(tmp))
 
 def test_19():
     example = [0, 42, 123, 12345]
@@ -350,9 +349,9 @@ def test_19():
         tmp = f.countDigit(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("countDigit({}) = {} -> True".format(elt, tmp))
+            print("countDigit({}) = {} -> correct".format(elt, tmp))
         else:
-            print("countDigit({}) = {} -> FALSE".format(elt, tmp))
+            print("countDigit({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 def test_20():
     example = [0, 42, 123, 12345]
@@ -362,9 +361,9 @@ def test_20():
         tmp = f.sumDivisors(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("sumDivisors({}) = {} -> True".format(elt, tmp))
+            print("sumDivisors({}) = {} -> correct".format(elt, tmp))
         else:
-            print("sumDivisors({}) = {} -> FALSE".format(elt, tmp))
+            print("sumDivisors({}) = {} -> NOT CORRECT".format(elt, tmp))
 
 #Menu
 menu = """1:  Exercice 1.1: (Prenom et Age)
@@ -395,14 +394,17 @@ while int(key) < 0 or int(key) > 20:
 
 print() 
 
+s = platform.system()
+
 while key != '0':
     key = int(key)
     
-    #On Linux.
-    subprocess.call("clear")
-    
-    #On Windows.
-    #subprocess.call("cls")
+    if s == "Linux":
+        #On Linux.
+        subprocess.call("clear")
+    elif s == "Windows":
+        #On Windows.
+        subprocess.call("cls")
 
     if key == 1:
         test_1()
@@ -454,5 +456,4 @@ while key != '0':
     key = input("Entrez un nombre (1 - 20) ou tapez '0': ")
     while int(key) < 0 or int(key) > 20:
         key = input("Entrez un nombre (1 - 20) ou tapez '0': ")
-
 

@@ -1,19 +1,18 @@
 import os
 import subprocess
+import platform #To check the OS.
 
 if os.path.exists("info"):
    pass
 else:
     #Lors du premier run du fichier, ce dernier va demander prenom, nom de
-    #famille et l'identifiant.
+    #famill.
     prenom = str(input("Entrez votre prenom: "))
     nom = str(input("Entrez votre nom: "))
-    id_nb = str(input("Entrez votre identifiant: "))
 
     with open("info", "w") as f:
         f.write(prenom + '_')
-        f.write(nom + '_')
-        f.write(id_nb)
+        f.write(nom)
 
 #Lire le fichier pour pouvoir utiliser le import.
 filename = ""
@@ -194,14 +193,17 @@ while int(key) < 0 or int(key) > 12:
 
 print() 
 
+s = platform.system()
+
 while key != '0':
     key = int(key)
-    
-    #On Linux.
-    subprocess.call("clear")
-    
-    #On Windows.
-    #subprocess.call("cls")
+
+    if s == "Linux":
+        #On Linux.
+        subprocess.call("clear")
+    elif s == "Windows":
+        #On Windows.
+        subprocess.call("cls")
 
     if key == 1:
         test_1()
@@ -237,5 +239,4 @@ while key != '0':
     key = input("Entrez un nombre (1 - 12) ou tapez '0': ")
     while int(key) < 0 or int(key) > 12:
         key = input("Entrez un nombre (1 - 12) ou tapez '0': ")
-
 
