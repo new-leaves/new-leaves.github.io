@@ -2,7 +2,7 @@
 layout: page
 title: Ressource
 permalink: /ressource/
-nav_order: 4
+nav_order: 3
 ---
 
 <link rel="icon" href="/img/logo.png">

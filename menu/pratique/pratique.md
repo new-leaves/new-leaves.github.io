@@ -3,7 +3,7 @@ layout: page
 title: Pratique
 has_children: true
 permalink: /pratique/
-nav_order: 3
+nav_order: 2
 ---
 
 <link rel="icon" href="/img/logo.png">

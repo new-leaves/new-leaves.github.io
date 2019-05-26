@@ -3,7 +3,7 @@ layout: page
 title: Cours
 has_children: true
 permalink: /cours/
-nav_order: 2
+nav_order: 1
 ---
 
 <link rel="icon" href="/img/logo.png">
