@@ -4,7 +4,7 @@ title: Séance 0
 parent: Cours
 has_children: true
 permalink: /cours/seance_0
-nav_order: 2
+nav_order: 1
 ---
 
 <link rel="icon" href="/img/logo.png">
