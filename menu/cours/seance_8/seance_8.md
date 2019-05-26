@@ -6,3 +6,8 @@ has_children: true
 permalink: /cours/seance_8
 nav_order: 8
 ---
+
+
+# FIX ME
+
+??
