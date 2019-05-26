@@ -2,7 +2,7 @@
 layout: page
 title: Cours
 has_children: true
-permalink: /cours/
+permalink: /
 nav_order: 1
 ---
 
