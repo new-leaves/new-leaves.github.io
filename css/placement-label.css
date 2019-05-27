@@ -1,0 +1,4 @@
+#containerIntro h1,
+#containerIntro p {
+    display: inline-block;
+}

@@ -9,23 +9,21 @@ nav_order: 4
 
 <link rel="icon" href="/img/logo.png">
 
-# **Tuples**
+# **Les Tuples**
 
-## <u> 1) Le concept </u>
+## <u> a) Le concept </u>
 
 Un __tuple__ ressemble grossièrement aux listes mais ces derniers __ne peuvent être modifiés__. 
 
-## <u> 2) La manipulation </u>
+## <u> b) La manipulation </u>
 
 Nous allons voir comment:
 
-<table><tr><td>
-<b>a</b>. Créer un tuple.<br>
-<b>b</b>. Accéder à un tuple.<br>
-<b>c</b>. Compter le nombre d'éléments d'un tuple.
-</td></tr></table>
+1. Créer un tuple.<br>
+2. Accéder à un tuple.<br>
+3. Compter le nombre d'éléments d'un tuple.
 
-### <u> a) Créer un tuple </u>
+### <u> 1) Créer un tuple </u>
 
 
 ```python
@@ -91,7 +89,7 @@ type(my_tuple)
 >>> str
 ```
 
-### <u> b) Accéder à un tuple </u>
+### <u> 2) Accéder à un tuple </u>
 
 Vous pouvez accéder aux tuples comme les listes. Cependant, on ne peut pas changer la valeur d'un élément d'un tuple.
 
@@ -122,7 +120,7 @@ IndexError: tuple index out of range
 ```
 
 
-### <u> c) Compter le nombre d'éléments d'un tuple </u>
+### <u> 3) Compter le nombre d'éléments d'un tuple </u>
 
 
 ```python
@@ -133,7 +131,7 @@ print(len(my_tuple))
 >>> 3   
 ```
 
-## <u> 3) Utilité</u>
+## <u> c) Utilité</u>
 
 Les __tuples__ sont généralement utilisés pour:
     

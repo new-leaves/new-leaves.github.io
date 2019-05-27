@@ -12,12 +12,12 @@ nav_order: 3
 
 # **Liste**
 
-## <u> 1) Le concept </u>
+## <u> a) Le concept </u>
 
 La __liste__ est une structure de donnée. Cette dernière permet de stocker plusieurs variables à la fois.
 
 
-## <u> 2) La manipulation </u>
+## <u> b) La manipulation </u>
 
 Nous allons voir ces principales fonctionalités:
 
@@ -27,7 +27,7 @@ Nous allons voir ces principales fonctionalités:
 4. Accéder aux éléments d'une liste.
 5. Changer valeur d'une liste.
 
-###  <u> a) Initialiser une liste </u>
+###  <u> 1) Initialiser une liste </u>
 
 
 ```python
@@ -58,7 +58,7 @@ type(L)
 ```
 
 
-### <u> b) Ajouter une valeur dans une liste </u>
+### <u> 2) Ajouter une valeur dans une liste </u>
 
 Pour ajouter un élément dans une liste, il faut utiliser la méthode __append__ (ajouter en français).
 
@@ -99,7 +99,7 @@ print(L)
 </td></tr></table>
 
 
-### <u> c) Compter le nombre d'éléments dans une liste </u>
+### <u> 3) Compter le nombre d'éléments dans une liste </u>
 
 Pour compter le nombre d'éléments dans une liste, il faut utiliser la méthode __len__.
 
@@ -122,7 +122,7 @@ print(len(L))
 >>> 3
 ```
 
-### <u> d) Accéder aux éléments d'une liste </u>
+### <u> 4) Accéder aux éléments d'une liste </u>
 
 On peut accéder aux élements d'une liste de la même manière que les strings.
 
@@ -181,7 +181,7 @@ Hello World !
 1
 ```
 
-### <u> 6) Changer élement d'une liste </u>
+### <u> 5) Changer valeur d'une liste </u>
 
 
 Contrairement aux strings, les __listes__ sont __mutables__, ce qui signfie qu'on __peut changer__ la __valeur__ d'un __élément d'une liste__.
@@ -218,7 +218,7 @@ TypeError: 'str' object does not support item assignment
 <table><tr><td>
 - La <b>liste</b> est une structure de donnée. Cette dernière permet de stocker plusieurs variables à la fois.
 <br>
-- les <b>listes</b> sont <b>mutables</b>, ce qui signfie qu'on <b>peut changer</b> la <b>valeur</b> d'un <b>élément d'une liste</b>.
+- les <b>listes</b> sont <b>mutables</b>, ce qui signfie qu'on <b>peut changer</b> la <b>valeur</b> d'un <b>élément d'une liste</b>. <br>
 - Nous savons comment:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Initilialiser une liste.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ajouter une valeur dans une liste.<br>

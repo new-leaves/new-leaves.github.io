@@ -9,9 +9,9 @@ nav_order: 2
 
 <link rel="icon" href="/img/logo.png">
 
-# __Strings__
+# __Les Strings__
 
-## <u>1) Le concept</u>
+## <u>a) Le concept</u>
 
 Une __string__ est une suite de caractères. Chaque caractère possède une valeur. On appelle cette valeur le code <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange">__ASCII__ </a>.
 
@@ -20,7 +20,7 @@ Une __string__ est une suite de caractères. Chaque caractère possède une vale
 s = "salut" #Ceci est une string
 ```
 
-## <u>2) Convention</u>
+## <u>b) Convention</u>
 
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
@@ -30,7 +30,7 @@ s = "salut" #Ceci est une string
 &nbsp;&nbsp;&nbsp;- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre " " et ' '. 
 </td></tr></table>
 
-## <u>3) La manipulation</u>
+## <u>c) La manipulation</u>
 
 Nous allons voir comment:
 
@@ -104,7 +104,7 @@ Il existe 2 manières de parcourir une string:
 <br>
 &nbsp;&nbsp;&nbsp;<b>b</b>. Boucle For avec le mot clef __in__.
 
-#### <u>a)  Boucle For/While + "len()"</u>
+#### <u>I)  Boucle For/While + "len()"</u>
 
 
 ```python
@@ -134,7 +134,7 @@ Version avec la boucle While:
 4
 ```
 
-#### <u>b) Boucle For + le mot clef "in"</u>
+#### <u>II) Boucle For + le mot clef "in"</u>
 
 
 ```python

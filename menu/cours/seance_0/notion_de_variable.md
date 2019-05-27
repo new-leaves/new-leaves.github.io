@@ -9,10 +9,12 @@ nav_order: 1
 
 <link rel="icon" href="/img/logo.png">
 
-
 # **Notion de variable**
+{: .no_toc }
+1. TOC
+{:toc}
 
-## <u> 1) Le concept </u>
+## Le concept
 
 Les **variables** sont utilisées pour **stocker** des **valeurs**. Voyez le comme une boîte où vous pouvez y posez un objet à l'intérieur. Cette boîte a également un **nom** pour pouvoir se distinguer des autres.
 
@@ -66,7 +68,7 @@ coucou
 </td></tr></table>
 
 
-## <u> 2) La convention </u>
+## La convention 
 
 - Les noms de <b>variables</b> doivent être écrit en <b>miniscule</b>.
 
@@ -76,7 +78,7 @@ coucou
     - nomDeVariable
     - checkHorizontal
 
-## <u> 3) Les différents types </u>
+## Les différents types
 
 Les <b>variables</b> peuvent être de <b>différents types</b>. Voici les principaux types: 
 
@@ -137,7 +139,7 @@ type(coucou)
 
 Une <b>string</b> correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le <b>code ASCII</b>.
 
-##  <u> 4) Manipulation </u>
+##  La manipulation
 
 Si la <b>variable</b> est un <b>nombre</b> (<b>int</b> ou <b>float</b>), vous pouvez faire les opérations suivantes:
 
@@ -169,7 +171,7 @@ Si la <b>variable</b> est une <b>string</b>, vous pouvez faire les opérations s
 3. Accéder à un caractère précis.
 
 
-### <u> a) Concaténation <u>
+### <u> Concaténation <u>
 
 La <b>concaténation</b> permet de <b>combiner 2 strings</b> pour en <b>former</b> une <b>nouvelle</b>.
 
@@ -185,7 +187,7 @@ a + b
 ```
 
 
-### <u> b) Multiplier avec un entier </u>
+### <u> Multiplier avec un entier </u>
 
 
 ```python
@@ -197,7 +199,7 @@ print(s * 2)
 >>> HelloHello
 ```
 
-### <u> c) Accéder un caractère précis </u>
+### <u> Accéder un caractère précis </u>
 
 
 ```python

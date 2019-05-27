@@ -11,7 +11,7 @@ nav_order: 3
 
 # **Les Boucles**
 
-## <u> 1) Le concept </u>
+## <u> a) Le concept </u>
 
 Les __boucles__ sont un moyen de __répéter des instructions__.
 
@@ -22,9 +22,9 @@ Il existe 2 types de boucles:
 2- <b>For</b>
 </td></tr></table>
 
-## <u> 2) Manipulation </u>
+## <u> b) Manipulation </u>
 
-### <u> a) Boucle While </u>
+### <u> 1) Boucle While </u>
 
 Reprenons l'exemple du videur. A chaque que vous voyez une __personne__, vous allez répéter les instructions jusqu'à ce qu'il n'y ait plus personne n'est ce pas?
 
@@ -74,7 +74,6 @@ Pourquoi ne pas utiliser une boucle ?
 
 
 ```python
-
 personne = True
 GARCON = True
 BEAU = True
@@ -198,7 +197,7 @@ KeyboardInterrupt                         Traceback (most recent call last)
         12         print("Tu peux entrer Madzelle")
 ```
 
-### <u> b) Boucle For </u>
+### <u> 2) Boucle For </u>
 
 Pour le même exemple, nous pouvons utiliser la boucle __for__.
 
@@ -283,16 +282,30 @@ for i in range(0, 5, 1): #Prend les valeurs de 0 à 4 avec un pas de 1
 4
 ```
 
-On n'est pas obligé de le préciser mais de base, le pas est égal à 1. On peut bien sûr le modifier.
+Nous ne sommes pas obligé de le préciser mais à la base, le pas est égal à 1. On peut bien sûr le modifier.
 
 ```python
 for i in range(0, 5, 2): #Prend les valeurs de 0 à 4 avec un pas de 2
     print(i)
 ```
+```python
+>>>
+0
+2
+4
+```
 ---
 ```python
 for i in range(5, 0, -1): #Prend les valeurs de 0 à 4 avec un pas de 2
     print(i)
+```
+```python
+>>>
+5
+4
+3
+2
+1
 ```
 
 <table><tr><td>

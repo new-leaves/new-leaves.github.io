@@ -225,10 +225,6 @@ a.button {
 }
 
 .btnFloat:hover:before {
-  
-}
-
-.btnFloat:hover:before {
   margin-top: -2px;
   margin-left: 0px;
   transform: scale(1.1,1.1);

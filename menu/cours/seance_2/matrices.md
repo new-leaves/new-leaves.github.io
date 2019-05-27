@@ -4,18 +4,18 @@ title: Les matrices
 grand_parent: Cours
 parent: Séance 2
 permalink: /cours/seance_2/matrices
-nav_order: 3
+nav_order: 2
 ---
 
 <link rel="icon" href="/img/logo.png">
 
-# __Matrices__
+# __Les Matrices__
 
-## <u> 1) Le concept </u>
+## <u> a) Le concept </u>
 
 Les __matrices__ sont des __listes de dimensions 2__, c'est-à-dire une liste dans une liste.
 
-## <u>2) Convention </u>
+## <u>b) Convention </u>
 
 Voici à quoi ressemble une matrice.
 
@@ -28,17 +28,15 @@ Voici à quoi ressemble une matrice.
 - La première ligne (<b> resp. colonne </b>) est <b>0</b> et la dernière ligne (<b>resp. colonne</b>) est <b>n-1</b> (resp <b>m-1</b>).
     - Dans le cas d'un <b>5x7</b>, la première ligne (<b>resp. colonne</b>) est <b>0</b> et la dernière ligne (<b>resp. colonne</b>) est <b>5-1 = <u>4</u></b> (resp <b>7-1 = <u>6</u></b>).
 
-## <u> 3) La manipulation </u>
+## <u> c) La manipulation </u>
 
 Nous allons voir comment:
     
-&nbsp;&nbsp;&nbsp;<b>a.</b> Créer une matrice.
-<br>
-&nbsp;&nbsp;&nbsp;<b>b.</b> Accéder à une cellule d'une matrice.
-<br>
-&nbsp;&nbsp;&nbsp;<b>c.</b> Parcourir une matrice.
+1. Créer une matrice.
+2. Accéder à une cellule d'une matrice.
+3. Parcourir une matrice.
 
-### <u> a) Créer une matrice </u>
+### <u> 1) Créer une matrice </u>
 
 Créeons une matrice de taille 5x4 remplie de 0.
 
@@ -104,7 +102,7 @@ matrix.prettyprint(M)
 ---------------------
 ```
 
-### <u> b) Accéder à une cellule d'une matrice </u>
+### <u> 2) Accéder à une cellule d'une matrice </u>
 
 La syntaxe pour accéder à une cellule: <b>M[row][col]</b>
 
@@ -139,7 +137,7 @@ M[4][3] #Cellule de la ligne 4 & colonne 3.
 ```
 
 
-### <u> c) Parcourir une matrice </u>
+### <u> 3) Parcourir une matrice </u>
 
 
 ```python

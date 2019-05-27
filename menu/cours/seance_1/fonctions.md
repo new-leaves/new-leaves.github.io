@@ -9,17 +9,17 @@ nav_order: 1
 
 <link rel="icon" href="/img/logo.png">
 
-# **Les fonctions**
+# **Les Fonctions**
 
-## <u> 1) Le concept </u>
+## <u> a) Le concept </u>
 
 Les __fonctions__ sont là pour __organiser notre code__ de manière à ce que dernier soit __plus facile à lire__.
 
-##  <u> 2) La convention </u>
+##  <u> b) La convention </u>
 
 Même convention que les noms de variables.
 
-## <u> 3) La manipulation </u>
+## <u> c) La manipulation </u>
 
 Supposons que vous êtes un magicien. Par conséquent, vous avez des sorts:
 

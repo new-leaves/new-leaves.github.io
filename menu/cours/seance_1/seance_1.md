@@ -8,8 +8,16 @@ nav_order: 2
 ---
 
 <link rel="icon" href="/img/logo.png">
- 
-# **FIX ME**
+<link rel="stylesheet" href="/css/placement-label.css">   
 
-1. Faire une description de la table of contents
-2. Leur dire qu'ils peuvent suivre intéractivement le cours avec jupyter notebook?
+<link rel="icon" href="/img/logo.png">
+
+<div id="containerIntro">
+<h1>Séance 1</h1> &nbsp; <p class="label label-green">Available</p>   
+</div>
+
+<table><tr><td>
+<i>-</i>&nbsp;Cette séance est composée de 4 cours. <br>
+<i>-</i>&nbsp;Vous pouvez suivre chaque cours intéractivement.<br>
+<i>-</i>&nbsp;Pour cela, téléchargez <a href="/docs/seance_1.zip"><b>seance_1.zip</b></a> puis ouvrez <b>jupyter notebook</b> (<b>cf <a href="/docs/survival_kit.pdf"> survival_kit.pdf</a> > CheatSheet > Jupyter Notebook </b>).
+</td></tr></table>

@@ -9,13 +9,13 @@ nav_order: 2
 
 <link rel="icon" href="/img/logo.png">
 
-# **Les conditions**
+# **Les Conditions**
 
-## <u> 1) Le concept </u>
+## <u> a) Le concept </u>
 
 Comme le nom le suggère, les conditions sont là pour imposer des __conditions__.
 
-## <u> 2) La manipulation </u>
+## <u> b) La manipulation </u>
 
 Par exemple, supposons que vous êtes le videur d'une boîte de nuit. 
 
