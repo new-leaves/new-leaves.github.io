@@ -7,24 +7,47 @@ permalink: /cours/seance_1/tuples
 nav_order: 4
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# **Les Tuples**
+<div id="containerIntro">
+<h1><b>Les Tuples</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+</div>
 
-## <u> a) Le concept </u>
+{: .no_toc }
+1. TOC
+{:toc}
 
-Un __tuple__ ressemble grossièrement aux listes mais ces derniers __ne peuvent être modifiés__. 
+---
 
-## <u> b) La manipulation </u>
+## Le concept
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Un <b>tuple</b> ressemble grossièrement aux listes mais ces derniers <b>ne peuvent être modifiés</b>. 
+</div>
+
+---
+
+## La manipulation
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous allons voir comment:
+</div>
 
-1. Créer un tuple.<br>
-2. Accéder à un tuple.<br>
-3. Compter le nombre d'éléments d'un tuple.
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> Créer un tuple.<br></li>
+<li> Accéder à un tuple.<br></li>
+<li> Compter le nombre d'éléments d'un tuple.</li>
+</ol>
+</div>
 
-### <u> 1) Créer un tuple </u>
+---
 
+### <u> Créer un tuple </u>
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ```python
 my_tuple = ()
@@ -34,7 +57,7 @@ print(my_tuple)
 >>> ()
 ```
 
----
+<br>
 
 ```python
 my_tuple = (2, 5)
@@ -43,8 +66,7 @@ print(my_tuple)
 ```python
 >>> (2, 5)
 ```
-
----
+<br>
 
 ```python
 my_tuple = "Hello World!", 42
@@ -54,7 +76,7 @@ print(my_tuple)
 >>> ('Hello World!', 42)
 ```
 
----
+<br>
 
 ```python
 type(my_tuple)
@@ -62,13 +84,13 @@ type(my_tuple)
 ```python
 >>> tuple
 ```
-
-<br>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;- Si le <b>tuple</b> ne contient qu'<b>un seul élement</b>, alors il ne sera pas de type <b>tuple</b>.
 </td></tr></table>
+</div>
 
 
 ```python
@@ -79,7 +101,7 @@ type(my_tuple)
 >>> int
 ```
 
----
+<br>
 
 ```python
 my_tuple = ("Hello World!")
@@ -89,10 +111,10 @@ type(my_tuple)
 >>> str
 ```
 
-### <u> 2) Accéder à un tuple </u>
-
+### <u> Accéder à un tuple </u>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Vous pouvez accéder aux tuples comme les listes. Cependant, on ne peut pas changer la valeur d'un élément d'un tuple.
-
+</div>
 
 ```python
 my_tuple = (1, "Hello World !", 5.0)
@@ -120,8 +142,9 @@ IndexError: tuple index out of range
 ```
 
 
-### <u> 3) Compter le nombre d'éléments d'un tuple </u>
-
+### <u> Compter le nombre d'éléments d'un tuple </u>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ```python
 my_tuple = (1, "Hello World !", 5.0)
@@ -131,12 +154,18 @@ print(len(my_tuple))
 >>> 3   
 ```
 
-## <u> c) Utilité</u>
+---
 
-Les __tuples__ sont généralement utilisés pour:
-    
-- Faire des déclarations multiples de variables.
-- Retourner plusieurs valeurs à la fin d'une fonction.
+## Utilité
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Les <b>tuples</b> sont généralement utilisés pour:
+</div>
+<div style="margin-bottom:0.5cm">
+<ol>
+<li>Faire des déclarations multiples de variables.</li>
+<li> Retourner plusieurs valeurs à la fin d'une fonction.</li>
+</ol>
+</div>
 
 
 ```python
@@ -149,7 +178,7 @@ print(b)
 1
 2
 ```
----
+<br>
 
 ```python
 def give_me_your_names():
