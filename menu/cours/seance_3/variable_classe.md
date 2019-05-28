@@ -6,12 +6,18 @@ parent: Séance 3
 permalink: /cours/seance_3/variables_de_classe
 nav_order: 1
 ---
+
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# **Variables de classe**
+<div id="containerIntro">
+<h1><b>Variables de classe</b></h1> &nbsp; <p class="label label-yellow">Moyen</p>   
+</div>
 
+
+<div style="margin-bottom:0.5cm">
 Ajoutons à nos employés leurs salaires. Ensuite, appliquons y une augmentation de 4%.
-
+</div>
 
 ```python
 class Employee:
@@ -47,10 +53,10 @@ Après
 52000
 ```
 
-Que se passe-t-il lorsque l'on veut changer l'augmentation de la paie ?
-
-Nous devons créer une __*variable*__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Que se passe-t-il lorsque l'on veut changer l'augmentation de la paie ? <br>
+Nous devons créer une <b><i>variable</i></b>.  
+</div>
 
 ```python
 class Employee:
@@ -108,15 +114,26 @@ NameError                                 Traceback (most recent call last)
 NameError: name 'raise_amount' is not defined
 ```
 
-Si vous exécutez le code ci-dessus, vous obtiendrez une erreur. Cela est dut au fait que __*raise_amount*__ n'est pas accessible.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Si vous exécutez le code ci-dessus, vous obtiendrez une erreur. Cela est dut au fait que <b><i>raise_amount</i></b> n'est pas accessible.
+</div>
 
-<u> Nous avons donc 2 options: </u>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Nous avons donc 2 options:
+</div>
 
-- Soit on y accède par la __classe__ en elle-même (c-a-d __Employee__).
-- Soit on y accède par une __instance de la classe__.
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> Soit on y accède par la <b>classe</b> en elle-même (c-a-d <b>Employee</b>). </li>
+<li> Soit on y accède par une <b>instance de la classe</b>. </li>
+</ol>
+</div>
+
+---
 
 ### <u> Cas 1: </u>
-
+<div style="margin-bottom:0.5cm">
+</div>
 
 ```python
 class Employee:
@@ -156,7 +173,8 @@ Après
 ```
 
 ### <u> Cas 2: </u>
-
+<div style="margin-bottom:0.5cm">
+</div>
 
 ```python
 class Employee:
@@ -193,9 +211,9 @@ Avant
 Après
 52000
 ```
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous allons utilisé le second cas. Pourquoi? Suivons l'exemple suivant:
-
+</div>
 
 ```python
 Employee.raise_amount = 1.05
@@ -211,7 +229,9 @@ print(emp_2.raise_amount)
 1.05
 ```
 
-Imaginons que vous ne voulez qu'augmenter le salaire de __*emp_1*__.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Imaginons que vous ne voulez qu'augmenter le salaire de <b><i>emp_1</i></b>.
+</div>
 
 
 ```python
@@ -228,10 +248,10 @@ print(emp_2.raise_amount)
 1.05
 ```
 
-C'est pourquoi il est plus logique d'utiliser __*self*__ que __*Employee*__.
-
-Cependant, parfois utiliser __*self*__ n'a pas de sens. 
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+C'est pourquoi il est plus logique d'utiliser <b><i>self</i></b>  que <b><i>Employee</i></b>.<br>
+Cependant, parfois utiliser <b><i>self</i></b> n'a pas de sens. 
+</div>
 
 ```python
 class Employee:
