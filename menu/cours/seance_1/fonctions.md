@@ -7,22 +7,40 @@ permalink: /cours/seance_1/fonctions
 nav_order: 1
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# **Les Fonctions**
+<div id="containerIntro">
+<h1><b>Les Fonctions</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+</div>
 
-## <u> a) Le concept </u>
+{: .no_toc }
+1. TOC
+{:toc}
 
-Les __fonctions__ sont là pour __organiser notre code__ de manière à ce que dernier soit __plus facile à lire__.
+---
 
-##  <u> b) La convention </u>
+## Le concept
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Les <b>fonctions</b> sont là pour <b>organiser notre code</b> de manière à ce que dernier soit <b>plus facile à lire</b>.
+</div>
+
+---
+
+## La convention
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Même convention que les noms de variables.
+</div>
 
-## <u> c) La manipulation </u>
+---
 
+## La manipulation
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Supposons que vous êtes un magicien. Par conséquent, vous avez des sorts:
-
+</div>
 
 ```python
 #Variables.
@@ -57,7 +75,7 @@ BOULE DE FEU!
 Energie restante: 40
 ```
 
----
+<br>
 
 ```python
 #SORT 2 : Attend 6 secondes avant d'utiliser le 'Sexy jutsu'.
@@ -84,10 +102,12 @@ ECHEC CRITIQUE
 Energie restante: 40
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Puisque vous êtes un magicien, vous ne voulez pas écrire vos sorts à chaque combat n'est-ce-pas? Vous voulez faire comme les autres magiciens et pouvoir crier le nom du sort directement!
-
+<br>
+<br>
 Voici comment faire:
-
+</div>
 
 ```python
 def bouleDeFeu(energy):
@@ -149,22 +169,22 @@ BOULE DE FEU!
 Energie restante: 40
 ```
 
----
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <u>Plusieurs points à mentioner:</u>
+<ol>
+<li> Une fonction en Python commence par le mot-clef <b>def</b>.</li>
+<li> Ce qu'il y a entre parenthèse après le nom de la fonction s'appelle <b>argument</b>.</li>
+<li> Le texte entouré de <b>"""  """</b> (triple guillemets) est appelé une <b>docstring</b> (documentation string). Elle permet d'avoir des <b>informations</b> sur l'<b>utilité de la fonction et des ses paramètres</b>. </li>
+</ol>
+</div>
 
-- Une fonction en Python commence par le mot-clef __def__
-
-- Ce qu'il y a entre parenthèse après le nom de la fonction s'appelle __argument__.
-
-- Le texte entouré de __"""  """__ (triple guillemets) est appelé une __docstring__ (documentation string). Elle permet d'avoir des __informations__ sur l'__utilité de la fonction et des ses paramètres__. 
-
-<br>
+<div style="margin-top:0.8cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;- Une fonction n'est pas obligée d'avoir des arguments !
 </td></tr></table>
+</div>
 
 ```python
 def f():
@@ -179,7 +199,9 @@ f()
 
 ---
 
+<div style="margin-bottom:0.5cm">
 Testons l'exemple suivant:
+</div>
 
 
 ```python
@@ -210,18 +232,26 @@ SEXY JUTSU ! (Très efficace !)
 Energie restante: 50
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:1cm">
 Pouvez-vous voir le problème?
-
-On avait __100__ d'énergie. Après l'appel de __bouleDeFeu()__, il nous reste plus que __40__ d'énergie. 
-
-Ainsi, lancer le sort  __sexyJutsu()__ ne devrait pas être possible ! Alors pourquoi cela marche ?
-Cela est dut au fait que les fonctions ont leurs propres __environnements__.
-
+<br>
+<br>
+On avait <b>100</b> d'énergie. Après l'appel de <b>bouleDeFeu()</b>, il nous reste plus que <b>40</b> d'énergie. 
+<br>
+Ainsi, lancer le sort  <b>sexyJutsu()</b> ne devrait pas être possible ! Alors pourquoi cela marche ?
+<br>
+Cela est dut au fait que les fonctions ont leurs propres <b>environnements</b>.
+<br>
+<br>
 Voici un schéma résumant la situation:
+</div>
 
 ![Fonctions scope](/img/course_image/nb_4/course4_1.png)
 
+
+<div style="margin-top:0.7cm;margin-bottom:1cm">
 Nous, nous voulons la situation suivante:
+</div>
 
 ![Fonction environnement](/img/course_image/nb_4/course4_2.png)
 
@@ -274,8 +304,11 @@ ECHEC CRITIQUE
 Energie restante: 40
 ```
 
-Ce que vous venez de voir est la notion de __scope__.
+<div style="margin-top:0.7cm">
+Ce que vous venez de voir est la notion de <b>scope</b>.
+</div>
 
+<div style="margin-top:0.7cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
@@ -283,6 +316,7 @@ Ce que vous venez de voir est la notion de __scope__.
 <br>
 &nbsp;&nbsp;&nbsp;- Par conséquent, si on ne fait que <b>return</b>, le résultat <b>ne s'affichera pas dans la console</b>.
 </td></tr></table>
+</div>
 
 ---
 
