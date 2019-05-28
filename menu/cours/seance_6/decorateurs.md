@@ -6,7 +6,8 @@ parent: Séance 6
 permalink: /cours/seance_6/decorateurs_getter_setters_deleters
 nav_order: 6
 ---
-<link rel="icon" href="/img/logo.png">
+
+<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
 # **Décorateurs - Getters / Setters / Deleters**
 

@@ -7,7 +7,7 @@ permalink: /pratique/tp/tp_1
 nav_order: 1
 ---
 
-<link rel="icon" href="/img/logo.png">
+<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
 
 Avant de commencer le TP, voici les prérequis:

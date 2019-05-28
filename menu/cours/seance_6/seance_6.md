@@ -7,10 +7,8 @@ permalink: /cours/seance_6
 nav_order: 6
 ---
 
-
 <link rel="stylesheet" href="/css/placement-label.css">   
-
-<link rel="icon" href="/img/logo.png">
+<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
 <div id="containerIntro">
 <h1>Séance 6</h1> &nbsp; <p class="label label-green">Available</p>   

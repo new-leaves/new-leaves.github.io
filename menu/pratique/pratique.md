@@ -6,7 +6,7 @@ permalink: /pratique/
 nav_order: 2
 ---
 
-<link rel="icon" href="/img/logo.png">
+<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
 # FIX ME
 

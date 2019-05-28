@@ -7,8 +7,9 @@ permalink: /cours/seance_4/methode_classe_statique
 nav_order: 4
 ---
 
-<link rel="stylesheet" href="/css/placement-label.css">  
-<link rel="icon" href="/img/logo.png">
+<link rel="stylesheet" href="/css/placement-label.css">
+<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
+
 
 <div id="containerIntro">
 <h2><b>Méthodes de classe / Méthodes statiques</b></h2> &nbsp; <p class="label label-yellow">Moyen</p>   
