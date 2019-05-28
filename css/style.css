@@ -295,7 +295,6 @@ a.button {
 #conteneur
 {
     display: flex;
-    border: solid;
     flex-direction: row;
     justify-content: center;
     align-items: center;
