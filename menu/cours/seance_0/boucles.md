@@ -22,14 +22,14 @@ nav_order: 3
 
 ## Le concept
 
-Les __boucles__ sont un moyen de __répéter des instructions__.
-
+<div style="margin-top:0.7cm">
+Les <b>boucles</b> sont un moyen de <b>répéter des instructions</b>. 
+</div>
 Il existe 2 types de boucles:
-<table><tr><td>
-1- <b>While</b>
-<br>
-2- <b>For</b>
-</td></tr></table>
+<ol>
+<li> <b>While</b> </li>
+<li> <b>For</b> </li>
+</ol>
 
 ---
 
@@ -37,9 +37,13 @@ Il existe 2 types de boucles:
 
 ### <u> Boucle While </u>
 
-Reprenons l'exemple du videur. A chaque que vous voyez une __personne__, vous allez répéter les instructions jusqu'à ce qu'il n'y ait plus personne n'est ce pas?
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Reprenons l'exemple du videur. A chaque que vous voyez une <b>personne</b>, vous allez répéter les instructions jusqu'à ce qu'il n'y ait plus personne n'est ce pas?
+</div>
 
+<div style="margin-bottom:0.5cm">
 Ainsi, au lieu d'écrire plusieurs fois:
+</div>
 
 ```python
 #1ère personne
@@ -81,7 +85,9 @@ else:
     print("www.pole-emploi.com")
 ```    
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Pourquoi ne pas utiliser une boucle ?
+</div>
 
 
 ```python
@@ -127,12 +133,14 @@ Allez garçon, fais-moi honneur! 8D
 Allez garçon, fais-moi honneur! 8D
 Allez garçon, fais-moi honneur! 8D
 ```
----
 
-Vous venez de voir une boucle __while__.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Vous venez de voir une boucle <b>while</b>.
 <br> 
-Cette dernière va continuer de répéter les instructions à l'intérieure d'elle __tant que "nbPeople > 0" est__ <font color = 'green'>True</font>.
+Cette dernière va continuer de répéter les instructions à l'intérieure d'elle <b>tant que "nbPeople > 0" est</b> <font color = 'green'>True</font>.
+</div>
 
+<div style="margin-bottom:0.8cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
@@ -140,7 +148,7 @@ Cette dernière va continuer de répéter les instructions à l'intérieure d'el
 <br>
 &nbsp;&nbsp;&nbsp;- En effet, <b>nbPeople</b> ne sera <b>jamais égal à 0</b> et donc <b>"nbPeople > 0" SERA TOUJOURS</b> <font color = 'green'>True</font>.
 </td></tr></table>
-
+</div>
 
 
 ```python
@@ -208,10 +216,13 @@ KeyboardInterrupt                         Traceback (most recent call last)
         12         print("Tu peux entrer Madzelle")
 ```
 
+---
+
 ### <u> Boucle For </u>
 
-Pour le même exemple, nous pouvons utiliser la boucle __for__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Pour le même exemple, nous pouvons utiliser la boucle <b>for</b>.
+</div>
 
 ```python
 personne = True
@@ -251,17 +262,17 @@ Allez garçon, fais-moi honneur! 8D
 Allez garçon, fais-moi honneur! 8D
 Allez garçon, fais-moi honneur! 8D
 ```
----
 
-Pour une boucle __for__:
-
-1. Il n'y a pas besoin d'avoir de **loop breaker**.
-
-2. "__i__" change automatiquement de valeurs.
-
-3. "__i in range(0, n)__" <=> **i** prend les valeurs de <font color = 'red'> 0 </font> __INCLUS__ à <font color = 'red'> n </font>  __EXCLU__.
-
----
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Pour une boucle <b>for</b>:
+</div>
+<div style="margin-top:0.4cm;margin-bottom:0.5cm">
+<ol>
+<li> Il n'y a pas besoin d'avoir de <b>loop breaker</b>.</li>
+<li> "<b>i</b>" change automatiquement de valeurs. </li>
+<li> "<b>i in range(0, n)</b>" <=> <b>i</b> prend les valeurs de <font color = 'red'> 0 </font> <b>INCLUS</b> à <font color = 'red'> n </font> <b>EXCLU</b>. </li>
+</ol>
+</div>
 
 ```python
 for i in range(0, 5):
@@ -276,9 +287,9 @@ for i in range(0, 5):
 4
 ```
 
----
-
-il faut savoir également que __range()__ possède un 3ème paramètre qui est le __pas__.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Il faut savoir également que <b>range()</b> possède un 3ème paramètre qui est le <b>pas</b>.
+</div>
 
 ```python
 for i in range(0, 5, 1): #Prend les valeurs de 0 à 4 avec un pas de 1
@@ -293,7 +304,9 @@ for i in range(0, 5, 1): #Prend les valeurs de 0 à 4 avec un pas de 1
 4
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous ne sommes pas obligé de le préciser mais à la base, le pas est égal à 1. On peut bien sûr le modifier.
+</div>
 
 ```python
 for i in range(0, 5, 2): #Prend les valeurs de 0 à 4 avec un pas de 2
@@ -305,7 +318,8 @@ for i in range(0, 5, 2): #Prend les valeurs de 0 à 4 avec un pas de 2
 2
 4
 ```
----
+<br>
+
 ```python
 for i in range(5, 0, -1): #Prend les valeurs de 0 à 4 avec un pas de 2
     print(i)
@@ -319,6 +333,7 @@ for i in range(5, 0, -1): #Prend les valeurs de 0 à 4 avec un pas de 2
 1
 ```
 
+<div style="margin-top:0.8cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
@@ -328,6 +343,7 @@ for i in range(5, 0, -1): #Prend les valeurs de 0 à 4 avec un pas de 2
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- range(1, 21) (de 1 à 20 -> il y a 20 chiffres)
 </td></tr></table>
+</div>
 
 ---
 
@@ -347,6 +363,6 @@ for i in range(5, 0, -1): #Prend les valeurs de 0 à 4 avec un pas de 2
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- "i in range(0, n)" <=> i prend les valeurs de 0 (<b>INCLUS</b>) à n (<b>EXCLU</b>).
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ne nécessite pas de loop breaker.
-
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>range()</b> possède un 3ème paramètre qui est le <b>pas</b>.
 </td></tr></table>
