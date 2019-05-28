@@ -8,7 +8,6 @@ nav_order: 1
 ---
 
 <link rel="stylesheet" href="/css/placement-label.css">   
-
 <link rel="icon" href="/img/logo.png">
 
 <div id="containerIntro">

@@ -7,20 +7,26 @@ permalink: /cours/seance_0/notion_de_variable
 nav_order: 1
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# **Notion de variable**
+<div id="containerIntro">
+<h1><b>Notion de variable</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+</div>
+
 {: .no_toc }
 1. TOC
 {:toc}
 
+---
+
 ## Le concept
 
-Les **variables** sont utilisées pour **stocker** des **valeurs**. Voyez le comme une boîte où vous pouvez y posez un objet à l'intérieur. Cette boîte a également un **nom** pour pouvoir se distinguer des autres.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Les <b>variables</b> sont utilisées pour <b>stocker</b> des <b>valeurs</b>. Voyez le comme une boîte où vous pouvez y posez un objet à l'intérieur. Cette boîte a également un <b>nom</b> pour pouvoir se distinguer des autres.
+</div>
 
-
-<font color = 'green'> <u> Exemples: </u> </font>
-<br>
+<div style ="margin-bottom:0.5cm"><font color = 'green'> <u> Exemple: </u> </font> </div>
 
 ```python
 a = 5
@@ -30,7 +36,7 @@ a
 ```python
 >>> 5
 ```
----
+<br>
 
 ```python
 coucou = 5.6
@@ -40,7 +46,7 @@ coucou
 ```python
 >>> 5.6
 ```
----
+<br>
 
 ```python
 ferdi = True
@@ -50,7 +56,7 @@ ferdi
 ```python
 >>> True
 ```
----
+<br>
 
 ```python
 coucou = "Hello World!"
@@ -60,6 +66,7 @@ coucou
 ```python
 >>> 'Hello World!'
 ```
+<br>
 
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
@@ -67,26 +74,37 @@ coucou
 &nbsp;&nbsp;&nbsp;La valeur précédente de "<b>coucou</b>"  a été remplacé par la récente !
 </td></tr></table>
 
+---
 
 ## La convention 
 
-- Les noms de <b>variables</b> doivent être écrit en <b>miniscule</b>.
-
-- Seul les <b>constantes</b> (variables qui ne changent pas de valeurs durant tout le programme) sont écrits en <b>majuscule</b>.
-
-- Si la <b>variable</b> est composée de <b>différents mots</b>, mettre une <b>majuscule</b> à la <b>1er lettre</b> de <b>chaque nouveau mot</b>:
-    - nomDeVariable
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<ol>
+<li> Les noms de <b>variables</b> doivent être écrit en <b>miniscule</b>. </li>
+<li> Seul les <b>constantes</b> (variables qui ne changent pas de valeurs durant tout le programme) sont écrits en <b>majuscule</b>. </li>
+<li>Si la <b>variable</b> est composée de <b>différents mots</b>, mettre une <b>majuscule</b> à la <b>1er lettre</b> de <b>chaque nouveau mot</b>: </li>
+    <ol>
+    - nomDeVariable <br>
     - checkHorizontal
+    </ol>
+</ol>
+</div>
+
+---
 
 ## Les différents types
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Les <b>variables</b> peuvent être de <b>différents types</b>. Voici les principaux types: 
-
-- '<b>int</b>' (entier) -> les entiers naturels.
-- '<b>float</b>' -> les nombres décimaux.
-- '<b>bool</b>' (booléen) -> <font color='green'> True</font> ou <font color='red'>False</font>.
-- '<b>str</b>' (string) ->  un mot (caractère) ou une phrase.
-
+<div style ="margin-bottom:0.7cm">
+<ol>
+<li> '<b>int</b>' (entier) -> les entiers naturels.</li>
+<li> '<b>float</b>' -> les nombres décimaux.</li>
+<li> '<b>bool</b>' (booléen) -> <font color='green'> True</font> ou <font color='red'>False</font>.</li>
+<li> '<b>str</b>' (string) ->  un mot (caractère) ou une phrase.</li>
+</ol>
+</div>
+</div>
 
 ```python
 a = 5
@@ -96,7 +114,7 @@ type(a)
 ```python
 >>> int
 ```
----
+<br>
 
 ```python
 coucou = 5.6
@@ -106,8 +124,7 @@ type(coucou)
 ```python
 >>> float
 ```
-
----
+<br>
 
 ```python
 ferdi = True
@@ -117,8 +134,7 @@ type(ferdi)
 ```python
 >>> bool
 ```
-
----
+<br>
 
 ```python
 coucou = "Hello World!"
@@ -129,6 +145,7 @@ type(coucou)
 >>> str
 ```
 
+<div style = "margin-top:0.8cm">
 <table><tr><td>
 <font color='red'> <u> Remarque: </u> </font> 
 <br>
@@ -136,22 +153,29 @@ type(coucou)
 <br>
 &nbsp;&nbsp;&nbsp;- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre <b>" "</b> et <b>' '</b>.
 </td></tr></table>
+</div>
 
 Une <b>string</b> correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le <b>code ASCII</b>.
 
+
+---
+
 ##  La manipulation
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Si la <b>variable</b> est un <b>nombre</b> (<b>int</b> ou <b>float</b>), vous pouvez faire les opérations suivantes:
 
-- +
-- -
-- *
-- / (division décimale)
-- // (division entière)
-- % (modulo -> reste d'une division entière)
+<ol>
+<li> +</li>
+<li> -</li>
+<li> *</li>
+<li> / (division décimale)</li>
+<li> // (division entière)</li>
+<li> % (modulo -> reste d'une division entière)</li>
+</ol>
+</div>
 
-<font color = 'green'> <u> Exemple: </u> </font>
-<br>
+<div style ="margin-bottom:0.5cm"><font color = 'green'> <u> Exemple: </u> </font> </div>
 
 ```python
 var = 5
@@ -162,7 +186,7 @@ var
 ```python
 >>> 6
 ```
-
+---
 
 Si la <b>variable</b> est une <b>string</b>, vous pouvez faire les opérations suivantes:
 
@@ -171,7 +195,7 @@ Si la <b>variable</b> est une <b>string</b>, vous pouvez faire les opérations s
 3. Accéder à un caractère précis.
 
 
-### <u> Concaténation <u>
+### <u> Concaténation </u>
 
 La <b>concaténation</b> permet de <b>combiner 2 strings</b> pour en <b>former</b> une <b>nouvelle</b>.
 
@@ -232,9 +256,9 @@ IndexError                                Traceback (most recent call last)
 IndexError: string index out of range
 ```
 
----
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 &nbsp;<font color ='red'> <u> Remarque 1: </u> </font>
-<br>
+</div>
 
 ```python
 a = "" #string vide
@@ -244,11 +268,15 @@ type(a)
 ```python
 >>> str
 ```
+
+<div style ="margin-top:0.8cm;margin-bottom:0.7cm">
 <table><tr><td>
 <font color ='red'> <u> Remarque 2: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;- <b> print() </b> est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
 </td></tr></table>
+</div>
+---
 
 Nous pouvons également faire ce qu'on appelle des <b>déclarations mulitples de variables</b>.
 
@@ -263,8 +291,7 @@ print(a,b)
 ```python
 >>> Hello World! 42
 ```
-
----
+<br>
 
 ```python
 a, b = "Hello World", 42
