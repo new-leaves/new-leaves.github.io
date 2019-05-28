@@ -295,6 +295,7 @@ a.button {
 #conteneur
 {
     display: flex;
+    border: solid;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -321,4 +322,12 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
+}
+
+.divFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
