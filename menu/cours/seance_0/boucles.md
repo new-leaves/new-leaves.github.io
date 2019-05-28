@@ -11,7 +11,7 @@ nav_order: 3
 <link rel="icon" href="/img/logo.png">
 
 <div id="containerIntro">
-<h1><b>Les boucles</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+<h1><b>Les Boucles</b></h1> &nbsp; <p class="label label-green">Facile</p>   
 </div>
 
 {: .no_toc }

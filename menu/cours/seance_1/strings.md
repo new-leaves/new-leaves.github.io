@@ -7,21 +7,35 @@ permalink: /cours/seance_1/strings
 nav_order: 2
 ---
 
+
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# __Les Strings__
+<div id="containerIntro">
+<h1><b>Les Strings</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+</div>
 
-## <u>a) Le concept</u>
+{: .no_toc }
+1. TOC
+{:toc}
 
-Une __string__ est une suite de caractères. Chaque caractère possède une valeur. On appelle cette valeur le code <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange">__ASCII__ </a>.
+---
 
+## Le concept
+
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Une <b>string</b> est une suite de caractères. Chaque caractère possède une valeur. On appelle cette valeur le code <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange"><b>ASCII</b> </a>.
+</div>
 
 ```python
 s = "salut" #Ceci est une string
 ```
+---
 
-## <u>b) Convention</u>
+##  La convention
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
@@ -29,21 +43,33 @@ s = "salut" #Ceci est une string
 <br>
 &nbsp;&nbsp;&nbsp;- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre " " et ' '. 
 </td></tr></table>
+</div>
+---
 
-## <u>c) La manipulation</u>
+## La manipulation
 
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous allons voir comment:
+</div>
 
-1. Avoir la longueur d'une string.
-2. Accéder à un caractère d'une string.
-3. Parcourir une string.
-4. Concatener des strings.
-5. Multiplier avec un entier.
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> Avoir la longueur d'une string.</li> 
+<li> Accéder à un caractère d'une string.</li>
+<li> Parcourir une string.</li>
+<li> Concatener des strings.</li>
+<li> Multiplier avec un entier.</li>
+</ol>
+</div>
 
-### <u>1)  Longueur d'une string</u>
+---
 
-Pour compter le nombre de caractères d'une string, il faut utiliser la méthode __len()__.
+### Longueur d'une string
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Pour compter le nombre de caractères d'une string, il faut utiliser la méthode <b>len()</b>.
+</div>
 
 ```python
 s = "" #String vide
@@ -53,7 +79,7 @@ len(s)
 >>> 0
 ```
 
----
+<br>
 
 ```python
 s = "123"
@@ -63,12 +89,14 @@ len(s)
 >>> 3
 ```
 
+---
 
-### <u>2) Accéder à un caractère d'une string</u>
+### Accéder à un caractère d'une string
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 On accède à un caractère d'une string de la même manière qu'avec un élément d'une liste.
-La string commence à l'index __0__ et se termine à l'index **len(s) - 1**.
-
+La string commence à l'index <b>0</b> et se termine à l'index **len(s) - 1**.
+</div>
 
 ```python
 s = "hey"
@@ -96,16 +124,23 @@ IndexError                                Traceback (most recent call last)
 IndexError: string index out of range
 ```
 
-### <u>3) Parcourir une string</u> 
+---
 
+### Parcourir une string
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Il existe 2 manières de parcourir une string:
+</div>
+<div style="margin-bottom:0.8cm">
+<ol>
+<li>Boucle For/While en utilisant la méthode <b>len()</b></li>
+<li>Boucle For avec le mot clef <b>in</b>.</li>
+</ol>
+</div>
 
-&nbsp;&nbsp;&nbsp;<b>a</b>. Boucle For/While en utilisant la méthode __len()__
-<br>
-&nbsp;&nbsp;&nbsp;<b>b</b>. Boucle For avec le mot clef __in__.
-
-#### <u>I)  Boucle For/While + "len()"</u>
-
+#### <u> Boucle For/While + "len()"</u>
+<div style="margin-bottom:0.5cm">
+</div>
 
 ```python
 s = "1234"
@@ -133,9 +168,13 @@ Version avec la boucle While:
 3
 4
 ```
+<div style="margin-top:0.7cm">
+</div>
 
-#### <u>II) Boucle For + le mot clef "in"</u>
+#### <u> Boucle For + le mot clef "in"</u>
 
+<div style="margin-bottom:0.5cm">
+</div>
 
 ```python
 s = "1234"
@@ -150,9 +189,13 @@ for char in s:
 4
 ```
 
-### <u>4) Concatener des strings</u>
+---
 
-La __concaténation__ permet de __combiner 2 strings__ pour en __former__ une __nouvelle__.
+### Concatener des strings
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+La <b>concaténation</b> permet de <b>combiner 2 strings</b> pour en <b>former</b> une <b>nouvelle</b>.
+</div>
 
 
 ```python
@@ -164,8 +207,11 @@ a + b
 >>> 'salut'
 ```
 
-### <u>5) Multiplier une string avec un entier</u>
+---
 
+### Multiplier une string avec un entier
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ```python
 s = "Hello"
