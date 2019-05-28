@@ -66,14 +66,13 @@ coucou
 ```python
 >>> 'Hello World!'
 ```
-<br>
-
+<div style = "margin-top:0.8cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;La valeur précédente de "<b>coucou</b>"  a été remplacé par la récente !
 </td></tr></table>
-
+</div>
 ---
 
 ## La convention 

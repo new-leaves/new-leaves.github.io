@@ -7,21 +7,35 @@ permalink: /cours/seance_0/conditions
 nav_order: 2
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">
 <link rel="icon" href="/img/logo.png">
 
-# **Les Conditions**
+<div id="containerIntro">
+<h1><b>Les conditions</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+</div>
 
-## <u> a) Le concept </u>
+{: .no_toc }
+1. TOC
+{:toc}
 
-Comme le nom le suggère, les conditions sont là pour imposer des __conditions__.
+---
 
-## <u> b) La manipulation </u>
+##  Le concept
 
-Par exemple, supposons que vous êtes le videur d'une boîte de nuit. 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Comme le nom le suggère, les <font color="green">"conditions"</font> sont là pour imposer des <b>conditions</b>.
+</div>
 
-Votre patron vous dit: <font color='brown'> "Il y'a trop de mecs à l'intérieur, accepte que des filles okay ?"</font>
+---
 
+##  La manipulation
+
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Par exemple, supposons que vous êtes le videur d'une boîte de nuit. <br>
+Votre patron vous dit: <font color='brown'> "Il y'a trop de mecs à l'intérieur, accepte que des filles okay ?"</font>.<br>
 Ainsi, à chaque fois qu'une personne se présente à vous, votre cerveau va faire la chose suivante:
+</div>
 
 ```python
 if personne is FILLE:  #Si personne est une FILLE
@@ -30,7 +44,9 @@ else: #Sinon
     print("Allez Oust !")
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Une autre version aurait pu être:
+</div>
 
 ```python
 if personne is GARCON: 
@@ -39,9 +55,10 @@ else:
     print("Tu peux entrer Madzelle"")
 ```
 
-Ce que vous venez de voir est une conditon __if__/__else__. 
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Ce que vous venez de voir est une conditon <b>if/else</b>. <br>
 Cela peut se traduire de la manière suivante:
+</div>
 
 ```python
 Est ce que __personne__ est une __FILLE__ ?
@@ -52,10 +69,10 @@ else:
     Allez Oust!
 ```
 
-Pour que cela puisse marcher en Python, il faudrait que __FILLE__ soit un __booléen__.
-
-Ainsi:
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Pour que cela puisse marcher en Python, il faudrait que <b>FILLE</b> soit un <b>booléen</b>. <br>
+Ainsi,
+</div>
 
 ```python
 personne = True
@@ -69,8 +86,8 @@ else:
 
     >>> Tu peux entrer Madzelle
 
+<br>
 
----
 ```python
 personne = True
 FILLE = False
@@ -83,10 +100,11 @@ else:
 
     >>> Allez Oust !
 
-<br>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Désormais, votre patron vous dit: <font color = 'brown'> "Hey bro, il commence à y avoir trop de garçons à l'intérieur. Laisse les entrer mais que les plus beaux !"</font>.
-
+<br>
 Ainsi, à chaque fois qu'une personne se présente à vous, votre cerveau va faire la chose suivante:
+</div>
 
 ```python
 if personne is FILLE:
@@ -97,8 +115,11 @@ else:
     else:
         print("www.pole-emploi.com")
 ```
-<br>
+
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Cela peut se traduire de la manière suivante:
+</div>
 
 ```python
 Est ce que personne est une FILLE ?
@@ -113,8 +134,11 @@ else:
     else:
         www.pole-emploi.com
 ```
-<br>
+
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Voici une plus jolie version:
+</div>
 
 ```python
 if personne is FILLE:
@@ -126,11 +150,13 @@ else:
 ```
 
 
+<div style = "margin-top:0.8cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;On peut utiliser autant de "<b>elif</b>" qu'on le souhaite (<b>if / elif / ... / elif / else</b>).
 </td></tr></table>
+</div>
 
 Nous pouvons même faire autrement avec les opérateurs logiques:
 
@@ -146,7 +172,10 @@ else:
 
 "__and__" est un opérateur logique. Il en existe d'autres comme "__or__" et "__not__". 
 
+
+<div style="margin-top:0.8cm;margin-bottom:0.5cm">
 <u> Voici le tableau de vérité: </u>
+</div>
 
 ![Tableau de vérité](/img/course_image/nb_2/course2_1.png)
 
