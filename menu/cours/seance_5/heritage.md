@@ -6,16 +6,27 @@ parent: Séance 5
 permalink: /cours/seance_5/heritage_creation_sous-classe
 nav_order: 5
 ---
+<link rel="icon" href="/img/logo.png"><link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# **Héritage - Création de sous-classe**
+<div id="containerIntro">
+<h1><b>Héritage - Création de sous-classe</b></h1> &nbsp; <p class="label label-yellow">MOYEN</p>   
+</div>
+
+{: .no_toc }
+1. TOC
+{:toc}
+
+---
 
 Si nous reprenons le contexte précédent, nous pouvons dire qu'il y a différent types d'employés telle que des ingénieurs, des managers ...
 
 Puisqu'ils partagent la même caractéristique, c'est-à-dire être des __Employee__ mais quand même temps possèdent leurs propres particularités, au lieu de créer entièrement une nouvelle classe, nous allons leur faire hériter des caractéristiques de la classe mère __Employee__.
 
-Nous allons tout d'abord redéfinir la classe __Employee__.
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Nous allons tout d'abord redéfinir la classe <b>Employee</b>.
+</div>
 
 ```python
 class Employee:
@@ -58,18 +69,20 @@ class Employee:
 emp_1 = Employee('test', 'user', '50000')
 ```
 
-Voici la sous-classe __Engineer__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Voici la sous-classe <b>Engineer</b>.
+</div>
 
 ```python
 class Engineer(Employee):
     pass
 ```
 
-La ligne au-dessus signifie : Nous donnons les caractéristiques de la classe __Employee__ à la sous-classe __Engineer__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+La ligne au-dessus signifie : <i>"Nous donnons les caractéristiques de la classe <b>Employee</b> à la sous-classe <b>Engineer</b>"</i>.
+<br><br>
 Désormais, nous voulons que chaque ingénieur indique leur langage de programmation favoris.
-
+</div>
 
 ```python
 class Engineer(Employee):
@@ -91,30 +104,44 @@ Ferdi Mom
 python
 ```
 
----
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Plusieurs choses à dire ici: 
+</div>
 
-<u> Plusieurs choses à dire ici: </u>
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> <b>super().__init__(first, last, pay)</b> est une manière de dire: Utilise le constructeur de la classe mère dans celui de <b>Engineer</b>.</li>
 
-- __*super()._\_init_\_(first, last, pay)*__ est une manière de dire: Utilise le constructeur de la classe mère dans celui de __Engineer__.
+<li> Nous avions pu utiliser la méthode <b>fullname</b> qui n'existe que dans <b>Employee</b>. C'est parce que <b>Engineer</b> a hérité des caractéristiques de <b>Employee</b>.</li>
+</ol>
+</div>
 
-- Nous avions pu utiliser la méthode __*fullname*__ qui n'existe que dans __Employee__. C'est parce que __Engineer__ a hérité des caractéristiques de __Employee__.
-
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <table><tr><td>
 <font color ="red"> <u> Remarque: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;<b>super().__init__(first, last, pay) <=> Employee().__init__(first, last, pay)</b>
 </td></tr></table>
+</div>
+
+---
 
 Désormais, je vais vous montrez 2 fonctions intégrées à Python: 
 
-- __*isinstance(arg1, arg2)*__
-- __*issubclass(arg1, arg2)*__
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> <b><i>isinstance(arg1, arg2)</i></b></li>
+<li> <b><i>issubclass(arg1, arg2)</i></b></li>
+</ol>
+</div>
 
-## <u> 1) isinstance() </u>
+---
 
-Cette fonction vérifie si __arg1__ est une __*instance*__ de __arg2__.
+## <i>isinstance() </i>
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Cette fonction vérifie si <b>arg1</b> est une <b><i>instance</i></b> de <b>arg2</b>.
+</div>
 
 ```python
 print(isinstance(eng_1, Engineer))
@@ -122,7 +149,7 @@ print(isinstance(eng_1, Engineer))
 ```python
 >>> True
 ```
----
+<br>
 
 ```python
 print(isinstance(eng_1, Employee))
@@ -137,10 +164,11 @@ print(isinstance(emp_1, Engineer))
 >>> False
 ```
 
-## <u> 2) issubclass() </u>
+## <i> issubclass() </i>
 
-Cette fonction vérifie si __arg1__ est une __*sous-classe*__ de __arg2__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Cette fonction vérifie si <b>arg1</b> est une <b><i>sous-classe</i></b> de <b>arg2</b>.
+</div>
 
 ```python
 print(issubclass(Engineer, Employee))
@@ -148,8 +176,7 @@ print(issubclass(Engineer, Employee))
 ```python
 >>> True
 ```
----
-
+<br>
 ```python
 print(issubclass(Employee, Engineer)) 
 ```
