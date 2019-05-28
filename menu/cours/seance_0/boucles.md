@@ -7,11 +7,20 @@ permalink: /cours/seance_0/boucles
 nav_order: 3
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# **Les Boucles**
+<div id="containerIntro">
+<h1><b>Les boucles</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+</div>
 
-## <u> a) Le concept </u>
+{: .no_toc }
+1. TOC
+{:toc}
+
+---
+
+## Le concept
 
 Les __boucles__ sont un moyen de __répéter des instructions__.
 
@@ -22,9 +31,11 @@ Il existe 2 types de boucles:
 2- <b>For</b>
 </td></tr></table>
 
-## <u> b) Manipulation </u>
+---
 
-### <u> 1) Boucle While </u>
+## La manipulation
+
+### <u> Boucle While </u>
 
 Reprenons l'exemple du videur. A chaque que vous voyez une __personne__, vous allez répéter les instructions jusqu'à ce qu'il n'y ait plus personne n'est ce pas?
 
@@ -197,7 +208,7 @@ KeyboardInterrupt                         Traceback (most recent call last)
         12         print("Tu peux entrer Madzelle")
 ```
 
-### <u> 2) Boucle For </u>
+### <u> Boucle For </u>
 
 Pour le même exemple, nous pouvons utiliser la boucle __for__.
 
