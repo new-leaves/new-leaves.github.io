@@ -6,7 +6,7 @@ permalink: /cours/
 nav_order: 1
 ---
 
-<link rel="icon" href="https://new-leaves.github.io/img/favicon/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://new-leaves.github.io/img/favicon/myFavicon.ico" type="image/x-icon" />
 
  
 Merci à <a href="https://www.youtube.com/user/schafer5">Corey Schafer</a> pour son travail de qualité, sans quoi je n'aurai pu
