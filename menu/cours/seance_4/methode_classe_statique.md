@@ -49,7 +49,7 @@ Il existe 3 types de méthodes:
 </ol>
 </div>
 
-### <u> Cas 1: </u>
+### <u> Cas 1 </u>
 <div style="margin-bottom:0.5cm">
 </div>
 
@@ -105,7 +105,7 @@ Après
 Ainsi <b>Employee.set_raise_amount(1.06)</b> est équivalent à <b>Employee.raise_amount = 1.06</b>.
 </div>
 
-### <u> Cas 2:</u>
+### <u> Cas 2</u>
 <div style="margin-bottom:0.5cm">
 </div>
 

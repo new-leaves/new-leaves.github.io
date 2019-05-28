@@ -323,10 +323,21 @@ hr {
   border-width: 1px;
 }
 
-.divFooter {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+footer {
+  padding:2% 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+nav {
+  min-height: 51px;
+}
+
+.main {
+  min-height: 200px;
 }
