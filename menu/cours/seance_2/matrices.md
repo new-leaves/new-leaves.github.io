@@ -7,38 +7,71 @@ permalink: /cours/seance_2/matrices
 nav_order: 2
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# __Les Matrices__
+<div id="containerIntro">
+<h1><b>Les Matrices</b></h1> &nbsp; <p class="label label-yellow">Moyen</p>   
+</div>
 
-## <u> a) Le concept </u>
+{: .no_toc }
+1. TOC
+{:toc}
 
-Les __matrices__ sont des __listes de dimensions 2__, c'est-à-dire une liste dans une liste.
+---
 
-## <u>b) Convention </u>
+##  Le concept
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Les <b>matrices</b> sont des <b>listes à 2 dimensions</b>, c'est-à-dire une liste dans une liste.
+</div>
+
+---
+
+## La convention
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Voici à quoi ressemble une matrice.
+</div>
 
 ![Matrice](/img/course_image/nb_7/course7_1.png)
 
-- Les <font color = "purple"> cercles violets </font> sont des "<b>cellules</b>".
-- Le <font color = "red"> cercle horizontal </font> est une "<b>ligne</b>"(<b>row</b> en anglais) dénoté <b>n</b>.
-- Le <font color = "blue"> cercle vertical </font> est une "<b>colonne</b>"(<b>column</b> en anglais) dénoté <b>m</b>.
-- Cette matrice est de taille <b> 5x7 (row x col) </b>.
-- La première ligne (<b> resp. colonne </b>) est <b>0</b> et la dernière ligne (<b>resp. colonne</b>) est <b>n-1</b> (resp <b>m-1</b>).
-    - Dans le cas d'un <b>5x7</b>, la première ligne (<b>resp. colonne</b>) est <b>0</b> et la dernière ligne (<b>resp. colonne</b>) est <b>5-1 = <u>4</u></b> (resp <b>7-1 = <u>6</u></b>).
 
-## <u> c) La manipulation </u>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<ol>
+<li> Les <font color = "purple"> cercles violets </font> sont des "<b>cellules</b>". </li>
+<li> Le <font color = "red"> cercle horizontal </font> est une "<b>ligne</b>"(<b>row</b> en anglais) dénoté <b>n</b>.</li>
+<li> Le <font color = "blue"> cercle vertical </font> est une "<b>colonne</b>"(<b>column</b> en anglais) dénoté <b>m</b>.</li>
+<li> Cette matrice est de taille <b> 5x7 (row x col) </b>.</li>
+<li> La première ligne (<b> resp. colonne </b>) est <b>0</b> et la dernière ligne (<b>resp. colonne</b>) est <b>n-1</b> (resp <b>m-1</b>).</li>
+    <ol>- Dans le cas d'un <b>5x7</b>, la première ligne (<b>resp. colonne</b>) est <b>0</b> et la dernière ligne (<b>resp. colonne</b>) est <b>5-1 = <u>4</u></b> (resp <b>7-1 = <u>6</u></b>).</ol>
+</ol>
+</div>
 
+---
+
+## La manipulation
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous allons voir comment:
-    
-1. Créer une matrice.
-2. Accéder à une cellule d'une matrice.
-3. Parcourir une matrice.
+</div>
 
-### <u> 1) Créer une matrice </u>
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> Créer une matrice.</li>
+<li> Accéder à une cellule d'une matrice.</li>
+<li> Parcourir une matrice.</li>
+</ol>
+</div>
 
+---
+
+### <u> Créer une matrice </u>
+
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Créeons une matrice de taille 5x4 remplie de 0.
+</div>
 
 
 ```python
@@ -66,10 +99,10 @@ matrix.prettyprint(M)
 | 0 | 0 | 0 | 0 |
 -----------------
 ```
----
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Voici une autre manière de créer une matrice 5x4. Cette fois-ci, on l'a remplira avec des valeurs aléatoires.
-
+</div>
 
 ```python
 from algopy import matrix #Cela nous permet d'afficher les matrices plus joliment.
@@ -102,10 +135,14 @@ matrix.prettyprint(M)
 ---------------------
 ```
 
-### <u> 2) Accéder à une cellule d'une matrice </u>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
+### <u> Accéder à une cellule d'une matrice </u>
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 La syntaxe pour accéder à une cellule: <b>M[row][col]</b>
-
+</div>
 
 ```python
 M[0][0] #Cellule de la ligne 1 & colonne 1.
@@ -113,10 +150,7 @@ M[0][0] #Cellule de la ligne 1 & colonne 1.
 ```python
 >>> 5
 ```
-
-
----
-
+<br>
 
 ```python
 M[0][1] #Cellule de la ligne 1 & colonne 2.
@@ -124,10 +158,7 @@ M[0][1] #Cellule de la ligne 1 & colonne 2.
 ```python
 >>> 9
 ```
-
-
----
-
+<br>
 
 ```python
 M[4][3] #Cellule de la ligne 4 & colonne 3.
@@ -136,9 +167,13 @@ M[4][3] #Cellule de la ligne 4 & colonne 3.
 >>> 4
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
-### <u> 3) Parcourir une matrice </u>
+### <u> Parcourir une matrice </u>
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ```python
 for row in range(n):
@@ -178,9 +213,9 @@ __<u>Pour résumer:</u>__
     <br>
 - Nous avons vu comment:
     <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Créer une matrice.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Créer une matrice.
     <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Accéder à une cellule d'une matrice.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accéder à une cellule d'une matrice.
     <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Parcourir une matrice.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Parcourir une matrice.
 </td></tr></table>

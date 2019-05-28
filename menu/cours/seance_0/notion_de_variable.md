@@ -95,6 +95,7 @@ coucou
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Les <b>variables</b> peuvent être de <b>différents types</b>. Voici les principaux types: 
+</div>
 <div style ="margin-bottom:0.7cm">
 <ol>
 <li> '<b>int</b>' (entier) -> les entiers naturels.</li>
@@ -102,7 +103,6 @@ Les <b>variables</b> peuvent être de <b>différents types</b>. Voici les princi
 <li> '<b>bool</b>' (booléen) -> <font color='green'> True</font> ou <font color='red'>False</font>.</li>
 <li> '<b>str</b>' (string) ->  un mot (caractère) ou une phrase.</li>
 </ol>
-</div>
 </div>
 
 ```python
