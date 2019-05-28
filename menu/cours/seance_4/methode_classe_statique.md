@@ -1,17 +1,28 @@
 ---
 layout: page
-title: Méthodes de classe et méthodes statiques
+title: Méthodes de classe / méthodes statiques
 grand_parent: Cours
 parent: Séance 4
 permalink: /cours/seance_4/methode_classe_statique
 nav_order: 4
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
-# **Méthodes de classe et méthodes statiques**
+<div id="containerIntro">
+<h2><b>Méthodes de classe / Méthodes statiques</b></h2> &nbsp; <p class="label label-yellow">Moyen</p>   
+</div>
 
+{: .no_toc }
+1. TOC
+{:toc}
+
+---
+
+<div style="margin-bottom:0.5cm">
 Il existe 3 types de méthodes:
+</div>
 
 <table><tr><td>
 - Les <b> méthodes ordinaires </b> qui prennent en argument l'instance de la classe dénotée <b> self </b>.
@@ -23,15 +34,23 @@ Il existe 3 types de méthodes:
 - Les <b> méthodes statiques </b> ne sont que de simples fonctions. Elle ne sont accessibles que par la classe.
 </td></tr></table>
 
-## <u> 1) Méthodes de classe </u>
+---
 
+## Méthodes de classe 
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 2 manières de les utiliser:
-
-- Soit pour mettre à jour une variable pour tous les objets (incluant la classe en elle même).
-- Soit l'utiliser comme un constructeur alternatif.
+</div>
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> Soit pour mettre à jour une variable pour tous les objets (incluant la classe en elle même).</li>
+<li> Soit l'utiliser comme un constructeur alternatif.</li>
+</ol>
+</div>
 
 ### <u> Cas 1: </u>
-
+<div style="margin-bottom:0.5cm">
+</div>
 
 ```python
 class Employee:
@@ -80,22 +99,32 @@ Après
 1.06
 1.06
 ```
----
 
-Ainsi __Employee.set_raise_amount(1.06)__ est équivalent à __Employee.raise_amount = 1.06__.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Ainsi <b>Employee.set_raise_amount(1.06)</b> est équivalent à <b>Employee.raise_amount = 1.06</b>.
+</div>
 
 ### <u> Cas 2:</u>
+<div style="margin-bottom:0.5cm">
+</div>
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Supposons que nous avons des informations d'employé écrit de la manière suivante:
-
+</div>
     emp_str_1  = 'ferdinand-mom-60000'
     emp_str_2  = 'test-user-50000'
 
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Pour pouvoir le faire coincider avec notre moule, il faut tout d'abord:
+</div>
 
-- Retirez chaque trait d'union.
-- Stockez chaque mots dans leurs variables respectives.
-
+<div style="margin-bottom:0.5cm">
+<ol>
+<li>Retirez chaque trait d'union.</li>
+<li>Stockez chaque mots dans leurs variables respectives.</li>
+</ol>
+</div>
 
 ```python
 class Employee: 
@@ -144,10 +173,11 @@ ferdinand.mom@company.com
 
 ---
 
-## <u> 2) Méthodes statiques </u>
+## Méthodes statiques
 
-Les __méthodes statiques__ ne sont que de simples fonctions. Elle ne sont accessibles que par la classe.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Les <b>méthodes statiques</b> ne sont que de simples fonctions. Elle ne sont accessibles que par la classe.
+</div>
 
 ```python
 class Employee:

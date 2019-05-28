@@ -14,7 +14,6 @@ nav_order: 1
 <h1><b>Classes & Instances</b></h1> &nbsp; <p class="label label-yellow">Moyen</p>   
 </div>
 
-
 Les __*classes*__ nous permettent d'__organiser nos fonctions/données__ de manière à pouvoir les __réutiliser__ plus __facilement__ dans le futur.
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
