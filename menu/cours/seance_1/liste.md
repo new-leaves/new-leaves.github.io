@@ -7,28 +7,46 @@ permalink: /cours/seance_1/listes
 nav_order: 3
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">  
 <link rel="icon" href="/img/logo.png">
 
+<div id="containerIntro">
+<h1><b>Les Listes</b></h1> &nbsp; <p class="label label-green">Facile</p>   
+</div>
 
-# **Liste**
+{: .no_toc }
+1. TOC
+{:toc}
 
-## <u> a) Le concept </u>
+---
 
-La __liste__ est une structure de donnée. Cette dernière permet de stocker plusieurs variables à la fois.
+## Le concept
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+La <b>liste</b> est une structure de donnée. Cette dernière permet de stocker plusieurs variables à la fois.
+</div>
+---
 
-## <u> b) La manipulation </u>
+## La manipulation
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous allons voir ces principales fonctionalités:
+</div>
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> Initilialiser une liste.</li>
+<li> Ajouter une valeur dans une liste.</li>
+<li> Compter le nombre d'éléments dans une liste.</li>
+<li> Accéder aux éléments d'une liste.</li>
+<li> Changer valeur d'une liste.</li>
+</ol>
+</div>
+---
 
-1. Initilialiser une liste.
-2. Ajouter une valeur dans une liste.
-3. Compter le nombre d'éléments dans une liste.
-4. Accéder aux éléments d'une liste.
-5. Changer valeur d'une liste.
+###  <u> Initialiser une liste </u>
 
-###  <u> 1) Initialiser une liste </u>
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ```python
 L = [] #Liste vide
@@ -38,7 +56,7 @@ print(L)
 >>> []
 ```
 
----
+<br>
 
 ```python
 L = [1, "Salut"]
@@ -48,7 +66,7 @@ print(L)
 >>> [1, 'Salut']
 ```
 
----
+<br>
 
 ```python
 type(L)
@@ -57,11 +75,14 @@ type(L)
 >>> list
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
-### <u> 2) Ajouter une valeur dans une liste </u>
+### <u> Ajouter une valeur dans une liste </u>
 
-Pour ajouter un élément dans une liste, il faut utiliser la méthode __append__ (ajouter en français).
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Pour ajouter un élément dans une liste, il faut utiliser la méthode <b>append</b> (ajouter en français).
+</div>
 
 ```python
 L = []
@@ -71,7 +92,7 @@ print(L)
 >>> []
 ```
 
----
+<br>
 
 ```python
 L.append(1)
@@ -81,7 +102,7 @@ print(L)
 >>> [1]
 ```
 
----
+<br>
 
 ```python
 L.append("Hello World!")
@@ -91,18 +112,19 @@ print(L)
 >>> [1, 'Hello World!']
 ```
 
-<br>
+<div style="margin-top:0.8cm;margin-bottom:0.5cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;- Comme vous pouvez le voir, <b>append</b> ajoute en fin de liste.
 </td></tr></table>
+</div>
 
+### <u> Compter le nombre d'éléments dans une liste </u>
 
-### <u> 3) Compter le nombre d'éléments dans une liste </u>
-
-Pour compter le nombre d'éléments dans une liste, il faut utiliser la méthode __len__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Pour compter le nombre d'éléments dans une liste, il faut utiliser la méthode <b>len</b>.
+</div>
 
 ```python
 L = [1, "Hello World!"]
@@ -112,7 +134,7 @@ print(len(L))
 >>> 2
 ```
 
----
+<br>
 
 ```python
 L.append(5.0)
@@ -122,10 +144,11 @@ print(len(L))
 >>> 3
 ```
 
-### <u> 4) Accéder aux éléments d'une liste </u>
+### <u> Accéder aux éléments d'une liste </u>
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 On peut accéder aux élements d'une liste de la même manière que les strings.
-
+</div>
 
 ```python
 L = [1, "Hello World !", 5.0]
@@ -139,8 +162,6 @@ index 0 : 1
 index 1 : Hello World !
 index 2 : 5.0
 ```
----
-
 ```python
 print(L[3]) #IndexError
 ```
@@ -157,15 +178,17 @@ IndexError                                Traceback (most recent call last)
 IndexError: list index out of range
 ```
 
-<br>
+<div style="margin-top:0.8cm;margin-bottom:0.5cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
 <br>
 &nbsp;&nbsp;&nbsp;- La liste commence à l'index <b> 0</b> et se termine à l'index <b>len(L) - 1</b>.
 </td></tr></table>
+</div>
 
+<div style="margin-bottom:0.5cm">
 On peut également accéder aux listes par derrière:
-
+</div>
 
 ```python
 L = [1, "Hello World !", 5.0]
@@ -181,10 +204,10 @@ Hello World !
 1
 ```
 
-### <u> 5) Changer valeur d'une liste </u>
+### <u> Changer valeur d'une liste </u>
 
 
-Contrairement aux strings, les __listes__ sont __mutables__, ce qui signfie qu'on __peut changer__ la __valeur__ d'un __élément d'une liste__.
+Contrairement aux strings, les <b>listes</b> sont <b>mutables</b>, ce qui signfie qu'on <b>peut changer</b> la <b>valeur</b> d'un <b>élément d'une liste</b>.
 
 ```python
 L = [1,2,3] #Liste
