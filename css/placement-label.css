@@ -3,3 +3,7 @@
 #containerIntro p {
     display: inline-block;
 }
+
+td {
+    background-color: #7253ed1c;
+  }

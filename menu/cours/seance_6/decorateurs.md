@@ -7,20 +7,32 @@ permalink: /cours/seance_6/decorateurs_getter_setters_deleters
 nav_order: 6
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">
 <link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
-# **Décorateurs - Getters / Setters / Deleters**
 
-Les __*décorateurs*__ nous permettent de définir des méthodes de classe que nous pouvons accéder comme des attributs. 
+<div id="containerIntro">
+<h1><b>Décorateurs - Getters/Setters/Deleters</b></h1> &nbsp; <p class="label label-yellow">Moyen</p>   
+</div>
 
-Cela nous permet donc d'implémenter des __*getters*__, __*setters*__ et __*deleters*__.
+{: .no_toc }
+1. TOC
+{:toc}
 
-## <u> 1) Getters </u>
+---
 
-Que se passe-t-il si nous voulons changer la valeur de __*emp_1.first*__ après l'instanciation ?
+Les <b><i>décorateurs</i></b> nous permettent de définir des méthodes de classe que nous pouvons accéder comme des attributs. 
 
+Cela nous permet donc d'implémenter des <b><i>getters</i></b>, <b><i>setters</i></b> et <b><i>deleters</i></b>.
+
+---
+
+## Getters 
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Que se passe-t-il si nous voulons changer la valeur de <b><i>emp_1.first</i></b> après l'instanciation ?<br>
 Tout devrait bien se passer non? 
-
+</div>
 
 ```python
 class Employee:    
@@ -47,16 +59,19 @@ John.Smith@email.com
 Jim Smith
 ```
 
----
-
-Comme nous pouvons le voir, l'attribut __*email*__ est resté intacte. Cela est dut au fait que __*email*__ a besoin de l'argument__*first*__  du constructeur (noté 1 sur le code ci-dessus) pour se créer. Ainsi, changer la valeur de __*first*__ via l'objet en lui-même (c-a-d *self.first*) ne va pas affecter __*email*__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Comme nous pouvons le voir, l'attribut <b><i>email</i></b> est resté intacte. <br>
+Cela est dut au fait que <b><i>email</i></b> a besoin de l'argument<b><i>first</i></b>  du constructeur (noté 1 sur le code ci-dessus) pour se créer. <br>
+Ainsi, changer la valeur de <b><i>first</i></b> via l'objet en lui-même (c-a-d <b>self.first</b>) ne va pas affecter <b><i>email</i></b>.
+<br>
+<br>
 Comment faire alors pour le changer comme les autres ?
-
-Pour cela, il faudrait que notre attribut __*email*__ ne soit pas créer durant l'appel du constructeur.
-
-Ainsi, pourquoi ne pas le créer de la même manière que __*fullname()*__, c'est-à-dire sous forme de méthode ? 
-
+<br>
+Pour cela, il faudrait que notre attribut <b><i>email</i></b> ne soit pas créer durant l'appel du constructeur.
+<br>
+<br>
+Ainsi, pourquoi ne pas le créer de la même manière que <b><i>fullname()</i></b>, c'est-à-dire sous forme de méthode ? 
+</div>
 
 ```python
 class Employee:
@@ -84,14 +99,14 @@ Jim
 Jim.Smith@email.com
 Jim Smith
 ```
----
 
-Très bien! Cependant, nous voulons comme dans le premier exemple, que __email__ reste un attribut.
-(En gros, nous voulons écrire __*emp_1.email*__ et non __*emp_1.email()*__ ) 
-
-
-C'est pourquoi, nous allons utiliser les __*getters*__, très populaire lorsqu'il s'agit de __récupérer__ des valeurs.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Très bien! Cependant, nous voulons comme dans le premier exemple, que <b>email</b> reste un attribut.
+(En gros, nous voulons écrire <b><i>emp_1.email</i></b> et non <b><i>emp_1.email()</i></b> ) 
+<br>
+<br>
+C'est pourquoi, nous allons utiliser les <b><i>getters</i></b>, très populaire lorsqu'il s'agit de <b>récupérer</b> des valeurs.
+</div>
 
 ```python
 class Employee:
@@ -121,14 +136,16 @@ Jim
 Jim.Smith@email.com
 Jim Smith
 ```
----
 
-Comme vous pouvez le voir, __*email*__ ressemble à une méthode mais est accessible de la même manière qu'un attribut. Exactement ce qu'il nous fallait !
-
-Cela est dû à __*@property*__.
-
-Nous pouvons faire de même avec __*fullname*__.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Comme vous pouvez le voir, <b><i>email</i></b> ressemble à une méthode mais est accessible de la même manière qu'un attribut. Exactement ce qu'il nous fallait !
+<br>
+<br>
+Cela est dû à <b><i>@property</i></b>.
+<br>
+<br>
+Nous pouvons faire de même avec <b><i>fullname</i></b>.
+</div>
 
 ```python
 class Employee:
@@ -162,10 +179,11 @@ Jim Smith
 ```
 ---
 
-## <u> 2) Setters </u>
+## Setters
 
-Supposons que nous voulons désormais changer le __*fullname*__ d'un employé.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Supposons que nous voulons désormais changer le <b><i>fullname</i></b> d'un employé.
+</div>
 
 ```python
 class Employee:
@@ -209,12 +227,15 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: can't set attribute
 ```
----
 
-Python nous renvoie une erreur. Cela signifie qu'il n'est pas possible de changer directement __*fullname*__.
-
-Pour cela, nous allons utiliser des __*setters*__. Ces derniers sont utilisés pour __changer__ des valeurs.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Python nous renvoie une erreur. <br>
+Cela signifie qu'il n'est pas possible de changer directement <b><i>fullname</i></b>.
+<br>
+Pour cela, nous allons utiliser des <b><i>setters</i></b>.
+<br>
+Ces derniers sont utilisés pour <b>changer</b> des valeurs.
+</div>
 
 ```python
 class Employee:
@@ -258,11 +279,13 @@ Ferdinand.Mom@email.com
 -> Fullname
 Ferdinand Mom
 ```
+---
 
-## <u> 3) Deleters </u>
+## Deleters
 
-Désormais, nous voulons supprimer le __*fullname*__ d'un employé.
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Désormais, nous voulons supprimer le <b><i>fullname</i></b> d'un employé.
+</div>
 
 ```python
 class Employee:

@@ -12,7 +12,7 @@ nav_order: 4
 
 
 <div id="containerIntro">
-<h2><b>Méthodes de classe / Méthodes statiques</b></h2> &nbsp; <p class="label label-yellow">Moyen</p>   
+<h1><b>Méthodes de classe / statiques</b></h1> &nbsp; <p class="label label-yellow">Moyen</p>   
 </div>
 
 {: .no_toc }
@@ -48,6 +48,8 @@ Il existe 3 types de méthodes:
 <li> Soit l'utiliser comme un constructeur alternatif.</li>
 </ol>
 </div>
+
+---
 
 ### <u> Cas 1 </u>
 <div style="margin-bottom:0.5cm">
