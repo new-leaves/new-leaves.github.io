@@ -14,4 +14,4 @@ nav_order: 1
 <h1><b>Les Dictionnaires</b></h1> &nbsp; <p class="label label-yellow">Moyen</p>   
 </div>
 
-<a href = "https://www.programiz.com/python-programming/dictionary">RTFM :D</a>
+<a href = "https://www.programiz.com/python-programming/dictionary" target="_blank">RTFM :D</a>

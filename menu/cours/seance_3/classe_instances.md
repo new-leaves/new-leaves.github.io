@@ -154,10 +154,12 @@ Il y a beaucoup à dire ici:
 </div>
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
-<table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;Lors de <b> l'instanciation </b>, il ne faut pas ajouter <b> self </b> en tant qu'argument.
+</div>
+
+<div style="margin-bottom:0.5cm">
+<table><tr><td>
+Lors de <b> l'instanciation </b>, il ne faut pas ajouter <b> self </b> en tant qu'argument.
 </td></tr></table>
 </div>
 
