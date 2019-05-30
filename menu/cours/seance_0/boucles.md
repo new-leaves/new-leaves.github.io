@@ -140,13 +140,15 @@ Vous venez de voir une boucle <b>while</b>.
 Cette dernière va continuer de répéter les instructions à l'intérieure d'elle <b>tant que "nbPeople > 0" est</b> <font color = 'green'>True</font>.
 </div>
 
-<div style="margin-bottom:0.8cm">
-<table><tr><td>
+<div style = "margin-top:0.7cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
+</div>
+
+<div style="margin-bottom:0.5cm">
+<table><tr><td>
+- Si vous oubliez de <b>décrémenter</b> (d'ajouter un <b>loop breaker</b>), vous allez entrer dans une <b>boucle infinie</b> ! 
 <br>
-&nbsp;&nbsp;&nbsp;- Si vous oubliez de <b>décrémenter</b> (d'ajouter un <b>loop breaker</b>), vous allez entrer dans une <b>boucle infinie</b> ! 
-<br>
-&nbsp;&nbsp;&nbsp;- En effet, <b>nbPeople</b> ne sera <b>jamais égal à 0</b> et donc <b>"nbPeople > 0" SERA TOUJOURS</b> <font color = 'green'>True</font>.
+- En effet, <b>nbPeople</b> ne sera <b>jamais égal à 0</b> et donc <b>"nbPeople > 0" SERA TOUJOURS</b> <font color = 'green'>True</font>.
 </td></tr></table>
 </div>
 
@@ -333,11 +335,11 @@ for i in range(5, 0, -1): #Prend les valeurs de 0 à 4 avec un pas de 2
 1
 ```
 
-<div style="margin-top:0.8cm">
-<table><tr><td>
+<div style = "margin-top:0.7cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;Par convention, on commence à <b>0</b>. Si on veut que notre instruction se répète <b>20 fois</b>, soit :
+</div>
+<div style="margin-top:0.5cm">
+<table><tr><td>Par convention, on commence à <b>0</b>. Si on veut que notre instruction se répète <b>20 fois</b>, soit :
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- range(0, 20) (de 0 à 19 -> il y a 20 chiffres)
 <br>
