@@ -7,6 +7,9 @@ permalink: /pratique/td/td_0
 nav_order: 1
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">
+<p class="label label-green">Facile</p>   
+
 Avant de commencer, voici les consignes à respecter:
 
  
@@ -17,4 +20,4 @@ Avant de commencer, voici les consignes à respecter:
 
 <u>Voici le sujet: </u>
 
-<a href="/docs/td_0/TD-0-warmUp.pdf" target="_blank"> <b>TD_0_WarmUp.pdf</b></a>
+<a href="/docs/td_0/TD-0-WarmUp.pdf" target="_blank"> <b>TD-0-WarmUp.pdf</b></a>

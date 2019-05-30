@@ -7,6 +7,9 @@ permalink: /pratique/td/td_2
 nav_order: 3
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">
+<p class="label label-yellow">Moyen</p>
+
 Avant de commencer, voici les consignes à respecter:
 
 
@@ -17,4 +20,4 @@ Avant de commencer, voici les consignes à respecter:
 
 <u>Voici le sujet: </u>
 
-<a href="/docs/td_2/TD-2-listes.pdf" target="_blank"> <b>TD_2_listes.pdf</b></a>
+<a href="/docs/td_2/TD-2-Listes.pdf" target="_blank"> <b>TD-2-Listes.pdf</b></a>

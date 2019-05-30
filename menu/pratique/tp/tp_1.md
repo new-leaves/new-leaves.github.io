@@ -7,6 +7,9 @@ permalink: /pratique/tp/tp_1
 nav_order: 1
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">
+<p class="label label-yellow">Moyen</p>
+
 Avant de commencer le TP, voici les prérequis:
 
 1. Activez votre environnement Python. <b>(cf <a href="/docs/survival_kit.pdf" target="_blank"> survival_kit.pdf</a> > CheatSheet > VirtualEnv)</b>.
@@ -16,6 +19,6 @@ Avant de commencer le TP, voici les prérequis:
 
 <u> Voici le sujet: </u>
 
-<a href="/docs/tp_1/tp_1_puissance_4.pdf" target="_blank"> <b>TP_1_Puissance_4.pdf</b></a>
+<a href="/docs/tp_1/TP-1-Puissance4.pdf" target="_blank"> <b>TP-1-Puissance4.pdf</b></a>
 
 

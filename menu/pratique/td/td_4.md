@@ -7,6 +7,9 @@ permalink: /pratique/td/td_4
 nav_order: 5
 ---
 
+<link rel="stylesheet" href="/css/placement-label.css">
+<p class="label label-red">Difficile</p>
+
 Avant de commencer, voici les consignes à respecter:
 
 
@@ -17,4 +20,4 @@ Avant de commencer, voici les consignes à respecter:
 
 <u>Voici le sujet: </u>
 
-<a href="/docs/td_4/TD-4-Matrices.pdf" target="_blank"> <b>TD_4_Matrices.pdf</b></a>
+<a href="/docs/td_4/TD-4-Matrices.pdf" target="_blank"> <b>TD-4-Matrices.pdf</b></a>
