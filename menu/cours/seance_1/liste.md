@@ -112,13 +112,16 @@ print(L)
 >>> [1, 'Hello World!']
 ```
 
-<div style="margin-top:0.8cm;margin-bottom:0.5cm">
-<table><tr><td>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;- Comme vous pouvez le voir, <b>append</b> ajoute en fin de liste.
+</div>
+
+<div style = "margin-bottom:0.8cm">
+<table><tr><td>
+ Comme vous pouvez le voir, <b>append</b> ajoute en fin de liste.
 </td></tr></table>
 </div>
+
 
 ### <u> Compter le nombre d'éléments dans une liste </u>
 
@@ -178,11 +181,13 @@ IndexError                                Traceback (most recent call last)
 IndexError: list index out of range
 ```
 
-<div style="margin-top:0.8cm;margin-bottom:0.5cm">
-<table><tr><td>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;- La liste commence à l'index <b> 0</b> et se termine à l'index <b>len(L) - 1</b>.
+</div>
+
+<div style = "margin-bottom:0.5cm">
+<table><tr><td>
+La liste commence à l'index <b> 0</b> et se termine à l'index <b>len(L) - 1</b>.
 </td></tr></table>
 </div>
 
@@ -206,8 +211,9 @@ Hello World !
 
 ### <u> Changer valeur d'une liste </u>
 
-
+<div style = "margin-top:0.7cm;margin-bottom:0.5cm">
 Contrairement aux strings, les <b>listes</b> sont <b>mutables</b>, ce qui signfie qu'on <b>peut changer</b> la <b>valeur</b> d'un <b>élément d'une liste</b>.
+</div>
 
 ```python
 L = [1,2,3] #Liste
