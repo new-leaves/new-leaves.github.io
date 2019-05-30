@@ -66,13 +66,13 @@ coucou
 ```python
 >>> 'Hello World!'
 ```
-<div style = "margin-top:0.8cm">
-<table><tr><td>
+<div style = "margin-top:0.8cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;La valeur précédente de "<b>coucou</b>"  a été remplacé par la récente !
-</td></tr></table>
 </div>
+<table><tr><td>
+La valeur précédente de "<b>coucou</b>"  a été remplacé par la récente !
+</td></tr></table>
+
 ---
 
 ## La convention 
@@ -144,18 +144,19 @@ type(coucou)
 >>> str
 ```
 
-<div style = "margin-top:0.8cm">
-<table><tr><td>
+<div style = "margin-top:0.8cm;margin-bottom:0.5cm">
 <font color='red'> <u> Remarque: </u> </font> 
+</div>
+
+<div style = "margin-bottom:0.5cm">
+<table><tr><td>
+- Pour les strings, vous pouvez soit écrire avec <b>" "</b> ou bien <b>' '</b>. Tout est une question de style ! 
 <br>
-&nbsp;&nbsp;&nbsp;- Pour les strings, vous pouvez soit écrire avec <b>" "</b> ou bien <b>' '</b>. Tout est une question de style ! 
-<br>
-&nbsp;&nbsp;&nbsp;- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre <b>" "</b> et <b>' '</b>.
+- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre <b>" "</b> et <b>' '</b>.
 </td></tr></table>
 </div>
 
 Une <b>string</b> correspond à un enchaînement de mots (caractères). Chaque caractère possède une valeur. On appelle cette valeur le <b>code ASCII</b>.
-
 
 ---
 
@@ -163,7 +164,9 @@ Une <b>string</b> correspond à un enchaînement de mots (caractères). Chaque c
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Si la <b>variable</b> est un <b>nombre</b> (<b>int</b> ou <b>float</b>), vous pouvez faire les opérations suivantes:
+</div>
 
+<div style="margin-bottom:0.5cm">
 <ol>
 <li> +</li>
 <li> -</li>
@@ -193,6 +196,7 @@ Si la <b>variable</b> est une <b>string</b>, vous pouvez faire les opérations s
 2. Multiplier avec un entier.
 3. Accéder à un caractère précis.
 
+---
 
 ### <u> Concaténation </u>
 
@@ -256,7 +260,7 @@ IndexError: string index out of range
 ```
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
-&nbsp;<font color ='red'> <u> Remarque 1: </u> </font>
+<font color ='red'> <u> Remarque 1: </u> </font>
 </div>
 
 ```python
@@ -268,13 +272,14 @@ type(a)
 >>> str
 ```
 
-<div style ="margin-top:0.8cm;margin-bottom:0.7cm">
-<table><tr><td>
+<div style ="margin-top:0.5cm;margin-bottom:0.5cm">
 <font color ='red'> <u> Remarque 2: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;- <b> print() </b> est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
-</td></tr></table>
 </div>
+<table><tr><td>
+- <b> print() </b> est une fonction prédéfinie de Python. Elle permet d'afficher le résultat dans la console.
+</td></tr></table>
+
+
 ---
 
 Nous pouvons également faire ce qu'on appelle des <b>déclarations mulitples de variables</b>.
