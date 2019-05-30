@@ -25,7 +25,7 @@ nav_order: 2
 
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
-Une <b>string</b> est une suite de caractères. Chaque caractère possède une valeur. On appelle cette valeur le code <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange"><b>ASCII</b> </a>.
+Une <b>string</b> est une suite de caractères. Chaque caractère possède une valeur. On appelle cette valeur le code <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange" target="_blank"><b>ASCII</b> </a>.
 </div>
 
 ```python
@@ -36,14 +36,14 @@ s = "salut" #Ceci est une string
 ##  La convention
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
-<table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;- Pour les strings, vous pouvez soit écrire avec " " ou bien ' '. Tout est une question de style !
-<br>
-&nbsp;&nbsp;&nbsp;- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre " " et ' '. 
-</td></tr></table>
 </div>
+<table><tr><td>
+- Pour les strings, vous pouvez soit écrire avec " " ou bien ' '. Tout est une question de style !
+<br>
+- Cependant, dans d'autres langage tel que le C, il existe bien une distinction entre " " et ' '. 
+</td></tr></table>
+
 ---
 
 ## La manipulation
