@@ -6,35 +6,57 @@ parent: Séance 7
 permalink: /cours/seance_7/methodes_speciales
 nav_order: 7
 ---
+
+<link rel="stylesheet" href="/css/placement-label.css">
 <link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
-# **Méthodes spéciales - Magic/Dunder méthodes**
 
-Les __dunders methods__ sont facilement repérables car ces dernières commencent et finissent par des '__'.
+<div id="containerIntro">
+<h1><b>Magic/Dunder méthodes</b></h1> &nbsp; <p class="label label-red">Difficile</p>   
+</div>
 
-**<u> Exemple: </u>** 
+{: .no_toc }
+1. TOC
+{:toc}
+
+---
+
+Les <b>dunders methods</b> sont facilement repérables car ces dernières commencent et finissent par des "__".
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<font color="green"><u> Exemple: </u> </font>
+</div>
 <table><tr><td>
-<font color ="green"> ___init___() </font>
+<b>___init___()</b>
 </td></tr></table>
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Ce sont des fonctions prédéfinies dans Python.
+<br>
+Voici la liste des dunders methods: 
+<a href = "https://docs.python.org/3/reference/datamodel.html#special-method-names" target="_blank">https://docs.python.org/3/reference </a>
+</div>
 
-Voici la liste des dunders methods:
-
-<a href = "https://docs.python.org/3/reference/datamodel.html#special-method-names">https://docs.python.org/3/reference/datamodel.html#special-method-names </a>
-
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <table><tr><td>
 <font color = "red"> <u> Remarque: </u></font>
 <br>
-&nbsp;&nbsp;&nbsp;"Dunder" = <b> D </b>__ouble __<b>Under</b>__score.
+&nbsp;&nbsp;&nbsp;"Dunder" = <b><i>D</i></b>ouble <b><i>under</i></b>score.
 </td></tr></table>
+</div>
 
-Ils sont utilisés pour imiter les types prédéfinis de Python. Par exemple, nous pouvons avoir la longueur d'une string (fonction prédéfinie dans Python) mais pas la longueur d'une instance de classe. 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Ils sont utilisés pour imiter les types prédéfinis de Python.
+<br>
+Par exemple, nous pouvons avoir la longueur d'une string (fonction prédéfinie dans Python) mais pas la longueur d'une instance de classe. 
+<br>
+<br>
+C'est pourquoi, nous allons utiliser les <b>dunders methods</b> pour apporter de nouvelles fonctionalités à nos instances !
+</div>
 
-C'est pourquoi, nous allons utiliser les __dunders methods__ pour apporter de nouvelles fonctionalités à nos instances !
-
-**<u> Par exemple: </u>**
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<font color="green"><u> Exemple: </u> </font>
+</div>
 
 ```python
 class NoLenSupport:
@@ -57,7 +79,7 @@ TypeError Traceback (most recent call last)
 
 TypeError: object of type 'NoLenSupport' has no len()
 ```
----
+<br>
 
 ```python
 class LenSupport:
@@ -71,12 +93,11 @@ len(obj)
 >>> 42
 ```
 
----
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Comment cela marche-t-il ?
-
+<br>
 En fait, lorsque vous faîtes:
-
+</div>
 
 ```python
 print(len('Hello'))
@@ -85,8 +106,9 @@ print(len('Hello'))
 >>> 5
 ```
 
-Python fait ceci:
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<b>Python</b> fait ceci:
+</div>
 
 ```python
 print('Hello'.__len__())
@@ -95,23 +117,33 @@ print('Hello'.__len__())
 >>> 5
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<b>Ainsi, les dunders methods permettent de rendre vos classes plus puissantes en ajoutant des caractéristiques jusqu'alors réserver aux types prédéfinis. 
+</b>
+</div>
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<u>Voici une liste non exhaustive de l'utilisation des dunders methods:</u>
+</div>
+
+<div style="margin-bottom:0.5cm">
+<ol>
+<li> Initialisations de nouveaux objets. </li>
+<li> Représentation des objets.</li>
+<li> Itération.</li>
+<li> Operators Overloading.</li>
+<li> Les objets Python "callable".</li>
+<li> Gestionnaire de contexte.</li>
+</ol>
+</div>
+
 ---
 
-Ainsi, les dunders methods permettent de rendre vos classes plus puissantes en ajoutant des caractéristiques jusqu'alors réserver aux types prédéfinis. 
+## Initialisations de nouveaux objets 
 
-<u> Voici une liste non exhaustive de l'utilisation des dunders methods: </u>
-
-1. Initialisations de nouveaux objets.
-2. Représentation des objets.
-3. Itération.
-4. Operators Overloading
-5. Les objets Python "callable".
-6. Gestionnaire de contexte.
-
-## <u> 1) Initialisations de nouveaux objets </u>
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous utilisons des dunders methods pour créer un constructeur qui à son tour, va créer nos objets.
-
+</div>
 
 ```python
 class Account:
@@ -122,17 +154,25 @@ class Account:
 
 acc = Account('bob', 10)
 ```
+---
 
-## <u> 2) Représentation des objets </u>
+## Représentation des objets
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Vous serez amené à documenter vos objets pour que d'autres personnes puissent s'y retrouver en lisant votre code.
-On appele cela faire une "__string representation__".
+On appele cela faire une "<b>string representation</b>".
+</div>
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Il y a 2 types de string representation:
+</div>
 
-- Une pour les développeurs = **\__repr__()**
-- Une pour les clients = **\__str__()**
-
+<div style="margin-bottom:0.7cm">
+<ol>
+<li> Une pour les développeurs = <b>__repr__()</b> </li>
+<li> Une pour les clients = <b>__str__()</b> </li>
+</ol>
+</div>
 
 ```python
 class Account:
@@ -166,13 +206,20 @@ str(acc)
 >>> 'Account of bob with starting amount: 10'
 ```
 
-## <u> 3) Itération </u>
+---
 
+## Itération 
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Créons un système de transaction. Elle sera composée de 2 méthodes:
+</div>
 
-- __add_transaction__(self, amount) qui permet de faire une transaction.
-- __balance__(self) qui permet de consulter son compte bancaire.
-
+<div style="margin-bottom:0.7cm">
+<ol>
+<li> <b>add_transaction</b>(self, amount) qui permet de faire une transaction. </li>
+<li> <b>balance</b>(self) qui permet de consulter son compte bancaire. </li>
+</ol>
+</div>
 
 ```python
 class Account:
@@ -203,17 +250,26 @@ acc.balance
 >>> 80
 ```
 
----
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Désormais, nous voulons savoir plusieurs choses:
+</div>
 
-1. Combien de transactions ai-je fais au total?
-2. Puis-je lister toutes mes transactions ? 
+<div style="margin-bottom:0.5cm">
+<ol>
+<li>Combien de transactions ai-je fais au total? </li>
+<li> Puis-je lister toutes mes transactions ? </li>
+</ol>
+</div>
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ### <u> Cas 1: Combien de transactions ai-je fais au total? </u>
 
-Etant donné que chaque transaction est stocké dans la liste __**transactions**__, nous pouvons nous dire que le nombre de transactions total correpond à la longueur de la liste? 
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Etant donné que chaque transaction est stocké dans la liste <b><i>transactions</i></b>, nous pouvons nous dire que le nombre de transactions total correpond à la longueur de la liste? 
+</div>
 
 ```python
 len(acc)
@@ -230,7 +286,9 @@ TypeError Traceback (most recent call last)
 TypeError: object of type 'Account' has no len()
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Comme mentioné plus haut, nous ne pouvons pas utiliser les fonctions prédéfinies de Python sur nos instances. Utilisons donc les dunders methods!
+</div>
 
 
 ```python
@@ -270,12 +328,13 @@ len(acc)
 >>> 5
 ```
 
-<table><tr><td>
+<div style="margin-top:0.7cm;margin-bottom:0.3cm">
 <font color = "red"> <u> Remarque: </u></font>
-<br>
-&nbsp;&nbsp;&nbsp;Une alternative sans dunders methods est possible:
-</td></tr></table>
+</div>
 
+<div style="margin-bottom:0.5cm">
+Une alternative sans dunders methods est possible.
+</div>
 
 ```python
 print(len(acc.transactions))
@@ -283,10 +342,14 @@ print(len(acc.transactions))
 ```python
 >>> 5
 ```
----
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ### <u> Cas 2: Puis-je lister toutes mes transactions ? </u>
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+</div>
 
 ```python
 class Account:
@@ -315,8 +378,9 @@ acc.add_transaction(50)
 acc.add_transaction(-20)
 acc.add_transaction(30) 
 ```
-
-Essayons de lister toutes nos transactions à l'aide d'une boucle __for__.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Essayons de lister toutes nos transactions à l'aide d'une boucle <b>for</b>.
+</div>
 
 
 ```python
@@ -337,9 +401,9 @@ TypeError Traceback (most recent call last)
 TypeError: 'Account' object is not iterable
 ```
 
----
-
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Utilisons les dunders methods.
+</div>
 
 
 ```python
@@ -388,7 +452,9 @@ for elt in acc:
 30
 ```
 
-Nous pouvons même accéder à acc comme si c'était une liste.
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Nous pouvons même accéder à <b>acc</b> comme si c'était une liste.
+</div>
 
 
 ```python
@@ -398,11 +464,14 @@ acc[0]
 >>> 20
 ```
 
-<table><tr><td>
-<font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;Une alternative sans dunders methods est possible:
-</td></tr></table>
+<div style="margin-top:0.7cm;margin-bottom:0.3cm">
+<font color = "red"> <u> Remarque: </u></font>
+</div>
+
+<div style="margin-bottom:0.5cm">
+Une alternative sans dunders methods est possible.
+</div>
+
 
 ```python
 for elt in acc.transactions:
@@ -415,11 +484,13 @@ for elt in acc.transactions:
     -20
     30
 
+---
 
-## <u> 4) Operators overloading </u>
+## Operators overloading
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Nous voulons comparer la somme d'argent entre deux comptes.
-
+</div>
 
 ```python
 acc1 = Account('Ferdi', 100)
@@ -447,10 +518,10 @@ TypeError Traceback (most recent call last)
 TypeError: '>' not supported between instances of 'Account' and 'Account'
 ```
 
----
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Puisqu'on ne peut pas comparer des instances de classe entre eux mais seulement des entiers, nous devons utiliser les dunders methods pour adapter les opérateurs de comparaisons aux instances.
-
+</div>
 
 ```python
 class Account:
@@ -495,16 +566,28 @@ False
 False
 ```
 
-## <u> 5) Les objets Python "callable" </u>
+---
 
-A l'aide des dunders methods, vous pouvez faire en sorte qu'un objet soit "callable". Il suffit d'utiliser la dunder method **\__call__()**.
+## Les objets Python "callable"
 
-Par exemple, pour notre classe __Account__ nous pouvons faire en sorte qu'elle affiche:
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+A l'aide des dunders methods, vous pouvez faire en sorte qu'un objet soit "callable". Il suffit d'utiliser la dunder method <b>__call__()</b>.
+</div>
+
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Par exemple, pour notre classe <b>Account</b> nous pouvons faire en sorte qu'elle affiche:
+</div>
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <table><tr><td>
-- <font color = "green"> la somme initiale.</font> <br>
-- <font color = "green"> toutes les transactions.</font> <br>
-- <font color = "green"> l'argent restant sur le compte. </font>
+<ol>
+<li> la somme initiale.</li>
+<li> toutes les transactions.</li>
+<li> l'argent restant sur le compte.</li>
+</ol>
 </td></tr></table>
+</div>
 
 ```python
 class Account:
@@ -559,11 +642,16 @@ Transactions:
 Balance: 80
 ```
 
-## <u> 6) Gestionnaire de contexte </u>
+---
 
-Un *gestionnaire de contexte* est un simple "protocole" que votre instance de classe doit suivre pour pouvoir utiliser le mot-clef __with__.
+## Gestionnaire de contexte 
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Un <i>gestionnaire de contexte</i> est un simple "protocole" que votre instance de classe doit suivre pour pouvoir utiliser le mot-clef <b>with</b>.
+<br>
+<br>
 Suivons l'exemple suivant:
+</div>
 
 ```python
 def my_function():
@@ -607,11 +695,17 @@ Exception Traceback (most recent call last)
 Exception: It should not break down everything.
 ```
 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Que s'est-il passé ici ? 
-
-Le __try / finally__ s'assure que __"After"__ sera toujours affiché même si __"my_function()"__ ne s'exécute pas.
-
-Puisque c'est une fonctionnalité utile, pourquoi ne pas factoriser le code dans une classe ? Ainsi, cela évite d'avoir des blocs de __try / finally__ dans notre code.
+<br>
+<br>
+Le <b>try / finally</b> s'assure que <b>"After"</b> sera toujours affiché même si <b>"my_function()"</b> ne s'exécute pas.
+<br>
+<br>
+Puisque c'est une fonctionnalité utile, pourquoi ne pas rassembler le code dans une classe ? 
+<br>
+Ainsi, cela évite d'avoir des longs blocs de <b>try / finally</b> dans notre code.
+</div>
 
 
 ```python
@@ -652,27 +746,51 @@ Exception                                 Traceback (most recent call last)
 Exception: It should not break down everything.
 ```
 
-<u> Il y a beaucoup de choses à dire ici: </u>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Il y a beaucoup de choses à dire ici:
+</div>
 
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <table><tr><td>
-- Pour pouvoir imiter le <b>try / finally</b>, il faut appeler ces 2 dunders methods: <b>__enter__()</b>  et <b>__exit__()</b>.
-<br>
-    - <b>__exit__()</b> prend 3 arguments ("self" non inclus) qui ont pour nom:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b> exc_type </b> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b> exc_value </b> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b> traceback </b> <br> 
-- Ensuite, il faut appeler la classe __ContextManager__ avec le mot-clef <b> with </b>. Ce dernier va appeler dans l'ordre suivant:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>__enter__()</b> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>my_function()</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>__exit__()</b>
-</td></tr></table>
+<ol>
 
+<li> Pour pouvoir imiter le <b>try / finally</b>, il faut appeler ces 2 dunders methods: </li>
+&nbsp;&nbsp;- <b>__enter__()</b>
+<br> 
+&nbsp;&nbsp;- <b>__exit__()</b>. 
 
-<table><tr><td>
-<font color = "red"> <u> Remarque: </u> </font>
 <br>
-&nbsp;&nbsp;&nbsp;Si vous avez le cas suivant:
+<br>
+
+<li> <b>__exit__()</b> prend 3 arguments ("self" non inclus) qui ont pour nom: </li>
+&nbsp;&nbsp;- <b> exc_type </b> 
+<br>
+&nbsp;&nbsp;- <b> exc_value </b> 
+<br>
+&nbsp;&nbsp;- <b> traceback </b> 
+
+<br>
+<br>
+
+<li> Ensuite, il faut appeler la classe <b>ContextManager</b> avec le mot-clef <b> with </b>. Ce dernier va appeler dans l'ordre suivant: </li>
+&nbsp;&nbsp;- <b>__enter__()</b> 
+<br>
+&nbsp;&nbsp;- <b>my_function()</b>
+<br>
+&nbsp;&nbsp;- <b>__exit__()</b>
+
+</ol>
 </td></tr></table>
+</div>
+
+<div style="margin-top:0.7cm;margin-bottom:0.3cm">
+<font color = "red"> <u> Remarque: </u></font>
+</div>
+
+<div style="margin-bottom:0.5cm">
+Si vous avez le cas suivant:
+</div>
 
 ```python
 class ContextManager():
@@ -716,11 +834,11 @@ Exception                                 Traceback (most recent call last)
 Exception: It should not break down everything.
 ```
 
-<table><tr><td>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Comme vous aviez pu le remarquer, la valeur de retour de <b>__enter()__</b> est stocké dans <b> c </b> !
-
-Un autre exemple pour mieux comprendre
-</td></tr></table>
+<br>
+Un autre exemple pour mieux comprendre.
+</div>
 
 ```python
 class ContextManager():
@@ -744,13 +862,16 @@ with ContextManager() as c:
     GLOUGLOU
     Après
 ```
-<table><tr><td>
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 Cela semble ne marcher qu'avec <b>__enter()__</b> !
-</td></tr></table>
+</div>
 
----
 
-Implémentons dans notre classe __Account__ la possibilité de revenir en arrière. Plus précisément, lorsqu'on veut retirer de l'argent sur notre compte: 
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+Implémentons dans notre classe <b>Account</b> la possibilité de revenir en arrière. Plus précisément, lorsqu'on veut retirer de l'argent sur notre compte: 
+</div>
+
 <table><tr><td>
  <b> Si </b> le retrait fait basculer notre compte bancaire dans le négatif, <b> Alors </b> on laisse le compte bancaire comme il était auparavant.
 </td></tr></table>
