@@ -149,12 +149,13 @@ else:
     print("www.pole-emploi.com")
 ```
 
-
-<div style = "margin-top:0.8cm">
-<table><tr><td>
+<div style = "margin-top:0.7cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;On peut utiliser autant de "<b>elif</b>" qu'on le souhaite (<b>if / elif / ... / elif / else</b>).
+</div>
+
+<div style = "margin-top:0.5cm">
+<table><tr><td>
+On peut utiliser autant de "<b>elif</b>" qu'on le souhaite (<b>if / elif / ... / elif / else</b>).
 </td></tr></table>
 </div>
 
