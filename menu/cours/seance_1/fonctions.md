@@ -172,6 +172,9 @@ Energie restante: 40
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
 <u>Plusieurs points à mentioner:</u>
+</div>
+
+<div style = "margin-bottom:0.5cm">
 <ol>
 <li> Une fonction en Python commence par le mot-clef <b>def</b>.</li>
 <li> Ce qu'il y a entre parenthèse après le nom de la fonction s'appelle <b>argument</b>.</li>
@@ -179,11 +182,11 @@ Energie restante: 40
 </ol>
 </div>
 
-<div style="margin-top:0.8cm">
-<table><tr><td>
+<div style = "margin-top:0.7cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;- Une fonction n'est pas obligée d'avoir des arguments !
+</div>
+<div style="margin-bottom:0.5cm">
+<table><tr><td>- Une fonction n'est pas obligée d'avoir des arguments !
 </td></tr></table>
 </div>
 
@@ -309,15 +312,14 @@ Energie restante: 40
 Ce que vous venez de voir est la notion de <b>scope</b>.
 </div>
 
-<div style="margin-top:0.7cm">
-<table><tr><td>
+<div style = "margin-top:0.7cm;margin-bottom:0.5cm">
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;- Comme dit auparavant, <b>print()</b> ne retourne pas de valeurs mais <b>affiche</b> dans la console. 
-<br>
-&nbsp;&nbsp;&nbsp;- Par conséquent, si on ne fait que <b>return</b>, le résultat <b>ne s'affichera pas dans la console</b>.
-</td></tr></table>
 </div>
+<table><tr><td>
+- Comme dit auparavant, <b>print()</b> ne retourne pas de valeurs mais <b>affiche</b> dans la console. 
+<br>
+- Par conséquent, si on ne fait que <b>return</b>, le résultat <b>ne s'affichera pas dans la console</b>.
+</td></tr></table>
 
 ---
 
