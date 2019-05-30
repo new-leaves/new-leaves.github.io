@@ -106,10 +106,12 @@ En fait, Python le supporte mais nous devons trouver une autre manière de l'exp
 
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
-<table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;En Java, le code au-dessus aurait marché correctement.
+</div>
+
+<div style="margin-bottom:0.5cm">
+<table><tr><td>
+En Java, le code au-dessus aurait marché correctement.
 </td></tr></table>
 </div>
 
