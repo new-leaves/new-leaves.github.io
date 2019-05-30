@@ -284,15 +284,6 @@ a.button {
 /*HomePage*/
 
 #conteneur
-{   
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#conteneur
 {
     display: flex;
     flex-direction: row;
@@ -309,6 +300,13 @@ a.button {
 .element:nth-child(2) /* On prend le deuxième bloc élément */
 {
   align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+  transform: translate(35%)
+}
+
+.element:nth-child(3) /* On prend le deuxième bloc élément */
+{
+  align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+  transform: translate(40%)
 }
 
 /*line in the HomePage*/
