@@ -8,7 +8,6 @@ nav_order: 7
 ---
 
 <link rel="stylesheet" href="/css/placement-label.css">
-<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
 
 <div id="containerIntro">

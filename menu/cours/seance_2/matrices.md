@@ -8,7 +8,6 @@ nav_order: 2
 ---
 
 <link rel="stylesheet" href="/css/placement-label.css">  
-<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
 
 <div id="containerIntro">
 <h1><b>Les Matrices</b></h1> &nbsp; <p class="label label-yellow">Moyen</p>   

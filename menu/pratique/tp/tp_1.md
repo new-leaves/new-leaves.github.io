@@ -7,9 +7,6 @@ permalink: /pratique/tp/tp_1
 nav_order: 1
 ---
 
-<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
-
-
 Avant de commencer le TP, voici les prérequis:
 
 1. Activez votre environnement Python. <b>(cf <a href="/docs/survival_kit.pdf" target="_blank"> survival_kit.pdf</a> > CheatSheet > VirtualEnv)</b>.

@@ -7,8 +7,6 @@ permalink: /pratique/td/td_2
 nav_order: 3
 ---
 
-<link rel="shortcut icon" href="https://new-leaves.github.io/img/favicon/favicon.ico">
-
 Avant de commencer, voici les consignes à respecter:
 
 
