@@ -38,10 +38,12 @@ Voici la liste des dunders methods:
 </div>
 
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
-<table><tr><td>
 <font color = "red"> <u> Remarque: </u></font>
-<br>
-&nbsp;&nbsp;&nbsp;"Dunder" = <b><i>D</i></b>ouble <b><i>under</i></b>score.
+</div>
+
+<div style="margin-bottom:0.5cm">
+<table><tr><td>
+"Dunder" = <b><i>D</i></b>ouble <b><i>under</i></b>score.
 </td></tr></table>
 </div>
 
