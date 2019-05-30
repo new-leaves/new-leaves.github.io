@@ -116,13 +116,12 @@ Plusieurs choses à dire ici:
 </ol>
 </div>
 
-<div style="margin-top:0.7cm;margin-bottom:0.5cm">
-<table><tr><td>
 <font color ="red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;<b>super().__init__(first, last, pay) <=> Employee().__init__(first, last, pay)</b>
-</td></tr></table>
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
 </div>
+<table><tr><td>
+<b>super().__init__(first, last, pay) <=> Employee().__init__(first, last, pay)</b>
+</td></tr></table>
 
 ---
 
