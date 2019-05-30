@@ -85,10 +85,11 @@ type(my_tuple)
 >>> tuple
 ```
 <div style="margin-top:0.7cm;margin-bottom:0.5cm">
-<table><tr><td>
 <font color = "red"> <u> Remarque: </u> </font>
-<br>
-&nbsp;&nbsp;&nbsp;- Si le <b>tuple</b> ne contient qu'<b>un seul élement</b>, alors il ne sera pas de type <b>tuple</b>.
+</div>
+
+<div style = "margin-bottom:1cm">
+<table><tr><td>Si le <b>tuple</b> ne contient qu'<b>un seul élement</b>, alors il ne sera pas de type <b>tuple</b>.
 </td></tr></table>
 </div>
 
