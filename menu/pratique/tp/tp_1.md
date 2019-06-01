@@ -4,7 +4,7 @@ title: TP 1
 grand_parent: Pratique
 parent: TP
 permalink: /pratique/tp/tp_1
-nav_order: 1
+nav_order: 2
 ---
 
 <link rel="stylesheet" href="/css/placement-label.css">
