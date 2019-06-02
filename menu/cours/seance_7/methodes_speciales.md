@@ -183,7 +183,7 @@ class Account:
         self.transactions = []
 
     def __repr__(self):
-        return 'Account({!r}, {!r})'.format(self.owner, self.amount)
+        return 'Account({}, {})'.format(self.owner, self.amount)
 
     def __str__(self):
         return 'Account of {} with starting amount: {}'.format(
