@@ -5,6 +5,12 @@
   font-family: 'Josefin Slab', serif;
 }
 */
+/*Disable horizontal scrollbar*/
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Josefin Slab', serif;
@@ -300,13 +306,13 @@ a.button {
 .element:nth-child(2) /* On prend le deuxième bloc élément */
 {
   align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
-  transform: translate(35%)
+  transform: translate(10%)
 }
 
 .element:nth-child(3) /* On prend le deuxième bloc élément */
 {
-  align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
-  transform: translate(40%)
+  align-self: flex-start; /* Seul ce bloc sera aligné à la fin */
+  transform: translate(10%)
 }
 
 /*line in the HomePage*/
