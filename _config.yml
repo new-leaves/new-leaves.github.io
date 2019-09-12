@@ -33,12 +33,12 @@ plugins:
 #-----------
 
 #For Github pages.
-remote_theme: pmarsceill/just-the-docs
+#remote_theme: pmarsceill/just-the-docs
 
 #-----------
 
 #For local
-#theme: just-the-docs
+theme: just-the-docs
 search_enabled: true
 
 # Exclude from processing.
