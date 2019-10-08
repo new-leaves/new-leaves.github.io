@@ -33,9 +33,9 @@ def test_1():
         tmp = f.myLen(elt)
         isTrue = (tmp == ans)
         if isTrue:
-            print("myLen({}) = {} -> correct".format(elt))
+            print("myLen({}) = {} -> correct".format(elt, ans))
         else: 
-            print("myLen({}) = {} -> NOT CORRECT".format(elt))
+            print("myLen({}) = {} -> NOT CORRECT".format(elt, ans))
 
 def test_2():
     example = [("a", ""),  ("b", "bbabbby shark!"), ("f", "toilette")]
@@ -134,8 +134,8 @@ def test_9():
             print("deleteFirstChar({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
 
 def test_10():
-    example = [("a", ""), ("a", "aaaaa"), ("u", "crouu crouuu")]
-    goodAns = ["", "aaaa", "crouu crouu"]
+    example = [("a", ""), ("a", "aaaaa"), ("u", "cruoua"), ("a", "father")]
+    goodAns = ["", "aaaa", "cruoa", "fther"]
 
     for elt, ans in zip(example, goodAns):
         tmp = f.deleteLastChar(elt[0], elt[1])
