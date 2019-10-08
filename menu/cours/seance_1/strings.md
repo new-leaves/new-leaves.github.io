@@ -54,6 +54,7 @@ Nous allons voir comment:
 
 <div style="margin-bottom:0.5cm">
 <ol>
+<li> Caster un entier en string. </li>
 <li> Avoir la longueur d'une string.</li> 
 <li> Accéder à un caractère d'une string.</li>
 <li> Parcourir une string.</li>
@@ -63,6 +64,35 @@ Nous allons voir comment:
 </div>
 
 ---
+### Caster un entier en string
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+"Caster" signifie changer de type.
+</div>
+
+```python
+var = 1
+type(var)
+>>> int
+```
+
+```python
+var = str(var)
+type(var)
+>>> str
+```
+
+<div style="margin-top:0.7cm;margin-bottom:0.5cm">
+<font color = "red"> <u> Remarque: </u> </font>
+</div>
+<table><tr><td>
+- Cela marche également pour:
+    <ol>
+       <li> float -> string </li>
+       <li> string -> int </li>
+       <li> string -> float </li>
+    </ol>
+</td></tr></table>
 
 ### Longueur d'une string
 
@@ -204,6 +234,24 @@ a + b
 ```
 ```python
 >>> 'salut'
+```
+
+```python
+var1 = "Ferdinand"
+var2 = 20
+
+s = var1 + " a " + str(var2) + " ans"
+print(s)
+>>> 'Ferdinand a 20 ans'
+```
+
+```python
+var1 = "Ferdinand"
+var2 = 20
+
+s = "{} a {} ans".format(var1, str(var2))
+print(s)
+>>> 'Ferdinand a 20 ans'
 ```
 
 ---
