@@ -51,7 +51,7 @@ isMale = False
 
 ```python
 #SORT 1 : Attend 5 secondes avant de lancer une boule de feu.
-if energy >= 50:
+if energy >= 60:
     energy -= 60
     #Décrémentation
     for i in range(5, -1, -1):
@@ -115,7 +115,7 @@ def bouleDeFeu(energy):
         SORT 1 : Attend 5 secondes avant de lancer une boule de feu.
         :param "energy": quantité d'énergie.
     """
-    if energy >= 50:
+    if energy >= 60:
         energy -= 60
         #Décrémentation
         for i in range(5, -1, -1):
@@ -269,7 +269,7 @@ def bouleDeFeu(energy):
         SORT 1 : Attend 5 secondes avant de lancer une boule de feu.
         :param "energy": quantité d'énergie.
     """
-    if energy >= 50:
+    if energy >= 60:
         energy -= 60
         #Décrémentation
         for i in range(5, -1, -1):
