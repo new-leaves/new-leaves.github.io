@@ -332,7 +332,7 @@ while key != '0':
         subprocess.call("clear")
     elif s == "Windows":
         #On Windows.
-        subprocess.call("cls")
+        subprocess.call("cls", shell=True)
 
     if key == 1:
         test_1()
