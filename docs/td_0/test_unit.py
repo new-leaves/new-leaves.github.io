@@ -150,7 +150,7 @@ def test_7():
             print("mult({}, {}) = {} -> NOT CORRECT".format(elt[0], elt[1], tmp))
 
 def test_8():
-    print("tableauMult(10) -> correct")
+    print(f.tableauMult(10))
 
 def test_9():
     pyramide_1 = "*"
