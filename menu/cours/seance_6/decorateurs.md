@@ -349,7 +349,7 @@ None None
 **<u> Pour résumer:</u>**
 
 <table><tr><td>
-Les <b> décorateurs </b> nous permettent de définir des méthodes de classe que nous pouvons accéder comme des attributs. 
+    Les <b> <a href="https://www.scaler.com/topics/python/python-decorators/">décorateurs</a> </b> nous permettent de définir des méthodes de classe que nous pouvons accéder comme des attributs. 
 <br>
 Il en existe 3 types:
 <br>
